@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "..\\..\\httpd.www"
+        },
+        {
+            "path": "."
+        },
+        {
+            "path": "..\\..\\automotive"
+        }
+    ]
+}
