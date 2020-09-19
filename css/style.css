@@ -2461,7 +2461,7 @@ ol {
 		padding: 0;
 		margin-bottom: 20px;
 	}
-	.slicknav_nav ul {
+	/* .slicknav_nav ul {
 		margin: 0;
 	}
 	.slicknav_nav .slicknav_row,
@@ -2483,7 +2483,7 @@ ol {
 	}
 	.slicknav_nav {
 		display: block !important;
-	}
+	} */
 	.offcanvas__logo {
 		margin-bottom: 25px;
 	}
@@ -2674,7 +2674,7 @@ ol {
 		padding: 0;
 		margin-bottom: 20px;
 	}
-	.slicknav_nav ul {
+	/* .slicknav_nav ul {
 		margin: 0;
 	}
 	.slicknav_nav .slicknav_row,
@@ -2696,7 +2696,7 @@ ol {
 	}
 	.slicknav_nav {
 		display: block !important;
-	}
+	} */
 	.offcanvas__logo {
 		margin-bottom: 25px;
 	}
