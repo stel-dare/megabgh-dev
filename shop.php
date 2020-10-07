@@ -57,7 +57,7 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
@@ -68,15 +68,15 @@
                                     <!-- <li ><a href="#">Promotions</a></li> -->
                                     <li><a href="#">Categories</a>
                                         <!-- <ul class="submenu">
-                                            <li><a href="services.html">Cleaning</a></li>
-                                            <li><a href="personnel_support.html">Personnel Support</a></li>
-                                            <li><a href="environmental_services.html">Environmental Services</a></li>
-                                            <li><a href="training.html">Training</a></li>
+                                            <li><a href="services.php">Cleaning</a></li>
+                                            <li><a href="personnel_support.php">Personnel Support</a></li>
+                                            <li><a href="environmental_services.php">Environmental Services</a></li>
+                                            <li><a href="training.php">Training</a></li>
                                         </ul> -->
                                     </li>
                                     <li ><a href="#">Register/Login</a></li>
                                     
-                                    <!-- <li><a href="shop.html">Shop</a></li> -->             
+                                    <!-- <li><a href="shop.php">Shop</a></li> -->             
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </nav>
@@ -375,7 +375,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">

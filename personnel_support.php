@@ -57,27 +57,27 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">                                                                                          
-                                    <li><a href="index.html">Home</a></li>
-                                    <li ><a href="about.html">About</a></li>
-                                    <li class="active"><a href="#">Services</a>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li ><a href="about.php">About</a></li>
+                                    <li class="active"><a href="services.php">Services</a>
                                         <ul class="submenu">
-                                            <li><a href="#">Cleaning</a></li>
-                                            <li><a href="personnel_support.html">Personnel Support</a></li>
-                                            <li><a href="environmental_services.html">Environmental Services</a></li>
-                                            <li><a href="training.html">Training</a></li>
+                                            <li><a href="services.php">Cleaning</a></li>
+                                            <li><a href="#">Personnel Support</a></li>
+                                            <li><a href="environmental_services.php">Environmental Services</a></li>
+                                            <li><a href="training.php">Training</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html" target="_blank" rel="noreferrer noopener">Shop</a></li>
+                                    <li><a href="shop.php" target="_blank" rel="noreferrer noopener">Shop</a></li>
                                     
-                                    <!-- <li><a href="shop.html">Shop</a></li> -->             
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <!-- <li><a href="shop.php">Shop</a></li> -->             
+                                    <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -128,77 +128,92 @@
                                     and services, Consultec customizes comprehensive solutions that are designed to fulfill
                                     your immediate needs, while considering</p> -->
                                     <div class="services__details__chooseus">
-                                        <h4>CLEANING</h4>
-                                        <p>We provide professional cleaning with our dedicated team to get our clients satisfied. Our operation involves:</p>
+                                        <h4>Hospitality Personnel Outsourcing</h4>
+                                        <p>
+                                            Outsourcing of casual and support staff is very relevant in the hospitality industry.
+                                             That is why we come in to offer that needed service in providing trained personnel to meet 
+                                             the specialized needs of our clients in hotels, restaurants and guest houses.
+                                             Our workers are carefully screened to ensure that our clients can be sure of our service.
+                                            </p>
+                                            
+                                            <p>
+                                                Our support staff includes:
+                                            </p>
                                         <ul>
-                                            <li><i class="fa fa-check-circle"></i> Domestic cleaning.
+                                            <li><i class="fa fa-check-circle"></i> Room attendants.
                                             </li>
-                                            <li><i class="fa fa-check-circle"></i>  General office cleaning.</li>
-                                            <li><i class="fa fa-check-circle"></i>  Grout, carpet and upholstery cleaning.
+                                            <li><i class="fa fa-check-circle"></i>  Laundry attendants.</li>
+                                            <li><i class="fa fa-check-circle"></i>  Public area cleaners.
                                             </li>
+                                            <li><i class="fa fa-check-circle"></i>  Stewards.</li>
+                                            <li><i class="fa fa-check-circle"></i>  Cooks.</li>
+                                            <li><i class="fa fa-check-circle"></i>  Waiters.</li>
                                             <!-- <li><i class="fa fa-check-circle"></i> Grout, carpet and upholstery cleaning.</li> -->
                                         </ul>
                                     </div>
                             </div>
                             <div class="services__details__pic">
-                                <img src="img/services/details/service-details-i.jpg" alt="">
+                                <img src="img/services/details/service-details-iii.jpg" alt="">
                             </div>
                             <div class="services__details__text">
-                                
-                                    <div class="services__details__chooseus">
-                                        <h4>Steam Cleaning</h4>
-                                        <p>
-                                            We undertake specialized steam cleaning services with the use of industrial steam cleaners. 
-                                            We degrease heavily stained places and sanitize working and living areas ensuring the places are left clean and hygienic.
-                                        </p>
-                                        <p>
-                                            We steam clean:
-                                        </p>
-                                        <ul>
-                                            <li><i class="fa fa-check-circle"></i> Homes.
-                                            </li>
-                                            <li><i class="fa fa-check-circle"></i> Offices.</li>
-                                            <li><i class="fa fa-check-circle"></i> Oil service stations.
-                                            </li>
-                                            <li><i class="fa fa-check-circle"></i> Fuel loading points.</li>
-                                            <li><i class="fa fa-check-circle"></i> Interior of ships.</li>
-                                            <li><i class="fa fa-check-circle"></i> Interior of aircrafts.</li>
-                                            <li><i class="fa fa-check-circle"></i> Plants.</li>
-                                            <li><i class="fa fa-check-circle"></i> Heavy duty machinery.</li>
-                                            <li><i class="fa fa-check-circle"></i> Car body, engine and interior.</li>
-                                            <li><i class="fa fa-check-circle"></i> Fuel loading points.</li>
-                                        </ul>
-                                    </div>
+                                   <h4>Waiting Service</h4>
+                                <p>
+                                    We provide professional waiters for corporate events, parties, weddings, funerals and other social gatherings.
+                                     You can rely on us to  make your event a successful  void of stress. Our servers are trained in general serving techniques and will take care of the setting up, 
+                                     serving and the clean up. We however treat every client differently and work according to their special needs.
+                                </p>
+
                             </div>
-                            <div class="services__details__pic">
-                                <img src="img/services/details/service-details-ii.jpg" alt="">
-                            </div>
-                            <!-- <div class="services__details__feature">
-                                <h4>Our featured</h4>
+                            <!-- <div class="services__details__pic">
+                                <img src="img/services/details/service-details.jpg" alt="">
+                            </div> -->
+                            <div class="services__details__text">
+                                <h4>Domestic Service</h4>
+                             <p>
+                                At MEGAB we understand that you are looking for a domestic service that will provide a range of services to 
+                                meet your home needs. So we help you clean, shop, cook and iron.
+                             </p>
+
+                         </div>
+                            <div class="services__details__feature">
+                                <h4>Our domestic services</h4>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <div class="services__details__feature__item">
                                             <img src="img/icon/si-3.png" alt="">
-                                            <h5>Industrial Construction</h5>
-                                            <p>Industriel has a brilliant record in responding to complex</p>
+                                            <h5>Cleaning and Ironing</h5>
+                                            <p>Our Domestic Assistants will give your home a thorough clean and take care of all of your ironing.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <div class="services__details__feature__item">
                                             <img src="img/icon/si-1.png" alt="">
-                                            <h5>Industrial Construction</h5>
-                                            <p>Industriel has a brilliant record in responding to complex</p>
+                                            <h5>Market Shopping</h5>
+                                            <p> We ensure you get all your foodstuffs clean, fresh and at the right market price.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <div class="services__details__feature__item">
                                             <img src="img/icon/si-2.png" alt="">
-                                            <h5>Industrial Construction</h5>
-                                            <p>Industriel has a brilliant record in responding to complex</p>
+                                            <h5>Elderly Care</h5>
+                                            <p>We lend a helping hand and take care of all the needs of your elderly loved ones.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
+                            <div class="services__details__text">
+                                <h4>Relocation</h4>
+                             <p>
+                                Do you need some assistance to move in a new residence or office? Our team will assist to make that move a comfortable one.
+                                 We have neat, covered container trucks and vans to transfer your personal belongings from any part of Accra to your new location.
+                                  We also do removals for offices, schools, hospitals among other institutions. You can be assured of our reliable 
+                                   professional service.
+                             </p>
+
+                         </div>
+                         <div class="services__details__pic">
+                            <img src="img/services/details/service-details-iv.jpg" alt="">
+                        </div>
                             <!-- <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="services__details__video set-bg"
@@ -229,10 +244,10 @@
                             <div class="services__sidebar__item">
                                 <h4>Our Services</h4>
                                 <ul>
-                                    <li ><a href="#" class="service-active">Cleaning</a></li>
-                                    <li><a href="personnel_support.html">Personnel Support</a></li>
-                                    <li><a href="environmental_services.html">Environmental Services</a></li>
-                                    <li><a href="training.html">Training</a></li>
+                                    <li ><a href="services.php" >Cleaning</a></li>
+                                    <li><a href="#" class="service-active">Personnel Support</a></li>
+                                    <li><a href="environmental_services.php">Environmental Services</a></li>
+                                    <li><a href="training.php">Training</a></li>
                                     <!-- <li><a href="#">Pating Car</a></li> -->
                                 </ul>
                             </div>
@@ -265,7 +280,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">

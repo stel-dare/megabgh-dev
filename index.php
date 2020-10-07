@@ -45,7 +45,7 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
@@ -53,19 +53,19 @@
                             <nav> 
                                 <ul id="navigation">                                                                                          
                                     <li class="active"><a href="#">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="services.html">Services</a>
+                                    <li><a href="about.php">About</a></li>
+                                    <li><a href="services.php">Services</a>
                                         <ul class="submenu">
-                                            <li><a href="services.html">Cleaning</a></li>
-                                            <li><a href="personnel_support.html">Personnel Support</a></li>
-                                            <li><a href="environmental_services.html">Environmental Services</a></li>
-                                            <li><a href="training.html">Training</a></li>
+                                            <li><a href="services.php">Cleaning</a></li>
+                                            <li><a href="personnel_support.php">Personnel Support</a></li>
+                                            <li><a href="environmental_services.php">Environmental Services</a></li>
+                                            <li><a href="training.php">Training</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html" target="_blank" rel="noreferrer noopener">Shop</a></li>
+                                    <li><a href="shop.php" target="_blank" rel="noreferrer noopener">Shop</a></li>
                                     
-                                    <!-- <li><a href="shop.html">Shop</a></li> -->             
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <!-- <li><a href="shop.php">Shop</a></li> -->             
+                                    <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -135,7 +135,7 @@
                                 <img src="assets/img/icon/services-icon1.png" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">We clean.</a></h5>
+                                <h5><a href="services.php">We clean.</a></h5>
                                 <p>
                                     We provide professional domestic cleaning, general office cleaning, grout, carpet and upholstery cleaning.
                                 </p>
@@ -148,7 +148,7 @@
                                 <img src="assets/img/icon/services-icon2.png" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">We disinfect and fumigate.</a></h5>
+                                <h5><a href="services.php">We disinfect and fumigate.</a></h5>
                                 <p>
                                     We use effective methods like high steamers, thermal fogging and others to eradicate the 
                                     bugs and pathogenic microbe population.
@@ -162,7 +162,7 @@
                                 <img src="assets/img/icon/services-icon3.png" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">We loan support staff.</a></h5>
+                                <h5><a href="services.php">We loan support staff.</a></h5>
                                 <p>
                 
                                      
@@ -201,7 +201,7 @@
                                     <img src="assets/img/icon/offers-icon-i.png" alt="">
                                 </div>
                                 <div class="cat-cap">
-                                    <h5><a href="services.html">We train your staff.</a></h5>
+                                    <h5><a href="services.php">We train your staff.</a></h5>
                                     <p>
                                         We offer training for your staff to gain the relevant skills in Safety Management, Front Office Management
                                         Housekeeping and more.
@@ -218,7 +218,7 @@
                                     <img src="assets/img/icon/offers-icon-ii.png" alt="">
                                 </div>
                                 <div class="cat-cap">
-                                    <h5><a href="services.html">We have a shop.</a></h5>
+                                    <h5><a href="services.php">We have a shop.</a></h5>
                                     <p>
                                         We sell cleaning supplies, air purifying units, fumigation supplies and many other 
                                         environmental supplies at very affordable prices.
@@ -278,7 +278,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">

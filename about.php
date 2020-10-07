@@ -45,27 +45,27 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">                                                                                          
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.php">Home</a></li>
                                     <li class="active"><a href="#">About</a></li>
-                                    <li><a href="services.html">Services</a>
+                                    <li><a href="services.php">Services</a>
                                         <ul class="submenu">
-                                            <li><a href="services.html">Cleaning</a></li>
-                                            <li><a href="personnel_support.html">Personnel Support</a></li>
-                                            <li><a href="environmental_services.html">Environmental Services</a></li>
-                                            <li><a href="training.html">Training</a></li>
+                                            <li><a href="services.php">Cleaning</a></li>
+                                            <li><a href="personnel_support.php">Personnel Support</a></li>
+                                            <li><a href="environmental_services.php">Environmental Services</a></li>
+                                            <li><a href="training.php">Training</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html" target="_blank" rel="noreferrer noopener">Shop</a></li>
+                                    <li><a href="shop.php" target="_blank" rel="noreferrer noopener">Shop</a></li>
                                     
-                                    <!-- <li><a href="shop.html">Shop</a></li> -->             
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <!-- <li><a href="shop.php">Shop</a></li> -->             
+                                    <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -131,7 +131,7 @@
                                 The outcome is gleaming clothes!</p>
                             -->
 
-                            <a href="contact.html" class="btn">Contact Us</a> 
+                            <a href="contact.php" class="btn">Contact Us</a> 
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                                 <img src="assets/img/icon/services-icon1.svg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">We collect your clothes</a></h5>
+                                <h5><a href="services.php">We collect your clothes</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                                 <img src="assets/img/icon/services-icon2.svg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Wash your clothes</a></h5>
+                                <h5><a href="services.php">Wash your clothes</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                                 <img src="assets/img/icon/services-icon3.svg" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Get delivery</a></h5>
+                                <h5><a href="services.php">Get delivery</a></h5>
                                 <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
                             </div>
                         </div>
@@ -273,7 +273,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">
