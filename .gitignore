@@ -1,2 +1,4 @@
 .gitignore
-.config.php
+config.php
+.gitignore
+config.php

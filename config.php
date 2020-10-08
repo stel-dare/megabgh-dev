@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     "database" => [
         'name' => 'megabgh',
         'username' => 'root',
@@ -10,4 +11,5 @@ return [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ]
     ]
+    
 ];
