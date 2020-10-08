@@ -346,8 +346,8 @@
                                 <li><a href="#">Disinfectant <span>(63 Item)</span></a></li>
                                 <li><a href="#">Vaccum Cleaner <span>(18 Item)</span></a></li>
                                 <li><a href="#">Glass Cleaner <span>(36 Item)</span></a></li> -->
-                                <?php foreach($categories as $cat => $total) : ?>
-                                    <li><a href="#"><?= $cat ?><span>(<?= $total ?> Items)</span></a></li>
+                                <?php foreach($categories as $cat) : ?>
+                                    <li><a href="#"><?= $cat -> title ?><span>(<?= $cat -> number_of_items ?> Items)</span></a></li>
                                 <?php endforeach; ?>
 
                             </ul>
