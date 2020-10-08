@@ -57,27 +57,27 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href=""><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">                                                                                          
-                                    <li><a href="index.php">Home</a></li>
-                                    <li ><a href="about.php">About</a></li>
-                                    <li class="active"><a href="services.php">Services</a>
+                                    <li><a href="">Home</a></li>
+                                    <li ><a href="about">About</a></li>
+                                    <li class="active"><a href="services">Services</a>
                                         <ul class="submenu">
-                                            <li><a href="services.php">Cleaning</a></li>
-                                            <li><a href="personnel_support.php">Personnel Support</a></li>
-                                            <li><a href="environmental_services.php">Environmental Services</a></li>
+                                            <li><a href="services">Cleaning</a></li>
+                                            <li><a href="personnel">Personnel Support</a></li>
+                                            <li><a href="environmental">Environmental Services</a></li>
                                             <li><a href="#">Training</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.php" target="_blank" rel="noreferrer noopener">Shop</a></li>
+                                    <li><a href="shop" target="_blank" rel="noreferrer noopener">Shop</a></li>
                                     
-                                    <!-- <li><a href="shop.php">Shop</a></li> -->             
-                                    <li><a href="contact.php">Contact</a></li>
+                                    <!-- <li><a href="shop">Shop</a></li> -->             
+                                    <li><a href="contact">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -243,9 +243,9 @@
                             <div class="services__sidebar__item">
                                 <h4>Our Services</h4>
                                 <ul>
-                                    <li ><a href="services.php" >Cleaning</a></li>
+                                    <li ><a href="services" >Cleaning</a></li>
                                     <li><a href="#" >Personnel Support</a></li>
-                                    <li><a href="environmental_services.php">Environmental Services</a></li>
+                                    <li><a href="environmental">Environmental Services</a></li>
                                     <li><a href="#" class="service-active">Training</a></li>
                                     <!-- <li><a href="#">Pating Car</a></li> -->
                                 </ul>
@@ -279,7 +279,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href=""><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">

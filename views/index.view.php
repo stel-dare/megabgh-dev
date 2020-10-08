@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Megabgh | About Us</title>
+    <title>Megabgh | Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -45,27 +45,27 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href=""><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">                                                                                          
-                                    <li><a href="index.php">Home</a></li>
-                                    <li class="active"><a href="#">About</a></li>
-                                    <li><a href="services.php">Services</a>
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="services">Services</a>
                                         <ul class="submenu">
-                                            <li><a href="services.php">Cleaning</a></li>
-                                            <li><a href="personnel_support.php">Personnel Support</a></li>
-                                            <li><a href="environmental_services.php">Environmental Services</a></li>
-                                            <li><a href="training.php">Training</a></li>
+                                            <li><a href="services">Cleaning</a></li>
+                                            <li><a href="personnel">Personnel Support</a></li>
+                                            <li><a href="environmental">Environmental Services</a></li>
+                                            <li><a href="training">Training</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.php" target="_blank" rel="noreferrer noopener">Shop</a></li>
+                                    <li><a href="shop" target="_blank" rel="noreferrer noopener">Shop</a></li>
                                     
-                                    <!-- <li><a href="shop.php">Shop</a></li> -->             
-                                    <li><a href="contact.php">Contact</a></li>
+                                    <!-- <li><a href="shop">Shop</a></li> -->             
+                                    <li><a href="contact">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -84,68 +84,47 @@
         <!-- Header End -->
     </header>
     <main>
-        <!--? Hero Start -->
-        <div class="slider-area2 section-bg2 hero-overly" data-background="assets/img/hero/hero3.png">
-            <div class="slider-height2 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap hero-cap2">
-                                <h2>About us</h2>
+        <!--? slider Area Start-->
+        <section class=" ">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/h1_hero.png);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">We clean, disinfect, fumigate and more</h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">Your environmental problems are our priority.</p>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Our Services</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>          
                 </div>
-            </div>
-        </div>
-        <!-- Hero End -->
-        <!--? About Area  -->
-        <section class="about-area2 section-padding40">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <!-- about-img -->
-                        <div class="about-img ">
-                            <img src="assets/img/gallery/about1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="about-caption mb-50">
-                            <!-- Section Tittle -->
-                            <div class="section-tittle mb-25">
-                                <h2>WELCOME TO MEGAB</h2>
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/shop.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">We have a shop. </h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">We sell cleaning supplies, air purifying units and more.</p>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Shop With Us</a>
+                                </div>
                             </div>
-                            <p class="mb-20">
-                                MEGAB is a cleaning, environmental management and personnel outsourcing business.
-                                We have an eye for detail and our goal is to protect human health and the environment. 
-                            </p>
-                            <p class="mb-30">
-                                We are committed to our clients and always aim to produce our best work by providing a professional and 
-                                reasonably  priced service that suits their various requirements.
-                            </p>
-                            <!-- <p class="mb-30">
-                                We stand out of our competitors because we offer our services with the driven passion to achieve the needed 
-                                results. 
-                            </p> -->
-                            <!-- <p class="mb-30">The automated process starts as soon as your clothes go into the machine. 
-                                The outcome is gleaming clothes!</p>
-                            -->
-
-                            <a href="contact.php" class="btn">Contact Us</a> 
                         </div>
-                    </div>
+                    </div>          
                 </div>
             </div>
         </section>
-        <!-- About Area End -->
+        <!-- slider Area End-->
         <!--? Services Area Start -->
-        <!-- <section class="services-area border-bottom pb-20 mb-60">
+        <section class="services-area pt-top border-bottom pb-20 mb-60">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <span class="element">Our Process</span>
-                            <h2>This is how we work</h2>
+                            <span class="element">What We Do</span>
+                            <h2>This is what we do</h2>
                         </div>
                     </div>
                 </div>
@@ -153,92 +132,113 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="assets/img/icon/services-icon1.svg" alt="">
+                                <img src="assets/img/icon/services-icon1.png" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.php">We collect your clothes</a></h5>
-                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                                <h5><a href="services">We clean.</a></h5>
+                                <p>
+                                    We provide professional domestic cleaning, general office cleaning, grout, carpet and upholstery cleaning.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="assets/img/icon/services-icon2.svg" alt="">
+                                <img src="assets/img/icon/services-icon2.png" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.php">Wash your clothes</a></h5>
-                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
+                                <h5><a href="services">We disinfect and fumigate.</a></h5>
+                                <p>
+                                    We use effective methods like high steamers, thermal fogging and others to eradicate the 
+                                    bugs and pathogenic microbe population.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
                             <div class="cat-icon">
-                                <img src="assets/img/icon/services-icon3.svg" alt="">
+                                <img src="assets/img/icon/services-icon3.png" alt="">
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.php">Get delivery</a></h5>
-                                <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Services End -->
-        <!--? Want To work -->
-
-        <!-- Want To work End -->
-        <!--? Testimonials_start -->
-
-        <!-- Testimonials_end -->
-        <!--? Company achievement Start -->
-        <section class="services-area section-padding40 fix">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <div class="section-tittle text-center mb-55">
-                            <span class="element">Fun Fact</span>
-                            <h2>Our Statistics</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center">
-                            <div class="cat-cap">
-                                <span>67</span>
-                                <p>We have fumigated and disinfected 67 hospitals,schools and offices.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center">
-                            <div class="cat-cap">
-                                <span>100+</span>
-                                <p>We have loaned more than 100 trained staff to hotels, guest houses and restaurants.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center">
-                            <div class="cat-cap">
-                                <span>560</span>
-                                <p>We have sold about 560 units of quality supplies to our clients.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="bottom-bt">
-                                <img src="assets/img/gallery/company-bg.png" alt="">
+                                <h5><a href="services">We loan support staff.</a></h5>
+                                <p>
+                
+                                     
+                                    We provide trained personnel that support your staff to meet the specialized 
+                                    needs of  your business.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Services End -->
+        <!--? Offer-services Start  -->
+        <section class="offer-services pb-bottom2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <span class="element">More Services</span>
+                            <h2>Other services we offer</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-offers">
+                            <img src="assets/img/gallery/offers1.png" alt="" class=" w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-offers">
+                            <img src="assets/img/gallery/offers2.png" alt="" class=" w-100">
+                            <div class="offers-caption text-center">
+                                <div class="cat-icon">
+                                    <img src="assets/img/icon/offers-icon-i.png" alt="">
+                                </div>
+                                <div class="cat-cap">
+                                    <h5><a href="services">We train your staff.</a></h5>
+                                    <p>
+                                        We offer training for your staff to gain the relevant skills in Safety Management, Front Office Management
+                                        Housekeeping and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-offers">
+                            <img src="assets/img/gallery/offers2.png" alt="" class=" w-100">
+                            <div class="offers-caption text-center">
+                                <div class="cat-icon">
+                                    <img src="assets/img/icon/offers-icon-ii.png" alt="">
+                                </div>
+                                <div class="cat-cap">
+                                    <h5><a href="services">We have a shop.</a></h5>
+                                    <p>
+                                        We sell cleaning supplies, air purifying units, fumigation supplies and many other 
+                                        environmental supplies at very affordable prices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="single-offers">
+                            <img src="assets/img/gallery/offers4.png" alt="" class=" w-100">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Offer-services End  -->
+        <!--? Want To work -->
         <section class="container">
             <section class="wantToWork-area" data-background="assets/img/gallery/section_bg01.png">
                 <div class="wants-wrapper w-padding2">
@@ -256,7 +256,12 @@
                 </div>
             </section>
         </section>
-        <!-- Company achievement End -->
+        <!-- Want To work End -->
+        <!-- Testimonials_start -->
+      
+        <!-- Testimonials_end -->
+        <!--? Company achievement Start -->
+        
         <!--?  Map Area start  -->
         <!-- <div class="Map-area">
             <img src="assets/img/gallery/Map.png" alt="" class="w-100">
@@ -273,7 +278,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href=""><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">

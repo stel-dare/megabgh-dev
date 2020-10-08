@@ -57,27 +57,27 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href=""><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">                                                                                          
-                                    <li><a href="index.php">Home</a></li>
-                                    <li ><a href="about.php">About</a></li>
-                                    <li class="active"><a href="services.php">Services</a>
+                                    <li><a href="">Home</a></li>
+                                    <li ><a href="about">About</a></li>
+                                    <li class="active"><a href="#">Services</a>
                                         <ul class="submenu">
-                                            <li><a href="services.php">Cleaning</a></li>
-                                            <li><a href="personnel_support.php">Personnel Support</a></li>
-                                            <li><a href="#">Environmental Services</a></li>
-                                            <li><a href="training.php">Training</a></li>
+                                            <li><a href="#">Cleaning</a></li>
+                                            <li><a href="personnel">Personnel Support</a></li>
+                                            <li><a href="environmental">Environmental Services</a></li>
+                                            <li><a href="training">Training</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.php" target="_blank" rel="noreferrer noopener">Shop</a></li>
+                                    <li><a href="shop" target="_blank" rel="noreferrer noopener">Shop</a></li>
                                     
-                                    <!-- <li><a href="shop.php">Shop</a></li> -->             
-                                    <li><a href="contact.php">Contact</a></li>
+                                    <!-- <li><a href="shop">Shop</a></li> -->             
+                                    <li><a href="contact">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -117,75 +117,88 @@
                     <div class="col-lg-8 order-lg-2">
                         <div class="services__details__content">
                             
-                            <div class="services__details__text">
-                                <h4>Bedbug Fumigation</h4>
-                             <p>
-                                Bedbug populations have developed resistance to insecticides used by professionals and are such a difficult pest to control. 
-                                Spraying pesticides only works if the bugs are directly touched by the poison and bedbugs are so small they are not likely to
-                                 be reached. However bedbugs are extraordinarily vulnerable to high temperatures. Studies have proven that temperatures of over 
-                                 60ºC are effective in killing bedbugs and eradicating bedbug infestations. That is why at MEGAB we deploy high steamers to kill
-                                  both bugs and eggs.
-                             </p>
-
-                         </div>
                             
-                            <div class="services__details__pic">
-                                <img src="img/services/details/service-details-vi.jpg" alt="">
+                            <div class="services__details__text">
+                                <!-- <h4>What We Do?</h4>
+                                <p>Consultec a professional telecommunication consulting firm providing strategic technology
+                                    solutions for small and mid-size businesses and enterprise-level companies. We increase
+                                    operational and financial</p>
+                                <p>Having years of diverse experience, we are able to create cutting-edge recommendations
+                                    that will transform your networks infrastructure. Analyzing your current infrastructure
+                                    and services, Consultec customizes comprehensive solutions that are designed to fulfill
+                                    your immediate needs, while considering</p> -->
+                                    <div class="services__details__chooseus">
+                                        <h4>CLEANING</h4>
+                                        <p>We provide professional cleaning with our dedicated team to get our clients satisfied. Our operation involves:</p>
+                                        <ul>
+                                            <li><i class="fa fa-check-circle"></i> Domestic cleaning.
+                                            </li>
+                                            <li><i class="fa fa-check-circle"></i>  General office cleaning.</li>
+                                            <li><i class="fa fa-check-circle"></i>  Grout, carpet and upholstery cleaning.
+                                            </li>
+                                            <!-- <li><i class="fa fa-check-circle"></i> Grout, carpet and upholstery cleaning.</li> -->
+                                        </ul>
+                                    </div>
                             </div>
-                            
-                            <!-- <div class="services__details__pic">
-                                <img src="img/services/details/service-details.jpg" alt="">
-                            </div> -->
+                            <div class="services__details__pic">
+                                <img src="img/services/details/service-details-i.jpg" alt="">
+                            </div>
                             <div class="services__details__text">
-                                <h4>Sanitization and Odour Control</h4>
-                             <p>
-                                Pathogenic microbes such as virus, fungi and pathogenic bacteria are the main cause of airborne or direct contact
-                                 diseases affecting humans. While both indoor and outdoor pollution affect health, statistics on the impact of household
-                                  indoor pollutants is alarming. The role of air pollution in the development of respiratory diseases, including acute 
-                                  respiratory infections and chronic obstructive pulmonary diseases is well known.
-                                There is therefore the need for everyone to be concerned about air quality and indoor air 
-                                 in working and living areas especially for people suffering from respiratory conditions such as asthma or allergies
-                             </p>
-
-                         </div>
+                                
+                                    <div class="services__details__chooseus">
+                                        <h4>Steam Cleaning</h4>
+                                        <p>
+                                            We undertake specialized steam cleaning services with the use of industrial steam cleaners. 
+                                            We degrease heavily stained places and sanitize working and living areas ensuring the places are left clean and hygienic.
+                                        </p>
+                                        <p>
+                                            We steam clean:
+                                        </p>
+                                        <ul>
+                                            <li><i class="fa fa-check-circle"></i> Homes.
+                                            </li>
+                                            <li><i class="fa fa-check-circle"></i> Offices.</li>
+                                            <li><i class="fa fa-check-circle"></i> Oil service stations.
+                                            </li>
+                                            <li><i class="fa fa-check-circle"></i> Fuel loading points.</li>
+                                            <li><i class="fa fa-check-circle"></i> Interior of ships.</li>
+                                            <li><i class="fa fa-check-circle"></i> Interior of aircrafts.</li>
+                                            <li><i class="fa fa-check-circle"></i> Plants.</li>
+                                            <li><i class="fa fa-check-circle"></i> Heavy duty machinery.</li>
+                                            <li><i class="fa fa-check-circle"></i> Car body, engine and interior.</li>
+                                            <li><i class="fa fa-check-circle"></i> Fuel loading points.</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div class="services__details__pic">
+                                <img src="img/services/details/service-details-ii.jpg" alt="">
+                            </div>
                             <!-- <div class="services__details__feature">
-                                <h4>Our domestic services</h4>
+                                <h4>Our featured</h4>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <div class="services__details__feature__item">
                                             <img src="img/icon/si-3.png" alt="">
-                                            <h5>Cleaning and Ironing</h5>
-                                            <p>Our Domestic Assistants will give your home a thorough clean and take care of all of your ironing.</p>
+                                            <h5>Industrial Construction</h5>
+                                            <p>Industriel has a brilliant record in responding to complex</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <div class="services__details__feature__item">
                                             <img src="img/icon/si-1.png" alt="">
-                                            <h5>Market Shopping</h5>
-                                            <p> We ensure you get all your foodstuffs clean, fresh and at the right market price.</p>
+                                            <h5>Industrial Construction</h5>
+                                            <p>Industriel has a brilliant record in responding to complex</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">
                                         <div class="services__details__feature__item">
                                             <img src="img/icon/si-2.png" alt="">
-                                            <h5>Elderly Care</h5>
-                                            <p>We lend a helping hand and take care of all the needs of your elderly loved ones.</p>
+                                            <h5>Industrial Construction</h5>
+                                            <p>Industriel has a brilliant record in responding to complex</p>
                                         </div>
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="services__details__text">
-                                <h4>Disinfection by Fogging</h4>
-                             <p>
-                                The application of disinfectants and biocides via fogging significantly reduce the number of viable infectious pathogens. 
-                                At MEGAB we use the process of thermal fogging to disinfect large internal and external areas, generating ultra-fine aerosols
-                                 in a range of 1-50 µm to achieve the needed results. Applicable areas include hospitals, schools and offices.
-                             </p>
-
-                         </div>
-                         <div class="services__details__pic">
-                            <img src="img/services/details/service-details-v.jpg" alt="">
-                        </div>
                             <!-- <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="services__details__video set-bg"
@@ -216,10 +229,10 @@
                             <div class="services__sidebar__item">
                                 <h4>Our Services</h4>
                                 <ul>
-                                    <li ><a href="services.php" >Cleaning</a></li>
-                                    <li><a href="personnel_support.php" >Personnel Support</a></li>
-                                    <li><a href="#" class="service-active">Environmental Services</a></li>
-                                    <li><a href="training.php">Training</a></li>
+                                    <li ><a href="#" class="service-active">Cleaning</a></li>
+                                    <li><a href="personnel">Personnel Support</a></li>
+                                    <li><a href="environmental">Environmental Services</a></li>
+                                    <li><a href="training">Training</a></li>
                                     <!-- <li><a href="#">Pating Car</a></li> -->
                                 </ul>
                             </div>
@@ -252,7 +265,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href=""><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">
