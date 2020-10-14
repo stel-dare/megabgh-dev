@@ -13,4 +13,10 @@ class QueryBuilder{
         $statement -> execute();   
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }
+
+    public function selectSome($table,$limit){
+        $statement = $this->pdo->prepare("select * from $table ORDER BY category_name LIMIT $limit");
+        $statement -> execute();   
+        return $statement->fetchAll(PDO::FETCH_OBJ);
+    }
 }

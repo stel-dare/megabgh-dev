@@ -330,10 +330,11 @@
                         </div>
                     </div>
                     <div class="shop__pagination">
-                        <a href="#">1</a>
+                        <!-- <a href="#">1</a>
                         <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#"><span class="arrow_carrot-right"></span></a>
+                        <a href="#">3</a> -->
+                        <a href="#"><span class="arrow_carrot-left"></span> Previous</a>
+                        <a href="#">Next<span class="arrow_carrot-right"></span> </a>
                     </div>
                 </div>
                 <div class="col-lg-3 order-lg-1">
@@ -347,8 +348,9 @@
                                 <li><a href="#">Vaccum Cleaner <span>(18 Item)</span></a></li>
                                 <li><a href="#">Glass Cleaner <span>(36 Item)</span></a></li> -->
                                 <?php foreach($categories as $cat) : ?>
-                                    <li><a href="#"><?= $cat -> title ?><span>(<?= $cat -> number_of_items ?> Items)</span></a></li>
+                                    <li><a href="#"><?= $cat -> category_name ?></a></li>
                                 <?php endforeach; ?>
+                                <li><a href=""style="color:#6785ff;text-decoration:underline;">All Categories</a></li>
 
                             </ul>
                         </div>
