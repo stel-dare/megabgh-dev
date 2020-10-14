@@ -1,6 +1,6 @@
 <?php
 
-$categories = $app['queryBuilder']->selectSome('categories',6);
+$categories = $app['queryBuilder']->selectSome('categories',6,0);
 
 
 

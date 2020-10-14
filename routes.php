@@ -12,6 +12,7 @@
 //     'contact' => 'controllers/contact.php',
 // ]);
 
+// GET REQUESTS
 $router -> get('' , 'controllers/index.php');
 $router -> get ('about' , 'controllers/about.php');
 $router -> get ('services' , 'controllers/services.php');
@@ -21,4 +22,8 @@ $router -> get ('environmental' , 'controllers/environmental_services.php');
 $router -> get ('training' , 'controllers/training.php');
 $router -> get ('shop' , 'controllers/shop.php');
 $router -> get ('contact' , 'controllers/contact.php');
+$router -> get('api','controllers/api-test.php');
+$router -> get('products','controllers/products.php');
+
+// POST REQUESTS
 $router -> post('contact_process', 'controllers/contact_process.php');

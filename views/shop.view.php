@@ -156,8 +156,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="row" id='products_view'>
+                        <!-- <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic">
                                     <img src="img/products/product-2.jpg" alt="">
@@ -327,14 +327,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="shop__pagination">
                         <!-- <a href="#">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a> -->
-                        <a href="#"><span class="arrow_carrot-left"></span> Previous</a>
-                        <a href="#">Next<span class="arrow_carrot-right"></span> </a>
+                        <a href="#" id='getPrevProducts'><span class="arrow_carrot-left"></span> Previous</a>
+                        <a href="#" id='getNextProducts'>Next<span class="arrow_carrot-right"></span> </a>
                     </div>
                 </div>
                 <div class="col-lg-3 order-lg-1">
@@ -504,6 +504,7 @@
 <!-- Jquery Plugins, main Jquery -->	
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<script src="js/shop.js"></script>
 
 </body>
 </html>
