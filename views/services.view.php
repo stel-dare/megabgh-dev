@@ -57,14 +57,14 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="/megabgh-dev/"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="/"><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">                                                                                          
-                                    <li><a href="/megabgh-dev/">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li ><a href="about">About</a></li>
                                     <li class="active"><a href="#">Services</a>
                                         <ul class="submenu">
@@ -265,7 +265,7 @@
                        <div class="single-footer-caption mb-30">
                         <!-- logo -->
                         <div class="footer-logo mb-35">
-                            <a href="/megabgh-dev/"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="/"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
                         <div class="footer-tittle">
                             <div class="footer-pera">
