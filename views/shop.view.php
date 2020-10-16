@@ -66,7 +66,7 @@
                                 <ul id="navigation">                                                                                          
                                     <li><a href="#">Home</a></li>
                                     <!-- <li ><a href="#">Promotions</a></li> -->
-                                    <li><a href="#">Categories</a>
+                                    <li><a href="about">About</a>
                                         <!-- <ul class="submenu">
                                             <li><a href="services">Cleaning</a></li>
                                             <li><a href="personnel">Personnel Support</a></li>
@@ -74,17 +74,22 @@
                                             <li><a href="training">Training</a></li>
                                         </ul> -->
                                     </li>
-                                    <li ><a href="#">Register/Login</a></li>
+                                    <li ><a href="contact">Contact</a></li>
+                                    <li class="d-lg-none"><a href="#" class="header-btn1 "><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li class="d-lg-none"><a href="#" class="header-btn1 ">My Account</a></li>
                                     
                                     <!-- <li><a href="shop">Shop</a></li> -->             
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <!-- <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
                                 </ul>
                             </nav>
                         </div>
                     </div>
                 </div> 
                 <div class="header-right d-none d-lg-block">
-                    <a href="#" class="header-btn1"><img src="assets/img/icon/call.png" alt=""> (233) 20 140 8571</a>
+                    <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
+                    <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" class="" style="color:#6785FF;">|</a>
+                    <a href="#" class="header-btn1">My Account</a>
                     <!-- <a href="#" class="header-btn2">Contact Us</a> -->
                 </div>
                 <!-- Mobile Menu -->
@@ -136,21 +141,35 @@
             <div class="row">
                 <div class="col-lg-9 order-lg-2">
                     <div class="product__widget">
-                        <div class="row">
+                        <div class="row" style="align-items:center;">
                             <div class="col-lg-4 col-md-4">
                                 <p>Showing 1 - 9 of 32 Products</p>
                             </div>
                             <div class="col-lg-8 col-md-8 text-right">
-                                <div class="select__item">
+                                <!-- <div class="select__item">
                                     <p>Showing Items</p>
                                     <select>
                                         <option value="">12</option>
                                     </select>
-                                </div>
+                                </div> -->
+                                        <div class="blog_right_sidebar select__item">
+                                            <div class="search_widget ">
+                                            <div class="form-group">
+                                            <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Search Product" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                            <div class="input-group-append">
+                                            <button class="btns" type="button"><i class="ti-search"></i></button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                            </div>
+                                        </div>
                                 <div class="select__item">
                                     <p>Sort By</p>
                                     <select>
-                                        <option value="">Best Seller</option>
+                                        <option value="">All Products</option>
+                                        <option value="">New Arrivals</option>
+                                        <option value="">Best Sellers</option>
                                     </select>
                                 </div>
                             </div>
