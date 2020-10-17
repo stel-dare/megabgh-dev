@@ -156,7 +156,7 @@
                                             <div class="search_widget ">
                                             <div class="form-group">
                                             <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Search Product" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                            <input type="text" class="form-control" style="height:36px;" placeholder="Search Product" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                             <div class="input-group-append">
                                             <button class="btns" type="button"><i class="ti-search"></i></button>
                                             </div>
@@ -369,7 +369,7 @@
                                 <?php foreach($categories as $cat) : ?>
                                     <li><a href="#"><?= $cat -> category_name ?></a></li>
                                 <?php endforeach; ?>
-                                <li><a href=""style="color:#6785ff;text-decoration:underline;">All Categories</a></li>
+                                <!-- <li><a href=""style="color:#6785ff;text-decoration:underline;">All Categories</a></li> -->
 
                             </ul>
                         </div>
