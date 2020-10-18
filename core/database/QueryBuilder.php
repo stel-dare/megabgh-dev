@@ -14,8 +14,11 @@ class QueryBuilder{
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }
 
-    public function selectSome($table,$limit,$index){
-        $statement = $this->pdo->prepare("select * from $table ORDER BY id LIMIT $index,$limit");
+    public function selectSome(
+        $table,$join_products_orders,$where_clause,$order_bestseling,$order_all_or_new,$limit,$index
+        )
+        {
+        $statement = $this->pdo->prepare("select * from $table $join_products_orders $where_clause $order_bestseling $order_all_or_new  LIMIT $index,$limit");
         $statement -> execute();   
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }
