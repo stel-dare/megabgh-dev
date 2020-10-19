@@ -1,28 +1,28 @@
 window.onload = function(e){
- getProducts(false);
+ getProducts(0);
    
 }
 
-indexTracker = 9;
+lastIndex = 0;
+lastTotal = 0;
 
-function getProducts(bool){
-    indexTracker= bool?  indexTracker + 9 : indexTracker - 9;
+function getProducts(num){
+        lastIndex+=num;
+        lastIndex = lastIndex>=0 && lastIndex <= lastTotal ? lastIndex : 0;
+        // if(lastIndex>=0 && lastIndex <= lastTotal){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-           try{ 
               let data = JSON.parse(this.responseText);
                updateProductsView(data['products']);
-                }
-
-            catch(e){
-                indexTracker=9;
-            }     
-            
+               updateProductCount(data['total']); 
           }
         };
-        xhttp.open("GET", "products?index="+indexTracker, true);
+        xhttp.open("GET", "products?index="+lastIndex, true);
         xhttp.send();
+    // }
+    // else lastIndex=0;
+    console.log(lastIndex);
 }
 
 function updateProductsView(data){
@@ -54,16 +54,23 @@ function updateProductsView(data){
         document.getElementById('products_view').appendChild(product);
         
     });
+    // Scroll to products section after updating
+    // document.getElementById('products_view').scrollIntoView();
+}
+
+function updateProductCount(total){
+    document.getElementById('total_products').innerHTML = total;
+    lastTotal = total;
 }
 
 function getNextProducts(e){
     e.preventDefault();
-    getProducts(true);
+    getProducts(9);
 }
 
 function getPrevProducts(e){
     e.preventDefault();
-    getProducts(false);
+    getProducts(-9);
 }
 
 document.getElementById('getNextProducts').addEventListener('click',getNextProducts);
