@@ -15,7 +15,7 @@ function getProducts(num){
           if (this.readyState == 4 && this.status == 200) {
               let data = JSON.parse(this.responseText);
                updateProductsView(data['products']);
-               updateProductCount(data['total']); 
+               updateProductCount(data['total'],lastIndex); 
           }
         };
         xhttp.open("GET", "products?index="+lastIndex, true);
@@ -58,8 +58,10 @@ function updateProductsView(data){
     // document.getElementById('products_view').scrollIntoView();
 }
 
-function updateProductCount(total){
+function updateProductCount(total,index){
     document.getElementById('total_products').innerHTML = total;
+    document.getElementById('lastIndex').innerHTML=index+1;
+    document.getElementById('newIndex').innerHTML=index+9>total? total : index+9;
     lastTotal = total;
 }
 

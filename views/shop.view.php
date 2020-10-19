@@ -143,7 +143,7 @@
                     <div class="product__widget">
                         <div class="row" style="align-items:center;">
                             <div class="col-lg-4 col-md-4">
-                                <p>Showing 1 - 9 of <span id="total_products">32</span> Products</p>
+                                <p>Showing <span id="lastIndex">1</span> - <span id="newIndex">9</span> of <span id="total_products">32</span> Products</p>
                             </div>
                             <div class="col-lg-8 col-md-8 text-right">
                                 <!-- <div class="select__item">
