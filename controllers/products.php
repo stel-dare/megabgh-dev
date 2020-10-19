@@ -1,6 +1,7 @@
 <?php
 
-
+// One Query To Rule Them All
+// Dear future self, kindly pay the price of your laziness without any grudge
 $sort_By =  array_key_exists('sortBy',$_GET)? $_GET['sortBy'] : 'id';
 $category_name = array_key_exists("category_name",$_GET)? $_GET['category_name'] : 'category_name';
 $lPrice = array_key_exists("lPrice",$_GET)? $_GET['lPrice'] : 'price';
@@ -15,7 +16,9 @@ $order_all_or_new = $table === "products"? $sort_By === 'id'? "ORDER BY $sort_By
 
 $index = array_key_exists('index',$_GET)? $_GET['index'] : 0;
 
-$products = $app['queryBuilder']->selectSome($table,$join_products_orders,$where_clause,$order_bestseling,$order_all_or_new,9,$index);
-echo json_encode($products);
+$results['products'] =  $app['queryBuilder']->selectSome($table,$join_products_orders,$where_clause,$order_bestseling,$order_all_or_new,9,$index);
+$results['total'] = $app['queryBuilder']->countQueryResult($table,$join_products_orders,$where_clause,$order_bestseling,$order_all_or_new);
 
+echo json_encode($results);
+// echo "select count(*) from (select * from $table $join_products_orders $where_clause $order_bestseling $order_all_or_new)";
 // echo "select * from $table $join_products_orders $where_clause $order_bestseling $order_all_or_new ";

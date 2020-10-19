@@ -17,7 +17,7 @@
       document.getElementById('result').innerHTML= this.responseText;
     }
   };
-  xhttp.open("GET", "products?sortBy=best&lPrice=5000&uPrice=8000&search='%i%'&category_name='Outdoors'", true);
+  xhttp.open("GET", "products?", true);
   xhttp.send();
 }
 </script>

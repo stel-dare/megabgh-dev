@@ -12,7 +12,7 @@ function getProducts(bool){
           if (this.readyState == 4 && this.status == 200) {
            try{ 
               let data = JSON.parse(this.responseText);
-               updateProductsView(data);
+               updateProductsView(data['products']);
                 }
 
             catch(e){

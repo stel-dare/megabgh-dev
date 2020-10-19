@@ -22,4 +22,13 @@ class QueryBuilder{
         $statement -> execute();   
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }
+
+    public function countQueryResult(
+        $table,$join_products_orders,$where_clause,$order_bestseling,$order_all_or_new
+        )
+        {
+        $statement = $this->pdo->prepare("select * from $table $join_products_orders $where_clause $order_bestseling $order_all_or_new ");
+        $statement -> execute();   
+        return count($statement->fetchAll(PDO::FETCH_OBJ));
+    }
 }
