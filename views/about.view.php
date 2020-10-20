@@ -85,7 +85,7 @@
     </header>
     <main>
         <!--? Hero Start -->
-        <div class="slider-area2 section-bg2 hero-overly" data-background="assets/img/hero/hero3.png">
+        <div class="slider-area2 section-bg2 hero-overly" data-background="assets/img/hero/hero3.jpg">
             <div class="slider-height2 d-flex align-items-center">
                 <div class="container">
                     <div class="row">
@@ -106,7 +106,7 @@
                     <div class="col-lg-6 col-md-12">
                         <!-- about-img -->
                         <div class="about-img ">
-                            <img src="assets/img/gallery/about1.png" alt="">
+                            <img src="assets/img/gallery/about1.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">

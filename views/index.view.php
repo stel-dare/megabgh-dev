@@ -101,7 +101,7 @@
                         </div>
                     </div>          
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/shop.jpg);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/shopping-family.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
@@ -190,7 +190,7 @@
                 <div class="row no-gutters">
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="assets/img/gallery/offers1.png" alt="" class=" w-100">
+                            <img src="assets/img/gallery/offers1.jpg" alt="" class=" w-100">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -230,7 +230,7 @@
                     
                     <div class="col-lg-6 col-md-6">
                         <div class="single-offers">
-                            <img src="assets/img/gallery/offers4.png" alt="" class=" w-100">
+                            <img src="assets/img/gallery/offers4.jpg" alt="" class=" w-100">
                         </div>
                     </div>
                 </div>
