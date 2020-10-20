@@ -3,10 +3,18 @@ window.onload = function(e){
    
 }
 
-lastIndex = 0;
-lastTotal = 0;
+let lastIndex = 0;
+let lastTotal = 0;
+//Filter parameters
+let category_name='';
+let lPrice='';
+let uPrice='';
+let search='';
+let sortBy='';
 
-function getProducts(num){
+//Filter Query
+
+function getProducts(num,queryString=''){
         lastIndex+=num;
         lastIndex = lastIndex>=0 && lastIndex <= lastTotal ? lastIndex : 0;
         // if(lastIndex>=0 && lastIndex <= lastTotal){
@@ -18,7 +26,7 @@ function getProducts(num){
                updateProductCount(data['total'],lastIndex); 
           }
         };
-        xhttp.open("GET", "products?index="+lastIndex, true);
+        xhttp.open("GET", "products?index="+lastIndex+queryString, true);
         xhttp.send();
     // }
     // else lastIndex=0;
@@ -60,19 +68,66 @@ function updateProductsView(data){
 
 function updateProductCount(total,index){
     document.getElementById('total_products').innerHTML = total;
-    document.getElementById('lastIndex').innerHTML=index+1;
+    document.getElementById('lastIndex').innerHTML=index+1>total? total : index+1;
     document.getElementById('newIndex').innerHTML=index+9>total? total : index+9;
     lastTotal = total;
 }
 
 function getNextProducts(e){
     e.preventDefault();
-    getProducts(9);
+    let queryString = updateFilterVariables();
+    getProducts(9,queryString);
+    // getProducts(9);
 }
 
 function getPrevProducts(e){
     e.preventDefault();
-    getProducts(-9);
+    let queryString = updateFilterVariables();
+    getProducts(-9,queryString);
+    // getProducts(-9);
+}
+
+function categoryClick(elem){
+    let categories = document.getElementsByClassName('category_name');
+    for(let i=0; i<categories.length; i++){categories[i].classList.remove('qSelected');}
+    elem.classList.add('qSelected');
+    let queryString = updateFilterVariables();
+    getProducts(0,queryString);
+}
+
+function priceClick(elem){
+    let price = document.getElementsByClassName('price');
+    for(let i=0; i<price.length; i++){price[i].classList.remove('qSelected');}
+    elem.classList.add('qSelected');
+    let queryString = updateFilterVariables();
+    getProducts(0,queryString);
+}
+
+function searchButtonClicked(){
+    let queryString = updateFilterVariables();
+    getProducts(0,queryString);
+    document.querySelector('#searchInput').value='';
+}
+
+function sortByClicked(){
+    let queryString = updateFilterVariables();
+    getProducts(0,queryString);
+}
+
+function updateFilterVariables(){
+    category_name= document.querySelector('li.category_name.qSelected')? `'${document.querySelector('li.category_name.qSelected').innerHTML}'` : '';
+    lPrice = document.querySelector('li.price.qSelected')? `${document.querySelector('li.price.qSelected span.lPrice').innerHTML}` : '';
+    uPrice = document.querySelector('li.price.qSelected')? `${document.querySelector('li.price.qSelected span.uPrice').innerHTML}` : '';
+    search = document.querySelector('#searchInput').value? `'%${document.querySelector('#searchInput').value}%'` : '';
+    sortBy = document.querySelector('#sortBy').value;
+    queryParams = ['category_name','lPrice','uPrice','search','sortBy'];
+    queryString='&';
+    `${category_name} ${lPrice} ${uPrice} ${search} ${sortBy}`.split(' ').forEach((elem,index)=>{
+        if(elem)  queryString+=`${queryParams[index]}=${elem}&`;
+    });
+    console.log(queryString);
+    return queryString;
+
 }
 
 document.getElementById('getNextProducts').addEventListener('click',getNextProducts);

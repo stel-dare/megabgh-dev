@@ -156,9 +156,9 @@
                                             <div class="search_widget ">
                                             <div class="form-group">
                                             <div class="input-group mb-3">
-                                            <input type="text" class="form-control" style="height:36px;" placeholder="Search Product" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                            <input id="searchInput" type="text" class="form-control" style="height:36px;" placeholder="Search Product" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                             <div class="input-group-append">
-                                            <button class="btns" type="button"><i class="ti-search"></i></button>
+                                            <button class="btns" type="button" onclick="searchButtonClicked()"><i class="ti-search"></i></button>
                                             </div>
                                             </div>
                                         </div>
@@ -166,10 +166,10 @@
                                         </div>
                                 <div class="select__item">
                                     <p>Sort By</p>
-                                    <select>
-                                        <option value="">All Products</option>
-                                        <option value="">New Arrivals</option>
-                                        <option value="">Best Sellers</option>
+                                    <select id='sortBy' onchange="sortByClicked()">
+                                        <option value="id">All Products</option>
+                                        <option value="date_added">New Arrivals</option>
+                                        <option value="best">Best Sellers</option>
                                     </select>
                                 </div>
                             </div>
@@ -360,14 +360,14 @@
                     <div class="shop__sidebar">
                         <div class="shop__sidebar__item">
                             <h4>Categories</h4>
-                            <ul>
+                            <ul style="cursor:pointer;">
                                 <!-- <li><a href="#">Air Purifier <span>(75 Item)</span></a></li>
                                 <li><a href="#">Steamer <span>(54 Item)</span></a></li>
                                 <li><a href="#">Disinfectant <span>(63 Item)</span></a></li>
                                 <li><a href="#">Vaccum Cleaner <span>(18 Item)</span></a></li>
                                 <li><a href="#">Glass Cleaner <span>(36 Item)</span></a></li> -->
                                 <?php foreach($categories as $cat) : ?>
-                                    <li><a href="#"><?= $cat -> category_name ?></a></li>
+                                    <li class="category_name" onclick="categoryClick(this)"><?= $cat -> category_name ?></li>
                                 <?php endforeach; ?>
                                 <!-- <li><a href=""style="color:#6785ff;text-decoration:underline;">All Categories</a></li> -->
 
@@ -375,12 +375,12 @@
                         </div>
                         <div class="shop__sidebar__item">
                             <h4>Price</h4>
-                            <ul>
-                                <li>GHS0 - GHS80.00</li>
-                                <li>GHS80.00 - GHS160.00</li>
-                                <li>GHS160.00 - GHS320.00</li>
-                                <li>GHS320.00 - GHS520.00</li>
-                                <li>Over GHS520.00</li>
+                            <ul style="cursor:pointer;">
+                                <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>0</span> - GHS <span class="uPrice">1000.00</span></li>
+                                <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>1000.00</span> - GHS <span class="uPrice">2000.00</span></li>
+                                <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>2000.00</span> - GHS <span class="uPrice">3000.00</span></li>
+                                <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>3000.00</span> - GHS <span class="uPrice">4000.00</span></li>
+                                <li class="price" onclick="priceClick(this)">Over GHS <span class="lPrice">4000.00</span><span style="visibility:hidden;" class="uPrice">100000.00</span></li></li>
                             </ul>
                         </div>
                     </div>
