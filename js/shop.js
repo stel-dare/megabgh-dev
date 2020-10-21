@@ -106,7 +106,7 @@ function priceClick(elem){
 function searchButtonClicked(){
     let queryString = updateFilterVariables();
     getProducts(0,queryString);
-    document.querySelector('#searchInput').value='';
+    // document.querySelector('#searchInput').value='';
 }
 
 function sortByClicked(){
