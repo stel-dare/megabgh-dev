@@ -6,7 +6,7 @@ $sort_By =  array_key_exists('sortBy',$_GET)? $_GET['sortBy'] : 'id';
 $category_name = array_key_exists("category_name",$_GET)? $_GET['category_name'] : 'category_name';
 $lPrice = array_key_exists("lPrice",$_GET)? $_GET['lPrice'] : 'price';
 $uPrice = array_key_exists("uPrice",$_GET)? $_GET['uPrice'] : 'price';
-$search_term = array_key_exists('search',$_GET)? $_GET['search'] : 'name';
+$search_term = array_key_exists('search',$_GET)? "'%".$_GET['search']."%'" : 'name';
 
 $table = array_key_exists('sortBy',$_GET)? $_GET['sortBy']==='best'? 'orders' : 'products' : 'products';
 $join_products_orders = $table === "orders"? "INNER JOIN products ON orders.product_id=products.id" : "";
