@@ -3,7 +3,7 @@
 // One Query To Rule Them All
 // Dear future self, kindly pay the price of your laziness without any grudge
 $sort_By =  array_key_exists('sortBy',$_GET)? $_GET['sortBy'] : 'id';
-$category_name = array_key_exists("category_name",$_GET)? $_GET['category_name'] : 'category_name';
+$category_name = array_key_exists("category_name",$_GET)? "'".$_GET['category_name']."'" : 'category_name';
 $lPrice = array_key_exists("lPrice",$_GET)? $_GET['lPrice'] : 'price';
 $uPrice = array_key_exists("uPrice",$_GET)? $_GET['uPrice'] : 'price';
 $search_term = array_key_exists('search',$_GET)? "'%".$_GET['search']."%'" : 'name';

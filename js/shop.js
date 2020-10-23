@@ -115,14 +115,14 @@ function sortByClicked(){
 }
 
 function updateFilterVariables(){
-    category_name= document.querySelector('li.category_name.qSelected')? `'${document.querySelector('li.category_name.qSelected').innerHTML}'` : '';
+    category_name= document.querySelector('li.category_name.qSelected')? `${document.querySelector('li.category_name.qSelected').title}` : '';
     lPrice = document.querySelector('li.price.qSelected')? `${document.querySelector('li.price.qSelected span.lPrice').innerHTML}` : '';
     uPrice = document.querySelector('li.price.qSelected')? `${document.querySelector('li.price.qSelected span.uPrice').innerHTML}` : '';
     search = document.querySelector('#searchInput').value? `${document.querySelector('#searchInput').value}` : '';
     sortBy = document.querySelector('#sortBy').value;
     queryParams = ['category_name','lPrice','uPrice','search','sortBy'];
     queryString='&';
-    `${category_name} ${lPrice} ${uPrice} ${search} ${sortBy}`.split(' ').forEach((elem,index)=>{
+    [category_name, lPrice, uPrice, search, sortBy].forEach((elem,index)=>{
         if(elem)  queryString+=`${queryParams[index]}=${elem}&`;
     });
     console.log(queryString);

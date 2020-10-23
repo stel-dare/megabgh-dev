@@ -145,6 +145,9 @@
                             <div class="col-lg-4 col-md-4">
                                 <p>Showing <span id="lastIndex">1</span> - <span id="newIndex">9</span> of <span id="total_products">32</span> Products</p>
                             </div>
+                            <!-- <div class="col-lg-4 col-md-4">
+                                <p>Clear Search</p>
+                            </div> -->
                             <div class="col-lg-8 col-md-8 text-right">
                                 <!-- <div class="select__item">
                                     <p>Showing Items</p>
@@ -159,6 +162,7 @@
                                             <input id="searchInput" type="text" class="form-control" style="height:36px;" placeholder="Search Product" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                             <div class="input-group-append">
                                             <button class="btns" type="button" onclick="searchButtonClicked()"><i class="ti-search"></i></button>
+                                            <!-- <button class="btns" type="button" onclick="searchButtonClicked()" style="background:#dc3545;"><i class="ti-close"></i></button> -->
                                             </div>
                                             </div>
                                         </div>
@@ -364,10 +368,10 @@
                                 <!-- <li><a href="#">Air Purifier <span>(75 Item)</span></a></li>
                                 <li><a href="#">Steamer <span>(54 Item)</span></a></li>
                                 <li><a href="#">Disinfectant <span>(63 Item)</span></a></li>
-                                <li><a href="#">Vaccum Cleaner <span>(18 Item)</span></a></li>
-                                <li><a href="#">Glass Cleaner <span>(36 Item)</span></a></li> -->
+                                <li><a href="#">Vaccum Cleaner <span>(18 Item)</span></a></li> -->
+                                <li class="category_name qSelected" onclick="categoryClick(this)">All Categories</li>
                                 <?php foreach($categories as $cat) : ?>
-                                    <li class="category_name" onclick="categoryClick(this)"><?= $cat -> category_name ?></li>
+                                    <li class="category_name" onclick="categoryClick(this)" title='<?= $cat -> category_name ?>'><?= $cat -> category_name ?></li>
                                 <?php endforeach; ?>
                                 <!-- <li><a href=""style="color:#6785ff;text-decoration:underline;">All Categories</a></li> -->
 
@@ -376,6 +380,7 @@
                         <div class="shop__sidebar__item">
                             <h4>Price</h4>
                             <ul style="cursor:pointer;">
+                                <li class="price" onclick="priceClick(this)">All Prices</li>
                                 <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>0</span> - GHS <span class="uPrice">1000.00</span></li>
                                 <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>1000.00</span> - GHS <span class="uPrice">2000.00</span></li>
                                 <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>2000.00</span> - GHS <span class="uPrice">3000.00</span></li>
