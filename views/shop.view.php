@@ -380,7 +380,7 @@
                         <div class="shop__sidebar__item">
                             <h4>Price</h4>
                             <ul style="cursor:pointer;">
-                                <li class="price" onclick="priceClick(this)">All Prices</li>
+                                <li class="price qSelected" onclick="priceClick(this)">All Prices<span class='lPrice' style="visibility:hidden;"></span><span class="uPrice" style="visibility:hidden;"></span></li>
                                 <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>0</span> - GHS <span class="uPrice">1000.00</span></li>
                                 <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>1000.00</span> - GHS <span class="uPrice">2000.00</span></li>
                                 <li class="price" onclick="priceClick(this)">GHS <span class='lPrice'>2000.00</span> - GHS <span class="uPrice">3000.00</span></li>
