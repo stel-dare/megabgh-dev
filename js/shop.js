@@ -132,3 +132,4 @@ function updateFilterVariables(){
 
 document.getElementById('getNextProducts').addEventListener('click',getNextProducts);
 document.getElementById('getPrevProducts').addEventListener('click',getPrevProducts);
+document.querySelector('#searchInput').addEventListener('keyup',function(e){searchButtonClicked();});
