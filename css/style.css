@@ -42,6 +42,10 @@ body {
 	color:#6785ff !important;
 }
 
+.clear_search{
+	visibility: hidden;
+}
+
 h1,
 h2,
 h3,

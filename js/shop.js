@@ -114,6 +114,14 @@ function sortByClicked(){
     getProducts(0,queryString);
 }
 
+function clearSearchInput(){
+    document.querySelector('#searchInput').value='';
+    let queryString = updateFilterVariables();
+    getProducts(0,queryString);
+    document.querySelector('#clear_search').classList.add('clear_search');
+
+}
+
 function updateFilterVariables(){
     category_name= document.querySelector('li.category_name.qSelected')? `${document.querySelector('li.category_name.qSelected').title}` : '';
     lPrice = document.querySelector('li.price.qSelected')? `${document.querySelector('li.price.qSelected span.lPrice').innerHTML}` : '';
@@ -132,4 +140,7 @@ function updateFilterVariables(){
 
 document.getElementById('getNextProducts').addEventListener('click',getNextProducts);
 document.getElementById('getPrevProducts').addEventListener('click',getPrevProducts);
-document.querySelector('#searchInput').addEventListener('keyup',function(e){searchButtonClicked();});
+document.querySelector('#searchInput').addEventListener('keyup',function(e){
+    searchButtonClicked();
+    document.querySelector('#clear_search').classList.remove('clear_search');
+});

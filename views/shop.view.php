@@ -162,7 +162,7 @@
                                             <input id="searchInput" type="text" class="form-control" style="height:36px;" placeholder="Search Product" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                             <div class="input-group-append">
                                             <button class="btns" type="button" onclick="searchButtonClicked()"><i class="ti-search"></i></button>
-                                            <!-- <button class="btns" type="button" onclick="searchButtonClicked()" style="background:#dc3545;"><i class="ti-close"></i></button> -->
+                                            <button class="btns clear_search" id="clear_search"  type="button" onclick="clearSearchInput()" style="background:#dc3545;"><i class="ti-close"></i></button>
                                             </div>
                                             </div>
                                         </div>
