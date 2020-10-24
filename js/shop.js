@@ -37,7 +37,7 @@ function updateProductsView(data){
     document.getElementById('products_view').innerHTML = '';
     data.forEach(element => {
         let product = document.createElement('div');
-        product.classList.add('col-lg-4', 'col-md-4', 'col-sm-6');
+        product.classList.add('col-lg-4', 'col-md-4', 'col-sm-6','product-border-bottom');
         product.innerHTML = `
         
         <div class="product__item">
