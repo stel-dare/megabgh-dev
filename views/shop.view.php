@@ -399,12 +399,12 @@
     <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                      <div class="single-footer-caption mb-50">
                        <div class="single-footer-caption mb-30">
-                        <!-- logo -->
+                        
                         <div class="footer-logo mb-35">
                             <a href="/"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                         </div>
@@ -416,7 +416,7 @@
                                 </p>
                             </div>
                         </div>
-                        <!-- social -->
+                        
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
@@ -452,6 +452,10 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="container text-center">
+        <p style="font-size:1.2em;"><span class="shop-name" style="font-size:2em;">megabgh online shop.</span></p>
+        <p style="font-size:1.2em;"> Contact our cutomer service <span class="number"><a href="#" style="margin-bottom:0;">(233) 20 140 8571</a></span> for shop support.</p>
     </div>
 </div>
 <!-- footer-bottom area -->
