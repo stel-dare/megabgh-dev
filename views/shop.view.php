@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap" rel="stylesheet">
 
         <!-- Shop Css Styles -->
         <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
@@ -57,24 +58,24 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="/"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="shop" class="shop-name">megabgh online shop</a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">                                                                                          
-                                    <li><a href="#">Home</a></li>
+                                    <!-- <li><a href="#">Home</a></li> -->
                                     <!-- <li ><a href="#">Promotions</a></li> -->
-                                    <li><a href="about">About</a>
+                                    <!-- <li><a href="about">About</a> -->
                                         <!-- <ul class="submenu">
                                             <li><a href="services">Cleaning</a></li>
                                             <li><a href="personnel">Personnel Support</a></li>
                                             <li><a href="environmental">Environmental Services</a></li>
                                             <li><a href="training">Training</a></li>
                                         </ul> -->
-                                    </li>
-                                    <li ><a href="contact">Contact</a></li>
+                                    <!-- </li> -->
+                                    <!-- <li ><a href="contact">Contact</a></li> -->
                                     <li class="d-lg-none"><a href="#" class="header-btn1 "><i class="fa fa-shopping-cart"></i></a></li>
                                     <li class="d-lg-none"><a href="#" class="header-btn1 ">My Account</a></li>
                                     
