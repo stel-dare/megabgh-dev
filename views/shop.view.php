@@ -37,6 +37,10 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .main-header{padding: 1em 0em;}
+        .slider-height{height:295px}@media only screen and (min-width: 992px) and (max-width: 1199px){.slider-height{height:295px}}@media only screen and (min-width: 768px) and (max-width: 991px){.slider-height{height:220px}}@media only screen and (min-width: 576px) and (max-width: 767px){.slider-height{height:220px}}@media (max-width: 575px){.slider-height{height:220px}}
+    </style>
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -113,7 +117,7 @@
                             <div class="hero__caption">
                                 <h1 data-animation="fadeInLeft" data-delay="0.2s">Very Affordable</h1>
                                 <p data-animation="fadeInLeft" data-delay="0.4s">Our products are very affordable.</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Shop Now</a>
+                                <a href="#" class="btn hero-btn d-none" data-animation="fadeInLeft" data-delay="0.7s">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +130,7 @@
                             <div class="hero__caption">
                                 <h1 data-animation="fadeInLeft" data-delay="0.2s">Very secure payment. </h1>
                                 <p data-animation="fadeInLeft" data-delay="0.4s">Our payments methods are secure and stress free.</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Shop With Us</a>
+                                <a href="#" class="btn hero-btn d-none" data-animation="fadeInLeft" data-delay="0.7s">Shop With Us</a>
                             </div>
                         </div>
                     </div>

@@ -58,7 +58,7 @@
         doAnimations($animatingElements);
       });
       BasicSlider.slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         dots: true,
         fade: true,
