@@ -88,7 +88,7 @@
         <section class=" ">
             <div class="slider-active">
                 <!-- Single Slider -->
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/h1_hero.png);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero1.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
@@ -101,7 +101,33 @@
                         </div>
                     </div>          
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/shopping-family.jpg);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero2.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">We provide professional cleaning.</h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">Domestic cleaning, general office cleaning and more.</p>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Our Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero3.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">We make relocation easy</h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">We help pack and transfer your belongings to any location.</p>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Our Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero4.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">

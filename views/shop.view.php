@@ -110,7 +110,7 @@
        <section class=" ">
         <div class="slider-active">
             <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/shopping-family.jpg);">
+            <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero4.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
