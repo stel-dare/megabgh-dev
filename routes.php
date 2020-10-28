@@ -24,6 +24,7 @@ $router -> get ('shop' , 'controllers/shop.php');
 $router -> get ('contact' , 'controllers/contact.php');
 $router -> get('api','controllers/api-test.php');
 $router -> get('products','controllers/products.php');
+$router -> get('product_details','controllers/product_details.php');
 
 // POST REQUESTS
 $router -> post('contact_process', 'controllers/contact_process.php');

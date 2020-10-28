@@ -17,7 +17,7 @@
       document.getElementById('result').innerHTML= this.responseText;
     }
   };
-  xhttp.open("GET", "products?", true);
+  xhttp.open("GET", "products?sortBy=best", true);
   xhttp.send();
 }
 </script>

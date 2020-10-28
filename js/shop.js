@@ -44,12 +44,12 @@ function updateProductsView(data){
         <div class="product__item__pic">
             <img src=${element.image_url} alt="" style="width:270px;height:270px">
             <ul class="hover__item">
-                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                <li><a href="product_details?id=${element.id}"><i class="fa fa-eye"></i></a></li>
                 <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
         </div>
         <div class="product__item__text">
-            <h6><a href="#">${element.name}</a></h6>
+            <h6><a href="product_details?id=${element.id}">${element.name}</a></h6>
             <div class="price">
                 <span>GHS ${element.price}</span>
                 <a href="#">+Add To Cart</a>

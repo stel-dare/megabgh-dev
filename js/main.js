@@ -52,29 +52,29 @@
     /*------------------
 		Navigation
 	--------------------*/
-    $(".header__menu").slicknav({
-        prependTo: '#mobile-menu-wrap',
-        allowParentLinks: true
-    });
+    // $(".header__menu").slicknav({
+    //     prependTo: '#mobile-menu-wrap',
+    //     allowParentLinks: true
+    // });
 
     /*--------------------------
         Testimonial Slider
     ----------------------------*/
-    $(".testimonial__slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 1,
-        dots: true,
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true
-    });
+    // $(".testimonial__slider").owlCarousel({
+    //     loop: true,
+    //     margin: 0,
+    //     items: 1,
+    //     dots: true,
+    //     smartSpeed: 1200,
+    //     autoHeight: false,
+    //     autoplay: true
+    // });
     /*------------------
 		Magnific
 	--------------------*/
-    $('.video-popup').magnificPopup({
-        type: 'video'
-    });
+    // $('.video-popup').magnificPopup({
+    //     type: 'video'
+    // });
 
     /*------------------
 		Single Product
@@ -125,7 +125,7 @@
     /*-------------------
 		Nice Select
 	--------------------- */
-    $("select").niceSelect();
+    // $("select").niceSelect();
 
     /*------------------
         Project Counter

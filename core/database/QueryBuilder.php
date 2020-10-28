@@ -31,4 +31,10 @@ class QueryBuilder{
         $statement -> execute();   
         return count($statement->fetchAll(PDO::FETCH_OBJ));
     }
+
+    public function selectOne($table,$id){
+        $statement = $this->pdo->prepare("select * from $table where id = $id");
+        $statement -> execute();   
+        return $statement->fetchAll(PDO::FETCH_OBJ);
+    }
 }
