@@ -29,6 +29,7 @@ $router -> get('product_details','controllers/product_details.php');
 
 // AUTH GET REQUESTS
 $router -> get('login','controllers/auth/login.php');
+$router -> get('register','controllers/auth/register.php');
 
 
 // POST REQUESTS
