@@ -27,9 +27,12 @@ $router -> get('api','controllers/api-test.php');
 $router -> get('products','controllers/products.php');
 $router -> get('product_details','controllers/product_details.php');
 
-// AUTH REQUESTS
+// AUTH GET REQUESTS
 $router -> get('login','controllers/auth/login.php');
 
 
 // POST REQUESTS
+
+// AUTH POST REQUEST
 $router -> post('contact_process', 'controllers/contact_process.php');
+$router -> post('auth_user', 'controllers/auth/auth_user.php');

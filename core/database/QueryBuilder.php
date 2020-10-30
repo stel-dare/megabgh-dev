@@ -37,4 +37,10 @@ class QueryBuilder{
         $statement -> execute();   
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }
+
+    public function authUser($email,$password){
+        $statement = $this->pdo->prepare("select * from customers where email = '$email' AND password = '$password'");
+        $statement -> execute();   
+        return count($statement->fetchAll(PDO::FETCH_OBJ));
+    }
 }
