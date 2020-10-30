@@ -37,3 +37,4 @@ $router -> get('register','controllers/auth/register.php');
 // AUTH POST REQUEST
 $router -> post('contact_process', 'controllers/contact_process.php');
 $router -> post('auth_user', 'controllers/auth/auth_user.php');
+$router -> post('register_user', 'controllers/auth/register_user.php');

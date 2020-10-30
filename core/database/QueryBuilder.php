@@ -38,9 +38,23 @@ class QueryBuilder{
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }
 
+    // AUTH METHODS
+
     public function authUser($email,$password){
         $statement = $this->pdo->prepare("select * from customers where email = '$email' AND password = '$password'");
         $statement -> execute();   
         return count($statement->fetchAll(PDO::FETCH_OBJ));
+    }
+
+    public function checkUsernameEmailTaken($field,$value){
+        $statement = $this->pdo->prepare("select * from customers where $field = '$value'");
+        $statement -> execute();   
+        return count($statement->fetchAll(PDO::FETCH_OBJ));
+    }
+
+    public function addUser($email,$username,$fName,$lName,$password){
+        $statement = $this->pdo->prepare("insert into customers (email, username, first_name, last_name, password) values ('$email','$username','$fName','$lName','$password')");
+        $statement -> execute();   
+        // return count($statement->fetchAll(PDO::FETCH_OBJ));
     }
 }
