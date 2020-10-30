@@ -57,4 +57,10 @@ class QueryBuilder{
         $statement -> execute();   
         // return count($statement->fetchAll(PDO::FETCH_OBJ));
     }
+
+    public function setTokenForPasswordReset($email,$token){
+        $statement = $this->pdo->prepare("insert into password_resets (email, token) values ('$email','$token')");
+        $statement -> execute();   
+        // return count($statement->fetchAll(PDO::FETCH_OBJ));
+    }
 }
