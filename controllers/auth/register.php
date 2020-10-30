@@ -1,3 +1,3 @@
 <?php
 
-require "views/auth/register.view.html";
+require "views/auth/register.view.php";

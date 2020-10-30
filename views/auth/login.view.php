@@ -61,7 +61,7 @@
 						</span>
 
 						<a href="#" class="txt2 hov1">
-							Username / Password?
+							Password?
 						</a>
 					</div>
 
