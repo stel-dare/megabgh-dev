@@ -244,7 +244,7 @@ Pages
                                 <a class="nav-link active" id="orders-tab" data-toggle="tab" href="#currentOrders" role="tab" aria-controls="orders" aria-selected="true"><i class="icofont-food-cart"></i> My Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="orders-tab" data-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="true"><i class="icofont-food-cart"></i> Order History</a>
+                                <a class="nav-link" id="orders-tab" data-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="false"><i class="icofont-food-cart"></i> Order History</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a class="nav-link" id="offers-tab" data-toggle="tab" href="#offers" role="tab" aria-controls="offers" aria-selected="false"><i class="icofont-sale-discount"></i> Offers</a>
@@ -257,6 +257,9 @@ Pages
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="payments-tab" data-toggle="tab" href="#payments" role="tab" aria-controls="payments" aria-selected="false"><i class="icofont-credit-card"></i> Payment Methods</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="" data-toggle="tab" href="" role="tab" aria-controls="" aria-selected="false"><i class="icofont-logout"></i> Log Out</a>
                             </li>
                             
                         </ul>
