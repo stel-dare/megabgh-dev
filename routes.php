@@ -37,6 +37,7 @@ $router -> get('reset_password', 'controllers/auth/reset_password.php');
 $router -> get('user_account', 'controllers/user_account/user_account.php');
 $router -> get('checkout', 'controllers/user_account/checkout.php');
 $router -> get('cart', 'controllers/user_account/cart.php');
+$router -> get('invoice', 'controllers/user_account/invoice.php');
 
 
 // POST REQUESTS
