@@ -33,6 +33,9 @@ $router -> get('register','controllers/auth/register.php');
 $router -> get('email', 'controllers/auth/email.php');
 $router -> get('reset_password', 'controllers/auth/reset_password.php');
 
+// USER ACCOUNT GET REQUETS
+$router -> get('user_account', 'controllers/user_account/user_account.php');
+
 
 // POST REQUESTS
 
