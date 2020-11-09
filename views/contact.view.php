@@ -176,13 +176,13 @@
                         </form>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
-                        <div class="media contact-info">
+                        <!-- <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
                                 <h3>Lapaz, Accra.</h3>
                                 <p>Family Life, Lapaz, Accra.</p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
@@ -253,7 +253,7 @@
                         <ul>
                             <li class="number"><a href="#">(233) 20 140 8571</a></li>
                             <li><a href="#">gakbentil@yahoo.co.uk</a></li>
-                            <li><a href="#">Family Life, Lapaz, Accra.</a></li>
+                             
                         </ul>
                     </div>
                 </div>

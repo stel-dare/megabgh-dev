@@ -450,7 +450,7 @@
                         <ul>
                             <li class="number"><a href="#">(233) 20 140 8571</a></li>
                             <li><a href="#">gakbentil@yahoo.co.uk</a></li>
-                            <li><a href="#">Family Life, Lapaz, Accra.</a></li>
+                             
                         </ul>
                     </div>
                 </div>
