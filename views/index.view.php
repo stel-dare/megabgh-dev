@@ -195,43 +195,49 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/professional-cleaning.jpg" alt="">
-                            </div>
+                           
                             <div class="cat-cap">
                                 <h5><a href="services">General Cleaning.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/professional-cleaning.jpg" alt="">
+                            </div>
                                 <p>
                                     We undertake general office cleaning, grout, carpet and upholstery cleaning.  
                                 </p>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/steam-cleaning.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Steam Cleaning.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/steam-cleaning.jpg" alt="">
+                            </div>
                                 <p>
                                     We undertake specialized steam cleaning services with 
-                                    the use of industrial steam cleaners
+                                    the use of industrial steam cleaners.
                                 </p>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/personnel-outsourcing.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Personnel Outsourcing.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/personnel-outsourcing.jpg" alt="">
+                            </div>
                                 <p>
                 
                                   We outsource trained casual and support staff in the hotel industry.
                                 </p>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -244,11 +250,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/waiting-service.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Waiting service.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/waiting-service.jpg" alt="">
+                            </div>
                                 <p>
                                     We provide professional waiters for corporate events, parties, 
                                     weddings, funerals and other social gatherings.
@@ -258,11 +265,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/domestic-support.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Domestic Support.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/domestic-support.jpg" alt="">
+                            </div>
                                 <p>
                                     We offer a range of domestic services such as cleaning, shopping and 
                                     ironing to help you meet your home needs.
@@ -272,11 +280,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/artisans-connect.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Artisans Connect.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/artisans-connect.jpg" alt="">
+                            </div>
                                 <p>
                 
                                      
@@ -296,13 +305,14 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/elderly-care.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Elderly Care.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/elderly-care.jpg" alt="">
+                            </div>
                                 <p>
-                                    We give a helping hand to tour parents and loved ones and assist them 
+                                    We give a helping hand to your parents and loved ones and assist them 
                                     with their needs.
                                 </p>
                             </div>
@@ -310,11 +320,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/relocation.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Relocation.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/relocation.jpg" alt="">
+                            </div>
                                 <p>
                                     We assist to you to pack and move from your homes, 
                                     schools, offices, hospitals to your new location.
@@ -324,11 +335,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/disinfection-fumigation.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Disinfection and Fumigation.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/disinfection-fumigation.jpg" alt="">
+                            </div>
                                 <p>
                                     We use effective methods like high steamers, thermal 
                                     fogging and others to eradicate the 
@@ -346,11 +358,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/air-scrubbing.png" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Air Scrubbing.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/air-scrubbing.png" alt="">
+                            </div>
                                 <p>
                                     We filter air and scrub them from any particles, gases or chemicals.
                                 </p>
@@ -359,11 +372,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/odour-control.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Odour Treatment.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/odour-control.jpg" alt="">
+                            </div>
                                 <p>
                                     We neutralize offensive odours in schools, offices, hospitals, etc and 
                                     replace them with an agreeable smell.
@@ -373,11 +387,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/wastewater-treatment.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Wastewater Treatment.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/wastewater-treatment.jpg" alt="">
+                            </div>
                                 <p>
                                     We remove contaminants and suspended solids from the waste
                                     water before discharging it back to the environment.
@@ -394,11 +409,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/training.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Training.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/training.jpg" alt="">
+                            </div>
                                 <p>
                                     We offer training for hotel staff to gain the
                                      relevant skills to work.
@@ -408,11 +424,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
-                                <img src="assets/img/icon/online-shop.jpg" alt="">
-                            </div>
+                            
                             <div class="cat-cap">
                                 <h5><a href="services">Online Shop.</a></h5>
+                                <div class="cat-icon">
+                                <img src="assets/img/icon/online-shop.jpg" alt="">
+                            </div>
                                 <p>
                                     We have effective, affordable air purification solutions for 
                                     homes, schools, cars, offices, hospitals, libraries etc.
