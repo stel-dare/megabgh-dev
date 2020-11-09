@@ -67,12 +67,12 @@
                                     <li><a href="/">Home</a></li>
                                     <li ><a href="about">About</a></li>
                                     <li class="active"><a href="services">Services</a>
-                                        <ul class="submenu">
+                                        <!-- <ul class="submenu">
                                             <li><a href="services">Cleaning</a></li>
                                             <li><a href="personnel">Personnel Support</a></li>
                                             <li><a href="#">Environmental Services</a></li>
                                             <li><a href="training">Training</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li><a href="shop" target="_blank" rel="noreferrer noopener">Shop</a></li>
                                     
