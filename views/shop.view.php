@@ -40,6 +40,7 @@
     <style>
         .main-header{padding: 1em 0em;}
         .slider-height{height:295px}@media only screen and (min-width: 992px) and (max-width: 1199px){.slider-height{height:295px}}@media only screen and (min-width: 768px) and (max-width: 991px){.slider-height{height:220px}}@media only screen and (min-width: 576px) and (max-width: 767px){.slider-height{height:220px}}@media (max-width: 575px){.slider-height{height:220px}}
+        
     </style>
 </head>
 <body>
@@ -62,7 +63,7 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="shop" class="shop-name">megabgh online shop</a>
+                        <a href="#" class="shop-name" style="color:#6785FF;">megabgh online shop</a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
@@ -92,9 +93,9 @@
                 </div> 
                 <div class="header-right d-none d-lg-block">
                     <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
-                    <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" class="header-btn1" style="color:#6785FF;"><i class="fa fa-shopping-cart"></i></a>
                     <a href="#" class="" style="color:#6785FF;">|</a>
-                    <a href="#" class="header-btn1">My Account</a>
+                    <a href="#" class="header-btn1" style="color:#6785FF;">My Account</a>
                     <!-- <a href="#" class="header-btn2">Contact Us</a> -->
                 </div>
                 <!-- Mobile Menu -->
