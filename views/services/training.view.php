@@ -301,12 +301,13 @@
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
                 <div class="single-footer-caption mb-50">
                     <div class="footer-tittle">
-                        <h4>Services </h4>
+                        <h4>Our Values </h4>
                         <ul>
-                            <li><a href="#">- Cleaning</a></li>
-                            <li><a href="#">- Personnel Support</a></li>
-                            <li><a href="#">- Environmental Services</a></li>
-                            <li><a href="#">- Training</a></li>
+                            <li><a href="#">- Dedication.</a></li>
+                            <li><a href="#">- Truth.</a></li>
+                            <li><a href="#">- Hardwork.</a></li>
+                            <li><a href="#">- Loyalty.</a></li>
+                            <li><a href="#">- Excellence.</a></li>
             
                         </ul>
                     </div>
