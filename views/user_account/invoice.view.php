@@ -11,15 +11,15 @@
 
     <!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
 
-    <link href="user_account_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/icofont/icofont.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/vendor/select2/css/select2.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/select2/css/select2.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/css/osahan.css" rel="stylesheet">
+    <link href="assets/user_account_assets/css/osahan.css" rel="stylesheet">
 </head>
 
 <body>
@@ -123,13 +123,13 @@
     
     
 
-    <script src="user_account_assets/vendor/jquery/jquery-3.3.1.slim.min.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
+    <script src="assets/user_account_assets/vendor/jquery/jquery-3.3.1.slim.min.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
 
-    <script src="user_account_assets/vendor/bootstrap/js/bootstrap.bundle.min.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
+    <script src="assets/user_account_assets/vendor/bootstrap/js/bootstrap.bundle.min.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
 
-    <script src="user_account_assets/vendor/select2/js/select2.min.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
+    <script src="assets/user_account_assets/vendor/select2/js/select2.min.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
 
-    <script src="user_account_assets/js/custom.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
+    <script src="assets/user_account_assets/js/custom.js" type="e80d571881595dac4a7a43c8-text/javascript"></script>
     <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="e80d571881595dac4a7a43c8-|49" defer=""></script>
 </body>
 

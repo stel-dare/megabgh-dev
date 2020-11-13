@@ -11,15 +11,15 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <link href="user_account_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/icofont/icofont.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/vendor/select2/css/select2.min.css" rel="stylesheet">
+    <link href="assets/user_account_assets/vendor/select2/css/select2.min.css" rel="stylesheet">
 
-    <link href="user_account_assets/css/osahan.css" rel="stylesheet">
+    <link href="assets/user_account_assets/css/osahan.css" rel="stylesheet">
 </head>
 
 <body>
@@ -1025,13 +1025,13 @@ Subscribe
     </footer> -->
 
     <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
-    <script src="user_account_assets/vendor/jquery/jquery-3.3.1.slim.min.js" type="838bed98cedc331a98e71976-text/javascript"></script>
+    <script src="assets/user_account_assets/vendor/jquery/jquery-3.3.1.slim.min.js" type="838bed98cedc331a98e71976-text/javascript"></script>
 
-    <script src="user_account_assets/vendor/bootstrap/js/bootstrap.bundle.min.js" type="838bed98cedc331a98e71976-text/javascript"></script>
+    <script src="assets/user_account_assets/vendor/bootstrap/js/bootstrap.bundle.min.js" type="838bed98cedc331a98e71976-text/javascript"></script>
 
-    <script src="user_account_assets/vendor/select2/js/select2.min.js" type="838bed98cedc331a98e71976-text/javascript"></script>
+    <script src="assets/user_account_assets/vendor/select2/js/select2.min.js" type="838bed98cedc331a98e71976-text/javascript"></script>
 
-    <script src="user_account_assets/js/custom.js" type="838bed98cedc331a98e71976-text/javascript"></script>
+    <script src="assets/user_account_assets/js/custom.js" type="838bed98cedc331a98e71976-text/javascript"></script>
     <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="838bed98cedc331a98e71976-|49" defer=""></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"5ec19d563a0b0b78","r":1,"version":"2020.9.1","si":10}'></script>
 </body>
