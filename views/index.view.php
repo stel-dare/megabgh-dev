@@ -88,7 +88,7 @@
         <section class=" ">
             <div class="slider-active">
                 <!-- Single Slider -->
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/hero2.jpg);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:linear-gradient(0deg, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),url(assets/img/hero/hero2.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
@@ -101,7 +101,7 @@
                         </div>
                     </div>          
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero1.jpg);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:linear-gradient(0deg, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),url(assets/img/hero/home-hero1.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
@@ -114,7 +114,7 @@
                         </div>
                     </div>          
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero2.jpg);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:linear-gradient(0deg, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),url(assets/img/hero/home-hero2.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
@@ -127,7 +127,7 @@
                         </div>
                     </div>          
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero3.jpg);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:linear-gradient(0deg, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),url(assets/img/hero/home-hero3.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
@@ -140,7 +140,7 @@
                         </div>
                     </div>          
                 </div>
-                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:url(assets/img/hero/home-hero4.jpg);">
+                <div class="single-slider slider-height d-flex align-items-center slider-area hero-overly" style="background-image:linear-gradient(0deg, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),url(assets/img/hero/home-hero4.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
