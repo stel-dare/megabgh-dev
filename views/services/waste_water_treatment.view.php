@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Megabgh | Our Services</title>
+    <title>Megabgh | Waste Water Treatment</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -66,7 +66,7 @@
                                 <ul id="navigation">                                                                                          
                                     <li><a href="/">Home</a></li>
                                     <li ><a href="about">About</a></li>
-                                    <li class="active"><a href="#">Services</a>
+                                    <li class="active"><a href="services">Services</a>
                                         <!-- <ul class="submenu">
                                             <li><a href="#">Cleaning</a></li>
                                             <li><a href="personnel">Personnel Support</a></li>
@@ -97,13 +97,13 @@
     </header>
     <main>
         <!--? Hero Start -->
-        <div class="slider-area2 section-bg2 hero-overly" data-background="assets/img/hero/home-hero2.jpg">
+        <div class="slider-area2 section-bg2 hero-overly" data-background="assets/img/hero/wastewater-treatment.jpg">
             <div class="slider-height2 d-flex align-items-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2">
-                                <h2>Cleaning</h2>
+                                <h2>Waste Water Treatment</h2>
                             </div>
                         </div>
                     </div>
@@ -118,61 +118,25 @@
                         <div class="services__details__content">
                             
                             
-                            <div class="services__details__text">
-                                <!-- <h4>What We Do?</h4>
-                                <p>Consultec a professional telecommunication consulting firm providing strategic technology
-                                    solutions for small and mid-size businesses and enterprise-level companies. We increase
-                                    operational and financial</p>
-                                <p>Having years of diverse experience, we are able to create cutting-edge recommendations
-                                    that will transform your networks infrastructure. Analyzing your current infrastructure
-                                    and services, Consultec customizes comprehensive solutions that are designed to fulfill
-                                    your immediate needs, while considering</p> -->
-                                    <div class="services__details__chooseus">
-                                        <h4>CLEANING</h4>
-                                        <p>We provide professional cleaning with our dedicated team to get our clients satisfied. Our operation involves:</p>
-                                        <ul>
-                                            <li><i class="fa fa-check-circle"></i> Domestic cleaning.
-                                            </li>
-                                            <li><i class="fa fa-check-circle"></i>  General office cleaning.</li>
-                                            <li><i class="fa fa-check-circle"></i>  Grout, carpet and upholstery cleaning.
-                                            </li>
-                                            <!-- <li><i class="fa fa-check-circle"></i> Grout, carpet and upholstery cleaning.</li> -->
-                                        </ul>
-                                    </div>
-                            </div>
-                            <div class="services__details__pic">
-                                <img src="img/services/details/service-details-i.jpg" alt="">
-                            </div>
+                            
                             <div class="services__details__text">
                                 
                                     <div class="services__details__chooseus">
-                                        <h4>Steam Cleaning</h4>
+                                        <h4>Waste Water Treatment</h4>
                                         <p>
-                                            We undertake specialized steam cleaning services with the use of industrial steam cleaners. 
-                                            We degrease heavily stained places and sanitize working and living areas ensuring the places are left clean and hygienic.
+                                        We remove contaminants and suspended solids from the waste water before 
+                                        discharging it back to the environment.
                                         </p>
-                                        <p>
-                                            We steam clean:
-                                        </p>
-                                        <ul>
-                                            <li><i class="fa fa-check-circle"></i> Homes.
-                                            </li>
-                                            <li><i class="fa fa-check-circle"></i> Offices.</li>
-                                            <li><i class="fa fa-check-circle"></i> Oil service stations.
-                                            </li>
-                                            <li><i class="fa fa-check-circle"></i> Fuel loading points.</li>
-                                            <li><i class="fa fa-check-circle"></i> Interior of ships.</li>
-                                            <li><i class="fa fa-check-circle"></i> Interior of aircrafts.</li>
-                                            <li><i class="fa fa-check-circle"></i> Plants.</li>
-                                            <li><i class="fa fa-check-circle"></i> Heavy duty machinery.</li>
-                                            <li><i class="fa fa-check-circle"></i> Car body, engine and interior.</li>
-                                            <li><i class="fa fa-check-circle"></i> Fuel loading points.</li>
-                                        </ul>
+                                        
+                                        <div class="services__details__pic">
+                                             <img src="img/services/details/wastewater-treatment.jpg" alt="">
+                                         </div>
+                                        
                                     </div>
                             </div>
-                            <div class="services__details__pic">
-                                <img src="img/services/details/service-details-ii.jpg" alt="">
-                            </div>
+                            <!-- <div class="services__details__pic">
+                                <img src="img/services/details/steam-cleaning.jpg" alt="">
+                            </div> -->
                             <!-- <div class="services__details__feature">
                                 <h4>Our featured</h4>
                                 <div class="row">
@@ -229,10 +193,19 @@
                             <div class="services__sidebar__item">
                                 <h4>Our Services</h4>
                                 <ul>
-                                    <li ><a href="#" class="service-active">Cleaning</a></li>
-                                    <li><a href="personnel">Personnel Support</a></li>
-                                    <li><a href="environmental">Environmental Services</a></li>
-                                    <li><a href="training">Training</a></li>
+                                    <li ><a href="general_cleaning">General Cleaning</a></li>
+                                    <li><a href="steam_cleaning" >Steam Cleaning</a></li>
+                                    <li><a href="hotel_personnel" >Hotel Personnel Outsorcing And Training</a></li>
+                                    <li><a href="waiting_service" >Waiting Service</a></li>
+                                    <li><a href="domestic_support">Domestic Support - Ironing, Cleaning, Cooking</a></li>
+                                    <li><a href="artisan_connect">Artisans Connect Service</a></li>
+                                    <li><a href="sick_and_aged">Personnel Support For The Sick And Aged</a></li>
+                                    <li><a href="relocation_service">Relocation Service</a></li>
+                                    <li><a href="disinfection_and_fumigation">Disinfection And Fumigation Service</a></li>
+                                    <li><a href="air_scrubbing">Air Scrubbing To Remove Micro Organisms</a></li>
+                                    <li><a href="odour_treatment">Odour Treatment</a></li>
+                                    <li><a href="waste_water_treatment" class="service-active">Waste Water Treatment</a></li>
+                                    <li><a href="shop" target="_blank" rel="noreferrer noopener">Onlie Shop - Air Purifiers, Disinfecting Lights, Disinfecting Wipes, Health Line, Food Line</a></li>
                                     <!-- <li><a href="#">Pating Car</a></li> -->
                                 </ul>
                             </div>
