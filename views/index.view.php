@@ -477,7 +477,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
+                            <div class="cat-icons">
                                 <img src="assets/img/icon/dedication.png" alt="">
                             </div>
                             <div class="cat-cap">
@@ -488,7 +488,7 @@
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
+                            <div class="cat-icons">
                                 <img src="assets/img/icon/truth.jpg" alt="">
                             </div>
                             <div class="cat-cap">
@@ -499,7 +499,7 @@
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
+                            <div class="cat-icons">
                                 <img src="assets/img/icon/hardwork.jpg" alt="">
                             </div>
                             <div class="cat-cap">
@@ -510,7 +510,7 @@
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
+                            <div class="cat-icons">
                                 <img src="assets/img/icon/loyalty.png" alt="">
                             </div>
                             <div class="cat-cap">
@@ -521,7 +521,7 @@
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="single-cat text-center">
-                            <div class="cat-icon">
+                            <div class="cat-icons">
                                 <img src="assets/img/icon/excellence.png" alt="">
                             </div>
                             <div class="cat-cap">
