@@ -40,7 +40,11 @@
     <style>
         .main-header{padding: 1em 0em;}
         .slider-height{height:295px}@media only screen and (min-width: 992px) and (max-width: 1199px){.slider-height{height:295px}}@media only screen and (min-width: 768px) and (max-width: 991px){.slider-height{height:220px}}@media only screen and (min-width: 576px) and (max-width: 767px){.slider-height{height:220px}}@media (max-width: 575px){.slider-height{height:220px}}
-        
+        .user-account-name{position:relative;z-index:1;}
+        .user-account-name:hover>ul.user-account-submenu{visibility: visible;opacity:1;top:100%;}
+        .user-account-submenu{position:absolute;margin-left:17px;left:0;top:90%;visibility: hidden;opacity: 0;padding: 17px 0;}
+        .user-account-submenu li{background: rgba(103,133,255,0.8);box-shadow: 0 0 10px 3px rgba(0,0,0,0.05);padding:0.5em 0.8em;} 
+        .user-account-submenu li i{padding-right:0.5em;}   
     </style>
 </head>
 <body>
@@ -82,7 +86,12 @@
                                     <!-- </li> -->
                                     <!-- <li ><a href="contact">Contact</a></li> -->
                                     <li class="d-lg-none"><a href="#" class="header-btn1 "><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li class="d-lg-none"><a href="#" class="header-btn1 ">My Account</a></li>
+                                    <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi, Customer</a>
+                                        <ul class="submenu">
+                                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                                            
+                                        </ul>
+                                    </li>
                                     
                                     <!-- <li><a href="shop">Shop</a></li> -->             
                                     <!-- <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
@@ -93,9 +102,15 @@
                 </div> 
                 <div class="header-right d-none d-lg-block">
                     <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
-                    <a href="#" class="header-btn1" style="color:#6785FF;"><i class="fa fa-shopping-cart"></i></a>
-                    <a href="#" class="" style="color:#6785FF;">|</a>
-                    <a href="#" class="header-btn1" style="color:#6785FF;">My Account</a>
+                    <ul style="display:flex;">
+                    <li><a href="#" class="header-btn1" style="color:#6785FF;"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="#" class="" style="color:#6785FF;">|</a></li>
+                    <li class="user-account-name"><a href="#" class="header-btn1" style="color:#6785FF;">Hi, Customer</a>
+                        <ul class="user-account-submenu">
+                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        </ul>
+                    </li>
+                    </ul>
                     <!-- <a href="#" class="header-btn2">Contact Us</a> -->
                 </div>
                 <!-- Mobile Menu -->
