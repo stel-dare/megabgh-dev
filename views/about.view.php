@@ -329,7 +329,7 @@
                <div class="col-xl-12 ">
                    <div class="footer-copy-right text-center">
                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with  <a href="https://colorlib.com" target="_blank">Colorlib.</a>
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made  by  <a href="https://stel-dare.github.io/" target="_blank" rel="noreferrer noopener">stel.</a>
                           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                       </div>
                   </div>
