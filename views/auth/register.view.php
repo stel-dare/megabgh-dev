@@ -49,17 +49,21 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Username cannot be blank">
-						<input class="input100" type="text" name="username" placeholder="Username" required>
+						<input class="input100" id="username" type="text" name="username" placeholder="Username" onkeyup="document.getElementById('username_taken_label').classList.add('d-none');" required>
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
-
+						<?php if($username_or_email_taken==='username'): ?>
+					<label for="username" id="username_taken_label" class="alert alert-danger w-100"><i class="fa fa-exclamation-circle pr-2"></i>Username is taken</label>
+						<?php endif;  ?>
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="email" name="email" placeholder="Email" required>
+						<input class="input100" id="email" type="email" name="email" placeholder="Email" onkeyup="document.getElementById('email_taken_label').classList.add('d-none');" required>
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
-
+						<?php if($username_or_email_taken==='email'): ?>
+					<label for="email" id="email_taken_label" class="alert alert-danger w-100"><i class="fa fa-exclamation-circle pr-2"></i>Email is taken</label>
+						<?php endif;  ?>
 					<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
 						<input class="input100" type="password" name="password" placeholder="Password" required>
 						<span class="focus-input100-1"></span>
