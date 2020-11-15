@@ -38,16 +38,24 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="email" name="email" placeholder="Email" required>
+						<input class="input100" type="email" name="email" id="email" placeholder="Email" onkeyup="document.getElementById('wrong_email_label').classList.add('d-none');" required>
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
 
+						<?php if($email_or_password_wrong==='email'): ?>
+					<label for="email" id="wrong_email_label" class="alert alert-danger w-100"><i class="fa fa-exclamation-circle pr-2"></i>Wrong email</label>
+						<?php endif;  ?>
+
 					<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="password" placeholder="Password" required>
+						<input class="input100" type="password" id="password" name="password" placeholder="Password" onkeyup="document.getElementById('wrong_password_label').classList.add('d-none');" required>
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
+
+						<?php if($email_or_password_wrong==='password'): ?>
+					<label for="password" id="wrong_password_label" class="alert alert-danger w-100"><i class="fa fa-exclamation-circle pr-2"></i>Wrong password.</label>
+						<?php endif;  ?>
 
 					<div class="container-login100-form-btn m-t-20">
 						<button class="login100-form-btn" type="submit">

@@ -40,10 +40,10 @@ class QueryBuilder{
 
     // AUTH METHODS
 
-    public function authUser($email,$password){
-        $statement = $this->pdo->prepare("select * from customers where email = '$email' AND password = '$password'");
+    public function fetchUser($field,$value){
+        $statement = $this->pdo->prepare("select * from customers where $field = '$value'");
         $statement -> execute();   
-        return count($statement->fetchAll(PDO::FETCH_OBJ));
+        return $statement->fetchAll(PDO::FETCH_OBJ);
     }
 
     public function checkUsernameEmailTaken($field,$value){
