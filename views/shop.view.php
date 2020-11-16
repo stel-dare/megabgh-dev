@@ -94,7 +94,7 @@
                                         <ul class="submenu">
                                             <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                                             <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
-                                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                                            <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                                         </ul>
                                     <?php else: ?>
                                         <ul class="submenu">
@@ -120,7 +120,7 @@
                         <ul class="user-account-submenu">
                             <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                             <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
-                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                         </ul>
                        <?php else: ?>
                         <ul class="user-account-submenu">

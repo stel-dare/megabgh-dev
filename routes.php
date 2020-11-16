@@ -38,8 +38,6 @@ $router -> get ('odour_treatment' , 'controllers/services/odour_treatment.php');
 $router -> get ('waste_water_treatment' , 'controllers/services/waste_water_treatment.php');
 
 
-
-
 $router -> get ('personnel' , 'controllers/services/personnel_support.php');
 $router -> get ('environmental' , 'controllers/services/environmental_services.php');
 $router -> get ('training' , 'controllers/services/training.php');
@@ -50,6 +48,7 @@ $router -> get('login','controllers/auth/login.php');
 $router -> get('register','controllers/auth/register.php');
 $router -> get('email', 'controllers/auth/email.php');
 $router -> get('reset_password', 'controllers/auth/reset_password.php');
+$router -> get('logout','controllers/auth/logout.php');
 
 // USER ACCOUNT GET REQUESTS
 $router -> get('user_account', 'controllers/user_account/user_account.php');
@@ -65,4 +64,3 @@ $router -> post('contact_process', 'controllers/contact_process.php');
 $router -> post('auth_user', 'controllers/auth/auth_user.php');
 $router -> post('register_user', 'controllers/auth/register_user.php');
 $router -> post('auth_email', 'controllers/auth/auth_email.php');
-
