@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,16 +11,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap" rel="stylesheet">
 
-        <!-- Shop Css Styles -->
-        <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
-        <!-- <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">  -->
-        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-        <!-- <link rel="stylesheet" href="css/nice-select.css" type="text/css"> -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-        <!-- <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"> -->
-        <!-- <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css"> -->
-        <!-- <link rel="stylesheet" href="css/slicknav.min.css" type="text/css"> -->
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Shop Css Styles -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">  -->
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/nice-select.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="css/slicknav.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -37,10 +38,9 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .main-header{padding: 1em 0em;border-bottom: 1px solid rgba(0,0,0,0.1);}
-    </style>
+    <link rel="stylesheet" href="css/shop.css" type="text/css">
 </head>
+
 <body>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
@@ -61,17 +61,17 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="shop" class="shop-name">megabgh online shop</a>
+                        <a href="shop" class="shop-name" style="color:#6785FF;">megabgh online shop</a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
-                            <nav> 
-                                <ul id="navigation">                                                                                          
+                            <nav>
+                                <ul id="navigation">
                                     <!-- <li><a href="#">Home</a></li> -->
                                     <!-- <li ><a href="#">Promotions</a></li> -->
                                     <!-- <li><a href="about">About</a> -->
-                                        <!-- <ul class="submenu">
+                                    <!-- <ul class="submenu">
                                             <li><a href="services">Cleaning</a></li>
                                             <li><a href="personnel">Personnel Support</a></li>
                                             <li><a href="environmental">Environmental Services</a></li>
@@ -79,21 +79,55 @@
                                         </ul> -->
                                     <!-- </li> -->
                                     <!-- <li ><a href="contact">Contact</a></li> -->
-                                    <li class="d-lg-none"><a href="#" class="header-btn1 "><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li class="d-lg-none"><a href="#" class="header-btn1 ">My Account</a></li>
-                                    
-                                    <!-- <li><a href="shop">Shop</a></li> -->             
+                                    <li class="d-lg-none"><a href="#" class="header-btn1 "><i
+                                                class="fa fa-shopping-cart"></i></a></li>
+                                    <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi,
+                                            <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
+                                        <!-- <ul class="submenu">
+                                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+                                        </ul> -->
+                                        <?php if($logged_in): ?>
+                                        <ul class="submenu">
+                                            <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                            <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
+                                            <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                                        </ul>
+                                        <?php else: ?>
+                                        <ul class="submenu">
+                                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
+                                        </ul>
+                                        <?php endif;?>
+                                    </li>
+
+                                    <!-- <li><a href="shop">Shop</a></li> -->
                                     <!-- <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="header-right d-none d-lg-block">
                     <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
-                    <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i></a>
-                    <a href="#" class="" style="color:#6785FF;">|</a>
-                    <a href="#" class="header-btn1">My Account</a>
+                    <ul style="display:flex;">
+                        <li><a href="#" class="header-btn1" style="color:#6785FF;"><i
+                                    class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="#" class="" style="color:#6785FF;">|</a></li>
+                        <li class="user-account-name"><a href="#" class="header-btn1" style="color:#6785FF;">Hi,
+                                <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
+                            <?php if($logged_in): ?>
+                            <ul class="user-account-submenu">
+                                <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
+                                <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                            </ul>
+                            <?php else: ?>
+                            <ul class="user-account-submenu">
+                                <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
+                            </ul>
+                            <?php endif;?>
+
+                        </li>
+                    </ul>
                     <!-- <a href="#" class="header-btn2">Contact Us</a> -->
                 </div>
                 <!-- Mobile Menu -->
@@ -111,7 +145,8 @@
                 <div class="col-lg-6">
                     <div class="shop__details__pic">
                         <div class="shop__details__big__img">
-                            <img class="product__big__img" src="<?=$product[0]->image_url?>" style="width:500px; height:500px;" alt="">
+                            <img class="product__big__img" src="<?=$product[0]->image_url?>"
+                                style="width:500px; height:500px;" alt="">
                         </div>
                         <!-- <div class="shop__details__thumb__pic">
                             <div class="pt active" data-imgbigurl="img/products/details/product-big-1.jpg">
@@ -131,7 +166,7 @@
                         <h3><?=$product[0]->name?></h3>
                         <div class="price">GHS <?=$product[0]->price?></div>
                         <p>Dodge Widebody Replica offered in multiple sizes and finishes with applications to fit
-                        Chrysler 300c, Dodge Magnum, Chargers and</p>
+                            Chrysler 300c, Dodge Magnum, Chargers and</p>
                         <p class="last-para">Not only does the Widebody offer superior performance for the standard</p>
                         <div class="shop__details__widget">
                             <div class="quantity">
@@ -154,18 +189,18 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-    </div>
-</section>
-<!-- Shop Details Section End -->
+        </div>
+    </section>
+    <!-- Shop Details Section End -->
 
 
-<footer>
-    <!-- Footer Start-->
-    <div class="footer-area footer-padding">
-        <!-- <div class="container">
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding">
+            <!-- <div class="container">
             <div class="row d-flex justify-content-between">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                  <div class="single-footer-caption mb-50">
@@ -219,87 +254,95 @@
         </div>
     </div>
 </div> -->
-<div class="container text-center">
-    <p style="font-size:1.2em;"><span class="shop-name" style="font-size:2em;">megabgh online shop.</span></p>
-    <p style="font-size:1.2em;"> Contact our cutomer service <span class="number"><a href="#" style="margin-bottom:0;">(233) 20 140 8571</a></span> for shop support.</p>
-</div>
-</div>
-<!-- footer-bottom area -->
-<div class="footer-bottom-area section-bg2" data-background="assets/img/gallery/footer-bg.png">
-<div class="container">
-    <div class="footer-border">
-       <div class="row d-flex align-items-center">
-           <div class="col-xl-12 ">
-               <div class="footer-copy-right text-center">
-                   <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made  by  <a href="https://stel-dare.github.io/" target="_blank" rel="noreferrer noopener">stel.</a>
-                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- Footer End-->
-</footer>
-<!-- Scroll Up -->
-<div id="back-top" >
-<a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-</div>
+            <div class="container text-center">
+                <p style="font-size:1.2em;"><span class="shop-name" style="font-size:2em;">megabgh online shop.</span>
+                </p>
+                <p style="font-size:1.2em;"> Contact our cutomer service <span class="number"><a href="#"
+                            style="margin-bottom:0;">(233) 20 140 8571</a></span> for shop support.</p>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area section-bg2" data-background="assets/img/gallery/footer-bg.png">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right text-center">
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;<script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved | Made by <a href="https://stel-dare.github.io/"
+                                        target="_blank" rel="noreferrer noopener">stel.</a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
 
 
-<!-- Shop  Js Plugins -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<!-- <script src="js/bootstrap.min.js"></script> -->
-<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
-<script src="js/jquery-ui.min.js"></script>
-<!-- <script src="js/jquery.nice-select.min.js"></script> -->
-<!-- <script src="js/jquery.slicknav.js"></script> -->
-<!-- <script src="js/owl.carousel.min.js"></script> -->
-<script src="js/main.js"></script>
-<!-- JS here -->
+    <!-- Shop  Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <!-- <script src="js/jquery.slicknav.js"></script> -->
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <!-- JS here -->
 
-<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<!-- Jquery, Popper, Bootstrap -->
-<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="./assets/js/popper.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
-<!-- Jquery Mobile Menu -->
-<script src="./assets/js/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-<!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="./assets/js/owl.carousel.min.js"></script>
-<script src="./assets/js/slick.min.js"></script>
-<!-- One Page, Animated-HeadLin -->
-<script src="./assets/js/wow.min.js"></script>
-<script src="./assets/js/animated.headline.js"></script>
-<script src="./assets/js/jquery.magnific-popup.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-<!-- Date Picker -->
-<script src="./assets/js/gijgo.min.js"></script>
-<!-- Nice-select, sticky -->
-<script src="./assets/js/jquery.nice-select.min.js"></script>
-<script src="./assets/js/jquery.sticky.js"></script>
-<!-- Progress -->
-<script src="./assets/js/jquery.barfiller.js"></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
 
-<!-- counter , waypoint,Hover Direction -->
-<script src="./assets/js/jquery.counterup.min.js"></script>
-<script src="./assets/js/waypoints.min.js"></script>
-<script src="./assets/js/jquery.countdown.min.js"></script>
-<script src="./assets/js/hover-direction-snake.min.js"></script>
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
 
-<!-- contact js -->
-<script src="./assets/js/contact.js"></script>
-<script src="./assets/js/jquery.form.js"></script>
-<script src="./assets/js/jquery.validate.min.js"></script>
-<script src="./assets/js/mail-script.js"></script>
-<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
-<!-- Jquery Plugins, main Jquery -->	
-<script src="./assets/js/plugins.js"></script>
-<script src="./assets/js/main.js"></script>
-<!-- <script src="js/shop.js"></script> -->
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- <script src="js/shop.js"></script> -->
 
 </body>
+
 </html>
