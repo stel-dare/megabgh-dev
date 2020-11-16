@@ -86,11 +86,21 @@
                                     <!-- </li> -->
                                     <!-- <li ><a href="contact">Contact</a></li> -->
                                     <li class="d-lg-none"><a href="#" class="header-btn1 "><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi, Customer</a>
+                                    <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi, <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
+                                        <!-- <ul class="submenu">
+                                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+                                        </ul> -->
+                                        <?php if($logged_in): ?>
                                         <ul class="submenu">
-                                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                                            
+                                            <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                            <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
+                                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                                         </ul>
+                                    <?php else: ?>
+                                        <ul class="submenu">
+                                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
+                                        </ul>
+                                    <?php endif;?>
                                     </li>
                                     
                                     <!-- <li><a href="shop">Shop</a></li> -->             
@@ -105,10 +115,19 @@
                     <ul style="display:flex;">
                     <li><a href="#" class="header-btn1" style="color:#6785FF;"><i class="fa fa-shopping-cart"></i></a></li>
                     <li><a href="#" class="" style="color:#6785FF;">|</a></li>
-                    <li class="user-account-name"><a href="#" class="header-btn1" style="color:#6785FF;">Hi, Customer</a>
+                    <li class="user-account-name"><a href="#" class="header-btn1" style="color:#6785FF;">Hi, <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
+                       <?php if($logged_in): ?>
                         <ul class="user-account-submenu">
-                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                            <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
+                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                         </ul>
+                       <?php else: ?>
+                        <ul class="user-account-submenu">
+                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
+                        </ul>
+                       <?php endif;?>
+                         
                     </li>
                     </ul>
                     <!-- <a href="#" class="header-btn2">Contact Us</a> -->
