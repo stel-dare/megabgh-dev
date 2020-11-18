@@ -1549,8 +1549,8 @@ Pages
                                     Payment Methods</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="" data-toggle="tab" href="" role="tab" aria-controls=""
-                                    aria-selected="false"><i class="icofont-logout"></i> Log Out</a>
+                                <a class="nav-link" id="" href="logout" role="tab"><i class="icofont-logout"></i> Log
+                                    Out</a>
                             </li>
 
                         </ul>
