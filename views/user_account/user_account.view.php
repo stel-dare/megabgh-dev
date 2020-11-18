@@ -1202,18 +1202,6 @@
 
 
 <body>
-    <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Preloader Start -->
     <header>
         <!-- Header Start -->
         <div class="header-area">
@@ -1249,7 +1237,8 @@
                                         <?php if($logged_in): ?>
                                         <ul class="submenu">
                                             <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
-                                            <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
+                                            <li><a href="user_account"><i class="fas fa-user-circle"></i> View
+                                                    profile</a></li>
                                             <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                                         </ul>
                                         <?php else: ?>
@@ -1277,7 +1266,7 @@
                             <?php if($logged_in): ?>
                             <ul class="user-account-submenu">
                                 <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
-                                <li><a href="#"><i class="fas fa-user-circle"></i> View profile</a></li>
+                                <li><a href="user_account"><i class="fas fa-user-circle"></i> View profile</a></li>
                                 <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                             </ul>
                             <?php else: ?>
@@ -1522,11 +1511,9 @@ Pages
                                     <img class="mb-3 rounded-pill shadow-sm mt-1" src="img/user/4.png"
                                         alt="gurdeep singh osahan">
                                     <div class="osahan-user-media-body">
-                                        <h6 class="mb-2">Gurdeep Singh</h6>
-                                        <p class="mb-1">+91 85680-79956</p>
-                                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                data-cfemail="9df4fcf0f2eefcf5fcf3ddfaf0fcf4f1b3fef2f0">[email&#160;protected]</a>
-                                        </p>
+                                        <h6 class="mb-2"><?="$user->first_name $user->last_name" ?></h6>
+                                        <p class="mb-1"><?=$user->email ?></p>
+                                        <p class=""><?=$user->username ?> </p>
                                         <p class="mb-0 text-black font-weight-bold"><a class="text-primary mr-3"
                                                 data-toggle="modal" data-target="#edit-profile-modal" href="#"><i
                                                     class="icofont-ui-edit"></i> EDIT</a></p>

@@ -2,9 +2,13 @@
 session_start();
 ?>
 <?php
-// if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
-//     header("Location: shop");
-// }
-$logged_in = isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true ? true : false;
+if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
+    $logged_in = true;
+    $user = $app['queryBuilder']->fetchUser('id',$_SESSION['id'])[0];
+    require "views/user_account/user_account.view.php";
+    
+}
 
-require "views/user_account/user_account.view.php";
+else{
+    header("Location: login");
+}
