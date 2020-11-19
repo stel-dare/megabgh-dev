@@ -63,4 +63,11 @@ class QueryBuilder{
         $statement -> execute();   
         // return count($statement->fetchAll(PDO::FETCH_OBJ));
     }
+
+    // USER ACCOUNT METHODS
+    public function theExecutioner($statement){
+        $statement = $this->pdo->prepare($statement);
+        $statement -> execute();   
+        return $statement->fetchAll(PDO::FETCH_OBJ);
+    }
 }
