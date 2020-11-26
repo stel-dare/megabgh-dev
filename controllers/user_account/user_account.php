@@ -50,7 +50,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
 
       // Fetch current order products
       getOrderProducts($user_current_orders,$app);
-    //   die(var_dump($user_past_orders));
+    //   die(var_dump($user_current_orders));
     
     require "views/user_account/user_account.view.php";
     

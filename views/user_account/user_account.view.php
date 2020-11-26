@@ -1586,7 +1586,7 @@ Pages
                                                     </p>
                                                     <hr>
                                                     <div class="float-right">
-                                                        <a class="btn btn-sm btn-outline-primary" href="#"><i
+                                                        <a class="btn btn-sm btn-outline-primary" href=<?="invoice?user=$user->id&order=$current_order->id" ?>><i
                                                                 class="icofont-info-circle"></i> VIEW DETAILS</a>
                                                         <a class="btn btn-sm btn-primary" href="detail.html"><i
                                                                 class="icofont-location-pin"></i> TRACK ORDER</a>
@@ -1633,7 +1633,7 @@ Pages
                                                     </p>
                                                     <hr>
                                                     <div class="float-right">
-                                                        <a class="btn btn-sm btn-outline-primary" href="#"><i
+                                                        <a class="btn btn-sm btn-outline-primary" href=<?="invoice?user=$user->id&order=$past_order->id" ?>><i
                                                                 class="icofont-info-circle"></i> VIEW DETAILS</a>
                                                         <!-- <a class="btn btn-sm btn-primary" href="detail.html"><i class="icofont-refresh"></i> REORDER</a> -->
                                                     </div>

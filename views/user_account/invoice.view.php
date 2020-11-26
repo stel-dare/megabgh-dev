@@ -9,7 +9,7 @@
     <meta name="author" content="Askbootstrap">
     <title>Megabgh | Order Confirmation</title>
 
-    <!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <link href="assets/user_account_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,7 +26,7 @@
    
     <section class="breadcrumb-osahan pt-5 pb-5 bg-dark position-relative text-center">
         <h1 class="text-white">Order Confirmation</h1>
-        <h6 class="text-white-50">Order #25102589748</h6>
+        <h6 class="text-white-50">Order #<?=$order->id?></h6>
     </section>
     <section class="section pt-5 pb-5">
         <div class="container">
@@ -35,34 +35,34 @@
                     <div class="p-5 osahan-invoice bg-white shadow-sm">
                         <div class="row mb-5 pb-3 ">
                             <div class="col-md-8 col-10">
-                                <h3 class="mt-0">Thanks for choosing <strong class="text-secondary">Osahan Eat</strong>, Gurdeep ! Here are your order details: </h3>
+                                <h3 class="mt-0">Thanks for choosing <strong class="text-secondary">MEGABGH</strong>. Here are your order details: </h3>
                             </div>
                             <div class="col-md-4 col-2 pl-0 text-right">
                                 <p class="mb-4 mt-2">
-                                    <a class="text-primary font-weight-bold" href="#"><i class="icofont-print"></i> PRINT</a>
+                                    <span class="text-primary font-weight-bold" style="cursor:pointer" onclick="window.print()"><i class="icofont-print"></i> PRINT</span>
                                 </p>
-                                <img alt="logo" src="img/favicon.png">
+                                <img alt="logo" src="assets/img/favicon.ico">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <p class="mb-1 text-black">Order No: <strong>#25102589748</strong></p>
-                                <p class="mb-1">Order placed at: <strong>12/11/2018, 06:26 PM</strong></p>
-                                <p class="mb-1">Order delivered at: <strong>12/11/2018, 07:18 PM</strong></p>
-                                <p class="mb-1">Order Status: <strong class="text-success">Delivered</strong></p>
+                                <p class="mb-1 text-black">Order No: <strong>#<?=$order->id?></strong></p>
+                                <p class="mb-1">Order placed at: <strong><?=$order->date_ordered?></strong></p>
+                                <!-- <p class="mb-1">Order delivered at: <strong>12/11/2018, 07:18 PM</strong></p> -->
+                                <p class="mb-1">Order Status: <strong class="text-success"><?=$order->state?></strong></p>
                             </div>
                             <div class="col-md-6">
                                 <p class="mb-1 text-black">Delivery To:</p>
-                                <p class="mb-1 text-primary"><strong>Gurdeep Singh Osahan</strong></p>
-                                <p class="mb-1">291/d/1, 291, Jawaddi Kalan, Ludhiana, Punjab 141002, India
+                                <p class="mb-1 text-primary"><strong><?="$user->first_name $user->last_name" ?></strong></p>
+                                <p class="mb-1"><?="$user_selected_address->address, $user_selected_address->address_city, $user_selected_address->address_region" ?>
                                 </p>
                             </div>
                         </div>
                         <div class="row mt-5">
                             <div class="col-md-12">
                                 <p class="mb-1">Ordered from:</p>
-                                <h6 class="mb-1 text-black"><strong>Shahi Khansama</strong></h6>
-                                <p class="mb-1">Shop 3, Model Town Extension, Model Town, Ludhiana</p>
+                                <h6 class="mb-1 text-black"><strong>Megab Online Shop</strong></h6>
+                                <p class="mb-1">(233) 20 140 8571, gakbentil@yahoo.co.uk, Accra</p>
                                 <table class="table mt-3 mb-0">
                                     <thead class="thead-light">
                                         <tr>
@@ -72,43 +72,35 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php foreach($order->products as $product):?>
                                         <tr>
-                                            <td>Veg Masala Roll</td>
-                                            <td class="text-right">01</td>
-                                            <td class="text-right">$49</td>
+                                            <td><?=$product->name?></td>
+                                            <td class="text-right"><?=$product->quantity?></td>
+                                            <td class="text-right">GHS <?=$product->price?></td>
                                         </tr>
-                                        <tr>
-                                            <td>Veg Burger</td>
-                                            <td class="text-right">01</td>
-                                            <td class="text-right">$45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Veg Penne Pasta in Red Sauce</td>
-                                            <td class="text-right">01</td>
-                                            <td class="text-right">$135</td>
-                                        </tr>
+                                    <?php endforeach; ?>    
                                         <tr>
                                             <td class="text-right" colspan="2">Item Total:</td>
-                                            <td class="text-right"> $229</td>
+                                            <td class="text-right"> GHS <?=$order->total_paid?></td>
                                         </tr>
-                                        <tr>
+                                        <!-- <tr>
                                             <td class="text-right" colspan="2">GST:</td>
                                             <td class="text-right"> $9.6</td>
-                                        </tr>
+                                        </tr> -->
                                         <tr>
                                             <td class="text-right" colspan="2">Delivery Charges:</td>
-                                            <td class="text-right"> $00</td>
+                                            <td class="text-right"> GHS 0.00</td>
                                         </tr>
-                                        <tr>
+                                        <!-- <tr>
                                             <td class="text-right" colspan="2">Discount Applied (GURDEEP50):</td>
                                             <td class="text-right"> $141.97</td>
-                                        </tr>
+                                        </tr> -->
                                         <tr>
                                             <td class="text-right" colspan="2">
                                                 <h6 class="text-success">Grand Total:</h6>
                                             </td>
                                             <td class="text-right">
-                                                <h6 class="text-success"> $96</h6>
+                                                <h6 class="text-success"> GHS <?=$order->total_paid?></h6>
                                             </td>
                                         </tr>
                                     </tbody>
