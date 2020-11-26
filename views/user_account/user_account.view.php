@@ -1571,7 +1571,7 @@ Pages
                                             <div class="media">
                                                 <img class="mr-4" src=<?=$current_order->products[0]->image_url?> alt="Generic placeholder image">
                                                 <div class="media-body">
-                                                    <span class="float-right text-info"><?="$current_order->state on $current_order->date_ordered" ?> <i class="icofont-check-circled text-success"></i></span>
+                                                    <span class="float-right text-info"><?="$current_order->state on $current_order->date_ordered" ?> <i class="icofont-clock-time text-info"></i></span>
                                                     <h6 class="mb-2">
                                                         <span class="text-black"><?="$user->first_name $user->last_name" ?>
                                                         </span></h6>

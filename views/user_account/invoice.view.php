@@ -49,7 +49,7 @@
                                 <p class="mb-1 text-black">Order No: <strong>#<?=$order->id?></strong></p>
                                 <p class="mb-1">Order placed at: <strong><?=$order->date_ordered?></strong></p>
                                 <!-- <p class="mb-1">Order delivered at: <strong>12/11/2018, 07:18 PM</strong></p> -->
-                                <p class="mb-1">Order Status: <strong class="text-success"><?=$order->state?></strong></p>
+                                <p class="mb-1">Order Status: <strong class=<?=$order->state==='Delivered'? 'text-success' :'text-info'?>><?=$order->state?></strong></p>
                             </div>
                             <div class="col-md-6">
                                 <p class="mb-1 text-black">Delivery To:</p>
