@@ -39,7 +39,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
       function getOrderProducts($orders,$app){
         foreach($orders as $order){   
             $order->products = $app['queryBuilder']->theExecutioner("
-            SELECT order_products.order_id,order_products.product_id,order_products.quantity,products.name 
+            SELECT order_products.order_id,order_products.product_id,order_products.quantity,products.name,products.image_url 
             FROM `order_products` left join products on order_products.product_id = products.id HAVING 
             order_id = $order->id"); 
          }

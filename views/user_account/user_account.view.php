@@ -1569,7 +1569,7 @@ Pages
                                     <div class="gold-members p-4">
                                         <a href="#">
                                             <div class="media">
-                                                <img class="mr-4" src="img/3.jpg" alt="Generic placeholder image">
+                                                <img class="mr-4" src=<?=$current_order->products[0]->image_url?> alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <span class="float-right text-info"><?="$current_order->state on $current_order->date_ordered" ?> <i class="icofont-check-circled text-success"></i></span>
                                                     <h6 class="mb-2">
@@ -1611,7 +1611,7 @@ Pages
                                     <div class="gold-members p-4">
                                         <a href="#">
                                             <div class="media">
-                                                <img class="mr-4 " src="img/3.jpg" alt="Generic placeholder image">
+                                                <img class="mr-4 " src=<?=$past_order->products[0]->image_url?> alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <span class="float-right text-info">
                                                         <?="$past_order->state on $past_order->date_ordered" ?>
