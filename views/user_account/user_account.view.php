@@ -1573,8 +1573,8 @@ Pages
                                                 <div class="media-body">
                                                     <span class="float-right text-info"><?="$current_order->state on $current_order->date_ordered" ?> <i class="icofont-check-circled text-success"></i></span>
                                                     <h6 class="mb-2">
-                                                        <a href="detail.html" class="text-black"><?="$user->first_name $user->last_name" ?>
-                                                        </a></h6>
+                                                        <span class="text-black"><?="$user->first_name $user->last_name" ?>
+                                                        </span></h6>
                                                     <p class="text-gray mb-1"><i class="icofont-location-arrow"></i> <?="$user_selected_address->address, $user_selected_address->address_city, $user_selected_address->address_region" ?>
                                                     </p>
                                                     <p class="text-gray mb-3"><i class="icofont-list"></i> ORDER
@@ -1617,9 +1617,9 @@ Pages
                                                         <?="$past_order->state on $past_order->date_ordered" ?>
                                                         <i class="icofont-check-circled text-success"></i></span>
                                                     <h6 class="mb-2">
-                                                        <a href="#"
+                                                        <span
                                                             class="text-black"><?="$user->first_name $user->last_name" ?>
-                                                        </a></h6>
+                                                        </span></h6>
                                                     <p class="text-gray mb-1"><i class="icofont-location-arrow"></i>
                                                         <?="$user_selected_address->address, $user_selected_address->address_city, $user_selected_address->address_region" ?>
                                                     </p>

@@ -32,6 +32,9 @@ $order =  $app['queryBuilder']->theExecutioner(
     order_id = $order->id"); 
  
 
+// Format order date
+$order->date_ordered = date_format(date_create($order->date_ordered),"l, d F Y");
+    
 // die(var_dump($order));
 
 require "views/user_account/invoice.view.php";

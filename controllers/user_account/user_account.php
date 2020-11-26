@@ -45,11 +45,24 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
          }
       }
 
+      // Function to format date
+      function formatDate($orders){
+        foreach($orders as $order){   
+        $order->date_ordered = date_format(date_create($order->date_ordered),"l, d F Y");
+        }
+      }
+
       // Fetch past orders products
       getOrderProducts($user_past_orders,$app);
 
+      // Format past order ddate
+      formatDate($user_past_orders);
+
       // Fetch current order products
       getOrderProducts($user_current_orders,$app);
+
+      //Format past order date
+      formatDate($user_current_orders);
     //   die(var_dump($user_current_orders));
     
     require "views/user_account/user_account.view.php";
