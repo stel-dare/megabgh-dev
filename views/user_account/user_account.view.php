@@ -1564,26 +1564,25 @@ Pages
                             <div class="tab-pane fade show active" id="currentOrders" role="tabpanel"
                                 aria-labelledby="orders-tab">
                                 <h4 class="font-weight-bold mt-0 mb-4">My Orders</h4>
+                                <?php foreach($user_current_orders as $current_order): ?>
                                 <div class="bg-white card mb-4 order-list shadow-sm">
                                     <div class="gold-members p-4">
                                         <a href="#">
                                             <div class="media">
                                                 <img class="mr-4" src="img/3.jpg" alt="Generic placeholder image">
                                                 <div class="media-body">
-                                                    <span class="float-right text-info">Delivered on Mon, Nov 12, 7:18
-                                                        PM <i class="icofont-check-circled text-success"></i></span>
+                                                    <span class="float-right text-info"><?="$current_order->state on $current_order->date_ordered" ?> <i class="icofont-check-circled text-success"></i></span>
                                                     <h6 class="mb-2">
-                                                        <a href="detail.html" class="text-black">Gus's World Famous
-                                                            Fried Chicken
+                                                        <a href="detail.html" class="text-black"><?="$user->first_name $user->last_name" ?>
                                                         </a></h6>
-                                                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i> 730
-                                                        S Mendenhall Rd, Memphis, TN 38117, USA
+                                                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i> <?="$user_selected_address->address, $user_selected_address->address_city, $user_selected_address->address_region" ?>
                                                     </p>
                                                     <p class="text-gray mb-3"><i class="icofont-list"></i> ORDER
-                                                        #25102589748 <i class="icofont-clock-time ml-2"></i> Mon, Nov
-                                                        12, 6:26 PM</p>
-                                                    <p class="text-dark">Veg Masala Roll x 1, Veg Burger x 1, Veg Penne
-                                                        Pasta in Red Sauce x 1
+                                                        #<?=$current_order->id?> <i class="icofont-clock-time ml-2"></i> <?=$current_order->date_ordered?></p>
+                                                    <p class="text-dark">
+                                                    <?php foreach($current_order->products as $product): ?>
+                                                    <span><?= "$product->name x $product->quantity, "?></span> 
+                                                    <?php endforeach;?>
                                                     </p>
                                                     <hr>
                                                     <div class="float-right">
@@ -1593,84 +1592,14 @@ Pages
                                                                 class="icofont-location-pin"></i> TRACK ORDER</a>
                                                     </div>
                                                     <p class="mb-0 text-black text-primary pt-2"><span
-                                                            class="text-black font-weight-bold"> Total Paid:</span> $300
-                                                    </p>
+                                                            class="text-black font-weight-bold"> Total Paid:</span> GHS <?=$current_order->total_paid?></p>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="bg-white card mb-4 order-list shadow-sm">
-                                    <div class="gold-members p-4">
-                                        <a href="#">
-                                            <div class="media">
-                                                <img class="mr-4" src="img/4.jpg" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <span class="float-right text-info">Delivered on Mon, Nov 12, 7:18
-                                                        PM <i class="icofont-check-circled text-success"></i></span>
-                                                    <h6 class="mb-2">
-                                                        <a href="detail.html" class="text-black">Jimmy's Famous American
-                                                            Tavern
-                                                        </a></h6>
-                                                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i>
-                                                        1733 Ocean Ave, Santa Monica, CA 90401, USA
-                                                    </p>
-                                                    <p class="text-gray mb-3"><i class="icofont-list"></i> ORDER
-                                                        #25102589748 <i class="icofont-clock-time ml-2"></i> Mon, Nov
-                                                        12, 6:26 PM</p>
-                                                    <p class="text-dark">Veg Masala Roll x 5, Veg Burger x 1, Veg Penne
-                                                        Pasta in Red Sauce x 1
-                                                    </p>
-                                                    <hr>
-                                                    <div class="float-right">
-                                                        <a class="btn btn-sm btn-outline-primary" href="#"><i
-                                                                class="icofont-info-circle"></i> VIEW DETAILS</a>
-                                                        <a class="btn btn-sm btn-primary" href="detail.html"><i
-                                                                class="icofont-location-pin"></i> TRACK ORDER</a>
-                                                    </div>
-                                                    <p class="mb-0 text-black text-primary pt-2"><span
-                                                            class="text-black font-weight-bold"> Total Paid:</span> $500
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="bg-white card  order-list shadow-sm">
-                                    <div class="gold-members p-4">
-                                        <a href="#">
-                                            <div class="media">
-                                                <img class="mr-4" src="img/5.jpg" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <span class="float-right text-info">Delivered on Mon, Nov 12, 7:18
-                                                        PM <i class="icofont-check-circled text-success"></i></span>
-                                                    <h6 class="mb-2">
-                                                        <a href="detail.html" class="text-black">The Famous Restaurant
-                                                        </a></h6>
-                                                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i> 953
-                                                        S Main St, Centerville, OH 45459, USA
-                                                    </p>
-                                                    <p class="text-gray mb-3"><i class="icofont-list"></i> ORDER
-                                                        #25102589748 <i class="icofont-clock-time ml-2"></i> Mon, Nov
-                                                        12, 6:26 PM</p>
-                                                    <p class="text-dark">Veg Masala Roll x 5, Veg Penne Pasta in Red
-                                                        Sauce x 1
-                                                    </p>
-                                                    <hr>
-                                                    <div class="float-right">
-                                                        <a class="btn btn-sm btn-outline-primary" href="#"><i
-                                                                class="icofont-info-circle"></i> VIEW DETAILS</a>
-                                                        <a class="btn btn-sm btn-primary" href="detail.html"><i
-                                                                class="icofont-location-pin"></i> TRACK ORDER</a>
-                                                    </div>
-                                                    <p class="mb-0 text-black text-primary pt-2"><span
-                                                            class="text-black font-weight-bold"> Total Paid:</span> $420
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
+                                
                             </div>
 
                             <!-- current orders end -->
