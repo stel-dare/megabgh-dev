@@ -1344,12 +1344,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action='update_user_account' method='post'>
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <label for="inputPassword4">Delivery Area</label>
+                                <label for="inputPassword4">Complete Address</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Delivery Area">
+                                    <input type="text" class="form-control" name="address"
+                                        placeholder="Complete Address e.g. Christian Ridge, Beahu, Takoradi" required>
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
                                                 class="icofont-ui-pointer"></i></button>
@@ -1357,18 +1358,18 @@
                                 </div>
                             </div>
                             <div class="form-group col-md-12">
-                                <label for="inputPassword4">Complete Address
+                                <label for="inputPassword4">Address City
                                 </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Complete Address e.g. house number, street name, landmark">
+                                <input type="text" class="form-control" name="address_city"
+                                    placeholder="Address City e.g. Takoradi, East Legon" required>
                             </div>
                             <div class="form-group col-md-12">
-                                <label for="inputPassword4">Delivery Instructions
+                                <label for="inputPassword4">Address Region
                                 </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Delivery Instructions e.g. Opposite Gold Souk Mall">
+                                <input type="text" class="form-control" name="address_region"
+                                    placeholder="Address Region e.g. Western,Central" required>
                             </div>
-                            <div class="form-group mb-0 col-md-12">
+                            <!-- <div class="form-group mb-0 col-md-12">
                                 <label for="inputPassword4">Nickname
                                 </label>
                                 <div class="btn-group btn-group-toggle d-flex justify-content-center"
@@ -1383,16 +1384,17 @@
                                         <input type="radio" name="options" id="option3" autocomplete="off"> Other
                                     </label>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn d-flex w-50 text-center justify-content-center btn-outline-primary"
                         data-dismiss="modal">CANCEL
-                    </button><button type="button"
+                    </button><button type="submit" name="submit" value='add-address'
                         class="btn d-flex w-50 text-center justify-content-center btn-primary">SUBMIT</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -1569,37 +1571,46 @@ Pages
                                     <div class="gold-members p-4">
                                         <a href="#">
                                             <div class="media">
-                                                <img class="mr-4" src=<?=$current_order->products[0]->image_url?> alt="Generic placeholder image">
+                                                <img class="mr-4" src=<?=$current_order->products[0]->image_url?>
+                                                    alt="Generic placeholder image">
                                                 <div class="media-body">
-                                                    <span class="float-right text-info"><?="$current_order->state on $current_order->date_ordered" ?> <i class="icofont-clock-time text-info"></i></span>
+                                                    <span
+                                                        class="float-right text-info"><?="$current_order->state on $current_order->date_ordered" ?>
+                                                        <i class="icofont-clock-time text-info"></i></span>
                                                     <h6 class="mb-2">
-                                                        <span class="text-black"><?="$user->first_name $user->last_name" ?>
+                                                        <span
+                                                            class="text-black"><?="$user->first_name $user->last_name" ?>
                                                         </span></h6>
-                                                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i> <?="$user_selected_address->address, $user_selected_address->address_city, $user_selected_address->address_region" ?>
+                                                    <p class="text-gray mb-1"><i class="icofont-location-arrow"></i>
+                                                        <?="$user_selected_address->address, $user_selected_address->address_city, $user_selected_address->address_region" ?>
                                                     </p>
                                                     <p class="text-gray mb-3"><i class="icofont-list"></i> ORDER
-                                                        #<?=$current_order->id?> <i class="icofont-clock-time ml-2"></i> <?=$current_order->date_ordered?></p>
+                                                        #<?=$current_order->id?> <i class="icofont-clock-time ml-2"></i>
+                                                        <?=$current_order->date_ordered?></p>
                                                     <p class="text-dark">
-                                                    <?php foreach($current_order->products as $product): ?>
-                                                    <span><?= "$product->name x $product->quantity, "?></span> 
-                                                    <?php endforeach;?>
+                                                        <?php foreach($current_order->products as $product): ?>
+                                                        <span><?= "$product->name x $product->quantity, "?></span>
+                                                        <?php endforeach;?>
                                                     </p>
                                                     <hr>
                                                     <div class="float-right">
-                                                        <a class="btn btn-sm btn-outline-primary" href=<?="invoice?user=$user->id&order=$current_order->id" ?>><i
+                                                        <a class="btn btn-sm btn-outline-primary"
+                                                            href=<?="invoice?user=$user->id&order=$current_order->id" ?>><i
                                                                 class="icofont-info-circle"></i> VIEW DETAILS</a>
-                                                        <a class="btn btn-sm btn-primary" href=<?="trace?user=$user->id&order=$current_order->id" ?>><i
+                                                        <a class="btn btn-sm btn-primary"
+                                                            href=<?="trace?user=$user->id&order=$current_order->id" ?>><i
                                                                 class="icofont-location-pin"></i> TRACK ORDER</a>
                                                     </div>
                                                     <p class="mb-0 text-black text-primary pt-2"><span
-                                                            class="text-black font-weight-bold"> Total Paid:</span> GHS <?=$current_order->total_paid?></p>
+                                                            class="text-black font-weight-bold"> Total Paid:</span> GHS
+                                                        <?=$current_order->total_paid?></p>
                                                 </div>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <?php endforeach; ?>
-                                
+
                             </div>
 
                             <!-- current orders end -->
@@ -1611,7 +1622,8 @@ Pages
                                     <div class="gold-members p-4">
                                         <a href="#">
                                             <div class="media">
-                                                <img class="mr-4 " src=<?=$past_order->products[0]->image_url?> alt="Generic placeholder image">
+                                                <img class="mr-4 " src=<?=$past_order->products[0]->image_url?>
+                                                    alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <span class="float-right text-info">
                                                         <?="$past_order->state on $past_order->date_ordered" ?>
@@ -1627,18 +1639,20 @@ Pages
                                                         #<?=$past_order->id?> <i class="icofont-clock-time ml-2"></i>
                                                         <?=$past_order->date_ordered?></p>
                                                     <p class="text-dark">
-                                                    <?php foreach($past_order->products as $product): ?>
-                                                    <span><?= "$product->name x $product->quantity, "?></span> 
-                                                    <?php endforeach;?>
+                                                        <?php foreach($past_order->products as $product): ?>
+                                                        <span><?= "$product->name x $product->quantity, "?></span>
+                                                        <?php endforeach;?>
                                                     </p>
                                                     <hr>
                                                     <div class="float-right">
-                                                        <a class="btn btn-sm btn-outline-primary" href=<?="invoice?user=$user->id&order=$past_order->id" ?>><i
+                                                        <a class="btn btn-sm btn-outline-primary"
+                                                            href=<?="invoice?user=$user->id&order=$past_order->id" ?>><i
                                                                 class="icofont-info-circle"></i> VIEW DETAILS</a>
                                                         <!-- <a class="btn btn-sm btn-primary" href="detail.html"><i class="icofont-refresh"></i> REORDER</a> -->
                                                     </div>
                                                     <p class="mb-0 text-black text-primary pt-2"><span
-                                                            class="text-black font-weight-bold"> Total Paid:</span> GHS <?=$past_order->total_paid?>
+                                                            class="text-black font-weight-bold"> Total Paid:</span> GHS
+                                                        <?=$past_order->total_paid?>
                                                     </p>
                                                 </div>
                                             </div>
@@ -1906,6 +1920,9 @@ Loading...
                             </div>
                             <div class="tab-pane fade" id="addresses" role="tabpanel" aria-labelledby="addresses-tab">
                                 <h4 class="font-weight-bold mt-0 mb-4">Manage Addresses</h4>
+                                <p class="mb-3 text-black font-weight-bold"><a class="text-info mr-3"
+                                        data-toggle="modal" data-target="#add-address-modal" href="#"><i
+                                            class="icofont-ui-add"></i> ADD</a></p>
                                 <div class="row">
                                     <?php foreach($user_address as $address): ?>
                                     <div class="col-md-6">

@@ -70,4 +70,9 @@ class QueryBuilder{
         $statement -> execute();   
         return $statement->fetchAll(PDO::FETCH_OBJ);
     }
+
+    public function theInsertExecutioner($statement){
+        $statement = $this->pdo->prepare($statement);
+        $statement -> execute();   
+    } 
 }
