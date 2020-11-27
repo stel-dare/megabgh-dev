@@ -20,6 +20,35 @@ $table = explode('-',$_POST['submit'])[1];
             //Redirect to user account 
             header("Location: user_account");
         }
+
+         // No Match
+        else{
+            header("Location: 404");
+        }
+    }
+    
+    // Payment
+    else if($table==='payment'){
+        //Add
+        if($action==='add'){
+           //Insert into table
+           $app['queryBuilder']->theInsertExecutioner("
+           insert into customer_payment_methods (customer_id, payment_id, phone_number) values ('{$_SESSION['id']}', '{$_POST['payment_id']}', '{$_POST['phone_number']}');
+               ");
+           //Redirect to user account 
+           header("Location: user_account"); 
+        }
+
+         // No Match
+        else{
+            header("Location: 404");
+        }
+    }
+
+
+    // No Match
+    else{
+        header("Location: 404");
     }
     
     

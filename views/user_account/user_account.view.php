@@ -55,6 +55,13 @@
             margin: 0;
         }
 
+        .nice-select{
+            display:none;
+        }
+        .select2-search, .select2-search--dropdown{
+            display:none;
+        }
+
         @media only screen and (min-width: 1200px) {
             .container {
                 max-width: 1170px;
@@ -1421,6 +1428,55 @@
             </div>
         </div>
     </div>
+
+    <!-- // Add payment method modal -->
+    <div class="modal fade" id="add-payment-modal" tabindex="-1" role="dialog" aria-labelledby="add-payment"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="edit-profile">Add Payment Method</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="update_user_account" method="post">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Payment Vendor
+                                </label>
+                                <select name="payment_id" id="payment_id" required>
+                                    <?php foreach($payment_methods as $method):?>
+                                    <option value=<?=$method->id?>><?=$method->name?></option>
+                                    <?php endforeach;?>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Phone Number
+                                </label>
+                                <input type="tel" name="phone_number" class="form-control" placeholder="Enter Phone Number e.g. 0241235767  
+                              " pattern="[0-9]{10}" required>
+                            </div>
+                            <!-- <div class="form-group col-md-12 mb-0">
+                                <label>Password
+                                </label>
+                                <input type="password" value="**********" class="form-control" placeholder="Enter password
+                              ">
+                            </div> -->
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn d-flex w-50 text-center justify-content-center btn-outline-primary"
+                        data-dismiss="modal">CANCEL
+                    </button><button type="submit" name="submit" value="add-payment"
+                        class="btn d-flex w-50 text-center justify-content-center btn-primary">SUBMIT</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light osahan-nav shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img alt="logo" src="img/logo.png"></a>
@@ -1891,6 +1947,9 @@ Loading...
                             </div> -->
                             <div class="tab-pane fade" id="payments" role="tabpanel" aria-labelledby="payments-tab">
                                 <h4 class="font-weight-bold mt-0 mb-4">Payment Methods</h4>
+                                <p class="mb-3 text-black font-weight-bold"><a class="text-info mr-3"
+                                        data-toggle="modal" data-target="#add-payment-modal" href="#"><i
+                                            class="icofont-ui-add"></i> ADD</a></p>
                                 <div class="row">
                                     <?php foreach($user_payment_methods as $payment_method): ?>
                                     <div class="col-md-6">

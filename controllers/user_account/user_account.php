@@ -8,6 +8,9 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
     // Fetch user
     $user = $app['queryBuilder']->fetchUser('id',$_SESSION['id'])[0];
 
+    // Fetch payment method
+    $payment_methods = $app['queryBuilder']->selectAll('payment_methods');
+
     // Fetch user payment methods
     $user_payment_methods = $app['queryBuilder']->theExecutioner(
     "SELECT customer_id,payment_id,phone_number,name,image_url FROM `customer_payment_methods` INNER JOIN payment_methods on customer_payment_methods.payment_id = payment_methods.id WHERE customer_id=$user->id

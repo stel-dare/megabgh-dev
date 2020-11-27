@@ -62,6 +62,7 @@ $router -> post('update_user_account', 'controllers/user_account/update_user_acc
 
 // ERROR PAGES
 $router -> get('403', 'controllers/error/403.php');
+$router -> get('404', 'controllers/error/404.php');
 
 
 // POST REQUESTS
