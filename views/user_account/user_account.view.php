@@ -1588,7 +1588,7 @@ Pages
                                                     <div class="float-right">
                                                         <a class="btn btn-sm btn-outline-primary" href=<?="invoice?user=$user->id&order=$current_order->id" ?>><i
                                                                 class="icofont-info-circle"></i> VIEW DETAILS</a>
-                                                        <a class="btn btn-sm btn-primary" href="detail.html"><i
+                                                        <a class="btn btn-sm btn-primary" href=<?="trace?user=$user->id&order=$current_order->id" ?>><i
                                                                 class="icofont-location-pin"></i> TRACK ORDER</a>
                                                     </div>
                                                     <p class="mb-0 text-black text-primary pt-2"><span
