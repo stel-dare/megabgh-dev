@@ -33,6 +33,7 @@ class Router{
             return $this -> routes[$method][$uri];
         }
 
-        throw new Exception('This Page Does Not Exist');
+        // throw new Exception('This Page Does Not Exist');
+        return 'controllers/error/404.php';
     }
 }
