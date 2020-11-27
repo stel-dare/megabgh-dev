@@ -26,7 +26,7 @@ require "views/user_account/trace_order.view.php";
 
 // Redirect to unauthorized page
 else{
-    header("Location: login");  
+    header("Location: 403");  
 }
 
 }

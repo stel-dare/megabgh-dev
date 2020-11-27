@@ -42,7 +42,7 @@ require "views/user_account/invoice.view.php";
 
 // Redirect to unauthorized page
 else{
-    header("Location: login");  
+    header("Location: 403");  
 }
 
 }
