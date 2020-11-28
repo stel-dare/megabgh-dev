@@ -13,7 +13,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
 
     // Fetch user payment methods
     $user_payment_methods = $app['queryBuilder']->theExecutioner(
-    "SELECT customer_id,payment_id,phone_number,name,image_url FROM `customer_payment_methods` INNER JOIN payment_methods on customer_payment_methods.payment_id = payment_methods.id WHERE customer_id=$user->id
+    "SELECT customer_payment_methods.id,customer_id,payment_id,phone_number,selected_payment,name,image_url FROM `customer_payment_methods` INNER JOIN payment_methods on customer_payment_methods.payment_id = payment_methods.id WHERE customer_id=$user->id
     ");
 
     // Fetch user address

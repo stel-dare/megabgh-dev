@@ -1952,8 +1952,8 @@ Loading...
                                             class="icofont-ui-add"></i> ADD</a></p>
                                 <div class="row">
                                     <?php foreach($user_payment_methods as $payment_method): ?>
-                                    <div class="col-md-6">
-                                        <div class="bg-white card payments-item mb-4 shadow-sm">
+                                    <div class="col-md-6" >
+                                        <div class="<?="bg-white border card payments-item mb-4 shadow-sm payment-border-toggle"?><?=$payment_method->selected_payment? ' border-primary':''?>"  onclick="toggleBorder(this,<?=$payment_method->id?>,<?=$payment_method->customer_id?>)">
                                             <div class="gold-members p-4">
                                                 <a href="#">
                                                     <div class="media">

@@ -17,8 +17,8 @@
       document.getElementById('result').innerHTML= this.responseText;
     }
   };
-  xhttp.open("GET", "products?sortBy=best", true);
-  xhttp.send();
+  xhttp.open("POST", "update_user_account", true);
+  xhttp.send("submit=update-payment");
 }
 </script>
 </body>

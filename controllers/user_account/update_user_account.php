@@ -7,7 +7,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
 // Split action
 $action = explode('-',$_POST['submit'])[0];
 $table = explode('-',$_POST['submit'])[1];
-
+// die(var_dump($action));
 
     // Addresss
     if($table==='address'){
@@ -37,6 +37,18 @@ $table = explode('-',$_POST['submit'])[1];
                ");
            //Redirect to user account 
            header("Location: user_account"); 
+        }
+        //Select
+        else if($action==='select'){
+            //Deselect payment method already selected
+            $app['queryBuilder']->theInsertExecutioner("
+           update customer_payment_methods set selected_payment=0 where customer_id={$_POST['customer_id']}
+               ");
+            // update selected_payment field in table
+            $app['queryBuilder']->theInsertExecutioner("
+           update customer_payment_methods set selected_payment=1 where id={$_POST['id']}
+               ");
+               echo 'success';
         }
 
          // No Match
