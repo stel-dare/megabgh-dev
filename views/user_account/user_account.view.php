@@ -1985,7 +1985,7 @@ Loading...
                                 <div class="row">
                                     <?php foreach($user_address as $address): ?>
                                     <div class="col-md-6">
-                                        <div class="bg-white card addresses-item mb-4 border ">
+                                        <div class="<?="bg-white card addresses-item mb-4 border address-border-toggle"?><?=$address->selected_address? ' border-primary':''?>"  onclick="addressToggleBorder(this,<?=$address->id?>,<?=$address->customer_id?>)">
                                             <div class="gold-members p-4">
                                                 <div class="media">
                                                     <div class="mr-3"><i class="icofont-location-pin icofont-3x"></i>

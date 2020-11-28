@@ -326,3 +326,17 @@ function toggleBorder(elem, id, customer_id) {
   console.log(id);
 
 }
+
+function addressToggleBorder(elem, id, customer_id) {
+  cards = document.getElementsByClassName('address-border-toggle');
+  for (let i = 0; i < cards.length; i++) {
+    document.getElementsByClassName('address-border-toggle')[i].classList.remove('border-primary');
+  }
+  elem.classList.add('border-primary');
+  let xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "update_user_account", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send(`submit=select-address&id=${id}&customer_id=${customer_id}`);
+  console.log(id);
+
+}

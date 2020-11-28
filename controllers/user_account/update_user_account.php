@@ -21,6 +21,19 @@ $table = explode('-',$_POST['submit'])[1];
             header("Location: user_account");
         }
 
+        //Select
+        else if($action==='select'){
+            //Deselect address already selected
+            $app['queryBuilder']->theInsertExecutioner("
+           update customer_address set selected_address=0 where customer_id={$_POST['customer_id']}
+               ");
+            // update selected_address field in table
+            $app['queryBuilder']->theInsertExecutioner("
+           update customer_address set selected_address=1 where id={$_POST['id']}
+               ");
+               echo 'success';
+        }
+
          // No Match
         else{
             header("Location: 404");
@@ -38,6 +51,7 @@ $table = explode('-',$_POST['submit'])[1];
            //Redirect to user account 
            header("Location: user_account"); 
         }
+
         //Select
         else if($action==='select'){
             //Deselect payment method already selected
