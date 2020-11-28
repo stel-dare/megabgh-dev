@@ -55,11 +55,13 @@
             margin: 0;
         }
 
-        .nice-select{
-            display:none;
+        .nice-select {
+            display: none;
         }
-        .select2-search, .select2-search--dropdown{
-            display:none;
+
+        .select2-search,
+        .select2-search--dropdown {
+            display: none;
         }
 
         @media only screen and (min-width: 1200px) {
@@ -1417,13 +1419,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p class="mb-0 text-black">Are you sure you want to delete this xxxxx?</p>
+                    <p class="mb-0 text-black">Are you sure you want to delete this address?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn d-flex w-50 text-center justify-content-center btn-outline-primary"
                         data-dismiss="modal">CANCEL
                     </button><button type="button"
-                        class="btn d-flex w-50 text-center justify-content-center btn-primary">DELETE</button>
+                        class="btn d-flex w-50 text-center justify-content-center btn-primary" onclick="deleteAddress()">DELETE</button>
                 </div>
             </div>
         </div>
@@ -1952,8 +1954,9 @@ Loading...
                                             class="icofont-ui-add"></i> ADD</a></p>
                                 <div class="row">
                                     <?php foreach($user_payment_methods as $payment_method): ?>
-                                    <div class="col-md-6" >
-                                        <div class="<?="bg-white border card payments-item mb-4 shadow-sm payment-border-toggle"?><?=$payment_method->selected_payment? ' border-primary':''?>"  onclick="toggleBorder(this,<?=$payment_method->id?>,<?=$payment_method->customer_id?>)">
+                                    <div class="col-md-6">
+                                        <div class="<?="bg-white border card payments-item mb-4 shadow-sm payment-border-toggle"?><?=$payment_method->selected_payment? ' border-primary':''?>"
+                                            onclick="toggleBorder(this,<?=$payment_method->id?>,<?=$payment_method->customer_id?>)">
                                             <div class="gold-members p-4">
                                                 <a href="#">
                                                     <div class="media">
@@ -1985,7 +1988,8 @@ Loading...
                                 <div class="row">
                                     <?php foreach($user_address as $address): ?>
                                     <div class="col-md-6">
-                                        <div class="<?="bg-white card addresses-item mb-4 border address-border-toggle"?><?=$address->selected_address? ' border-primary':''?>"  onclick="addressToggleBorder(this,<?=$address->id?>,<?=$address->customer_id?>)">
+                                        <div class="<?="bg-white card addresses-item mb-4 border address-border-toggle"?><?=$address->selected_address? ' border-primary':''?>"
+                                            onclick="addressToggleBorder(this,<?=$address->id?>,<?=$address->customer_id?>)">
                                             <div class="gold-members p-4">
                                                 <div class="media">
                                                     <div class="mr-3"><i class="icofont-location-pin icofont-3x"></i>
@@ -1996,13 +2000,14 @@ Loading...
                                                         <p class="text-black">
                                                             <?="$address->address, $address->address_city, $address->address_region" ?>
                                                         </p>
-                                                        <p class="mb-0 text-black font-weight-bold"><a
-                                                                class="text-primary mr-3" data-toggle="modal"
-                                                                data-target="#add-address-modal" href="#"><i
-                                                                    class="icofont-ui-edit"></i> EDIT</a> <a
-                                                                class="text-danger" data-toggle="modal"
-                                                                data-target="#delete-address-modal" href="#"><i
-                                                                    class="icofont-ui-delete"></i> DELETE</a></p>
+                                                        <p class="mb-0 text-black font-weight-bold"><span><a
+                                                                    class="text-primary mr-3" data-toggle="modal"
+                                                                    data-target="#add-address-modal" href="#"><i
+                                                                        class="icofont-ui-edit"></i> EDIT</a></span>
+                                                            <span onclick="setDeleteAddress(<?=$address->id?>)"><a class="text-danger" data-toggle="modal"
+                                                                    data-target="#delete-address-modal" href="#"><i
+                                                                        class="icofont-ui-delete"></i> DELETE</a></span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>

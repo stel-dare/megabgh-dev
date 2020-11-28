@@ -313,6 +313,7 @@
 
 })(jQuery);
 
+// Toggle payment method border and update selected payment method
 function toggleBorder(elem, id, customer_id) {
   cards = document.getElementsByClassName('payment-border-toggle');
   for (let i = 0; i < cards.length; i++) {
@@ -327,6 +328,7 @@ function toggleBorder(elem, id, customer_id) {
 
 }
 
+// Toggle delivery address border and update selected delivery address method
 function addressToggleBorder(elem, id, customer_id) {
   cards = document.getElementsByClassName('address-border-toggle');
   for (let i = 0; i < cards.length; i++) {
@@ -339,4 +341,29 @@ function addressToggleBorder(elem, id, customer_id) {
   xhttp.send(`submit=select-address&id=${id}&customer_id=${customer_id}`);
   console.log(id);
 
+}
+
+// Varaible to store id of address to be deleted
+let deleteAddressId;
+
+// Function to set id of address to be deleted
+function setDeleteAddress(id) {
+  deleteAddressId = id;
+  console.log(`Delete this ${id}`);
+}
+
+// Function to delete address and refresh page
+function deleteAddress() {
+  if (deleteAddressId) {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        location.reload();
+      }
+    };
+    xhttp.open("POST", "update_user_account", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send(`submit=delete-address&id=${deleteAddressId}`);
+    console.log(`Deleted ${deleteAddressId}`)
+  }
 }
