@@ -346,9 +346,18 @@ function addressToggleBorder(elem, id, customer_id) {
 // Varaible to store id of address to be deleted
 let deleteAddressId;
 
+// Varaible to store id of payment method to be deleted
+let deletePaymentMethodId;
+
 // Function to set id of address to be deleted
 function setDeleteAddress(id) {
   deleteAddressId = id;
+  console.log(`Delete this ${id}`);
+}
+
+// Function to set id of payment method to be deleted
+function setDeletePaymentMethod(id) {
+  deletePaymentMethodId = id;
   console.log(`Delete this ${id}`);
 }
 
@@ -365,5 +374,21 @@ function deleteAddress() {
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send(`submit=delete-address&id=${deleteAddressId}`);
     console.log(`Deleted ${deleteAddressId}`)
+  }
+}
+
+// Function to delete payment method and refresh page
+function deletePaymentMethod() {
+  if (deletePaymentMethodId) {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        location.reload();
+      }
+    };
+    xhttp.open("POST", "update_user_account", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send(`submit=delete-payment&id=${deletePaymentMethodId}`);
+    console.log(`Deleted ${deletePaymentMethodId}`)
   }
 }

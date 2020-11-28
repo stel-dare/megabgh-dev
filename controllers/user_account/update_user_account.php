@@ -76,6 +76,17 @@ $table = explode('-',$_POST['submit'])[1];
                echo 'success';
         }
 
+        // Delete
+        else if($action==='delete'){
+            //Delete Address
+            $app['queryBuilder']->theInsertExecutioner("
+           delete from customer_payment_methods where id = {$_POST['id']}
+               ");
+
+            //Redirect to user account 
+            echo 'Delete Successful';
+        }
+
          // No Match
         else{
             header("Location: 404");

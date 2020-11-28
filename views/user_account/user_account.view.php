@@ -1425,7 +1425,33 @@
                     <button type="button" class="btn d-flex w-50 text-center justify-content-center btn-outline-primary"
                         data-dismiss="modal">CANCEL
                     </button><button type="button"
-                        class="btn d-flex w-50 text-center justify-content-center btn-primary" onclick="deleteAddress()">DELETE</button>
+                        class="btn d-flex w-50 text-center justify-content-center btn-primary"
+                        onclick="deleteAddress()">DELETE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // Delete payment method modal -->
+    <div class="modal fade" id="delete-payment-modal" tabindex="-1" role="dialog" aria-labelledby="delete-payment"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="delete-payment">Delete</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0 text-black">Are you sure you want to delete this payment method?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn d-flex w-50 text-center justify-content-center btn-outline-primary"
+                        data-dismiss="modal">CANCEL
+                    </button><button type="button"
+                        class="btn d-flex w-50 text-center justify-content-center btn-primary"
+                        onclick="deletePaymentMethod()">DELETE</button>
                 </div>
             </div>
         </div>
@@ -1967,8 +1993,10 @@ Loading...
                                                             <p><?=$payment_method->name ?></p>
                                                             <p class="mb-0 text-black font-weight-bold">
                                                                 <a class="text-danger" data-toggle="modal"
-                                                                    data-target="#delete-address-modal" href="#"><i
-                                                                        class="icofont-ui-delete"></i> DELETE</a></p>
+                                                                        data-target="#delete-payment-modal" ><span onclick='setDeletePaymentMethod(<?=$payment_method->id?>)'><i
+                                                                            class="icofont-ui-delete"></i>
+                                                                        DELETE</span></a>
+                                                                </p>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -2004,7 +2032,8 @@ Loading...
                                                                     class="text-primary mr-3" data-toggle="modal"
                                                                     data-target="#add-address-modal" href="#"><i
                                                                         class="icofont-ui-edit"></i> EDIT</a></span>
-                                                            <span onclick="setDeleteAddress(<?=$address->id?>)"><a class="text-danger" data-toggle="modal"
+                                                            <span onclick="setDeleteAddress(<?=$address->id?>)"><a
+                                                                    class="text-danger" data-toggle="modal"
                                                                     data-target="#delete-address-modal" href="#"><i
                                                                         class="icofont-ui-delete"></i> DELETE</a></span>
                                                         </p>
