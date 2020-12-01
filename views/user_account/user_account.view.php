@@ -1408,6 +1408,8 @@
         </div>
     </div>
 
+    
+
     <div class="modal fade" id="delete-address-modal" tabindex="-1" role="dialog" aria-labelledby="delete-address"
         aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
@@ -2028,10 +2030,11 @@ Loading...
                                                         <p class="text-black">
                                                             <?="$address->address, $address->address_city, $address->address_region" ?>
                                                         </p>
-                                                        <p class="mb-0 text-black font-weight-bold"><span><a
+                                                        <p class="mb-0 text-black font-weight-bold">
+                                                            <!-- <span><a
                                                                     class="text-primary mr-3" data-toggle="modal"
                                                                     data-target="#add-address-modal" href="#"><i
-                                                                        class="icofont-ui-edit"></i> EDIT</a></span>
+                                                                        class="icofont-ui-edit"></i> EDIT</a></span> -->
                                                             <span onclick="setDeleteAddress(<?=$address->id?>)"><a
                                                                     class="text-danger" data-toggle="modal"
                                                                     data-target="#delete-address-modal" href="#"><i
