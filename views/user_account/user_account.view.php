@@ -1602,9 +1602,11 @@ Pages
                                         <h6 class="mb-2"><?="$user->first_name $user->last_name" ?></h6>
                                         <p class="mb-1"><?=$user->email ?></p>
                                         <p class=""><?=$user->username ?> </p>
-                                        <p class="mb-0 text-black font-weight-bold"><a class="text-primary mr-3"
+                                        <p class="mb-0 text-black font-weight-bold">
+                                            <!-- <a class="text-primary mr-3"
                                                 data-toggle="modal" data-target="#edit-profile-modal" href="#"><i
-                                                    class="icofont-ui-edit"></i> EDIT</a></p>
+                                                    class="icofont-ui-edit"></i> EDIT</a> -->
+                                                </p>
                                     </div>
                                 </div>
                             </div>
