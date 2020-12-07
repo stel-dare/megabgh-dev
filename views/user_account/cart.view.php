@@ -25,17 +25,104 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/header.css">
 </head>
 
 <body>
-    <div class="page-wrapper">
 
+    <div class="page-wrapper">
+        <header>
+            <!-- Header Start -->
+            <div class="header-area">
+                <div class="main-header header-sticky">
+                    <!-- Logo -->
+                    <div class="header-left">
+                        <div class="logo">
+                            <a href="#" class="shop-name" style="color:#6785FF;">megabgh online shop</a>
+                        </div>
+                        <div class="menu-wrapper  d-flex align-items-center">
+                            <!-- Main-menu -->
+                            <div class="main-menu d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <!-- <li><a href="#">Home</a></li> -->
+                                        <!-- <li ><a href="#">Promotions</a></li> -->
+                                        <!-- <li><a href="about">About</a> -->
+                                        <!-- <ul class="submenu">
+                                            <li><a href="services">Cleaning</a></li>
+                                            <li><a href="personnel">Personnel Support</a></li>
+                                            <li><a href="environmental">Environmental Services</a></li>
+                                            <li><a href="training">Training</a></li>
+                                        </ul> -->
+                                        <!-- </li> -->
+                                        <!-- <li ><a href="contact">Contact</a></li> -->
+                                        <li class="d-lg-none"><a href="#" class="header-btn1 "><i
+                                                    class="fa fa-shopping-cart"></i></a></li>
+                                        <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi,
+                                                <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
+                                            <!-- <ul class="submenu">
+                                            <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+                                        </ul> -->
+                                            <?php if($logged_in): ?>
+                                            <ul class="submenu">
+                                                <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                                <li><a href="user_account"><i class="fas fa-user-circle"></i> View
+                                                        profile</a></li>
+                                                <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                                                </li>
+                                            </ul>
+                                            <?php else: ?>
+                                            <ul class="submenu">
+                                                <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
+                                            </ul>
+                                            <?php endif;?>
+                                        </li>
+
+                                        <!-- <li><a href="shop">Shop</a></li> -->
+                                        <!-- <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right d-none d-lg-block">
+                        <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
+                        <ul style="display:flex;">
+                            <li><a href="#" class="header-btn1" style="color:#6785FF;"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                            <li><a href="#" class="" style="color:#6785FF;">|</a></li>
+                            <li class="user-account-name"><a href="#" class="header-btn1" style="color:#6785FF;">Hi,
+                                    <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
+                                <?php if($logged_in): ?>
+                                <ul class="user-account-submenu">
+                                    <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                    <li><a href="user_account"><i class="fas fa-user-circle"></i> View profile</a></li>
+                                    <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                                </ul>
+                                <?php else: ?>
+                                <ul class="user-account-submenu">
+                                    <li><a href="login"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
+                                </ul>
+                                <?php endif;?>
+
+                            </li>
+                        </ul>
+                        <!-- <a href="#" class="header-btn2">Contact Us</a> -->
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header End -->
+        </header>
         <!-- End .header -->
 
         <main class="main">
-           
+
             <!-- End .page-header -->
-            
+
             <!-- End .breadcrumb-nav -->
 
             <div class="page-content">
@@ -60,8 +147,9 @@
                                                 <div class="product">
                                                     <figure class="product-media">
                                                         <a href="#">
-															<img src="assets/images/products/table/product-1.jpg" alt="Product image">
-														</a>
+                                                            <img src="assets/images/products/table/product-1.jpg"
+                                                                alt="Product image">
+                                                        </a>
                                                     </figure>
 
                                                     <h3 class="product-title">
@@ -74,20 +162,23 @@
                                             <td class="price-col">$84.00</td>
                                             <td class="quantity-col">
                                                 <div class="cart-product-quantity">
-                                                    <input type="number" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
+                                                    <input type="number" class="form-control" value="1" min="1" max="10"
+                                                        step="1" data-decimals="0" required>
                                                 </div>
                                                 <!-- End .cart-product-quantity -->
                                             </td>
                                             <td class="total-col">$84.00</td>
-                                            <td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
+                                            <td class="remove-col"><button class="btn-remove"><i
+                                                        class="icon-close"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td class="product-col">
                                                 <div class="product">
                                                     <figure class="product-media">
                                                         <a href="#">
-															<img src="assets/images/products/table/product-2.jpg" alt="Product image">
-														</a>
+                                                            <img src="assets/images/products/table/product-2.jpg"
+                                                                alt="Product image">
+                                                        </a>
                                                     </figure>
 
                                                     <h3 class="product-title">
@@ -100,33 +191,141 @@
                                             <td class="price-col">$76.00</td>
                                             <td class="quantity-col">
                                                 <div class="cart-product-quantity">
-                                                    <input type="number" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
+                                                    <input type="number" class="form-control" value="1" min="1" max="10"
+                                                        step="1" data-decimals="0" required>
                                                 </div>
                                                 <!-- End .cart-product-quantity -->
                                             </td>
                                             <td class="total-col">$76.00</td>
-                                            <td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
+                                            <td class="remove-col"><button class="btn-remove"><i
+                                                        class="icon-close"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-col">
+                                                <div class="product">
+                                                    <figure class="product-media">
+                                                        <a href="#">
+                                                            <img src="assets/images/products/table/product-1.jpg"
+                                                                alt="Product image">
+                                                        </a>
+                                                    </figure>
+
+                                                    <h3 class="product-title">
+                                                        <a href="#">Beige knitted elastic runner shoes</a>
+                                                    </h3>
+                                                    <!-- End .product-title -->
+                                                </div>
+                                                <!-- End .product -->
+                                            </td>
+                                            <td class="price-col">$84.00</td>
+                                            <td class="quantity-col">
+                                                <div class="cart-product-quantity">
+                                                    <input type="number" class="form-control" value="1" min="1" max="10"
+                                                        step="1" data-decimals="0" required>
+                                                </div>
+                                                <!-- End .cart-product-quantity -->
+                                            </td>
+                                            <td class="total-col">$84.00</td>
+                                            <td class="remove-col"><button class="btn-remove"><i
+                                                        class="icon-close"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-col">
+                                                <div class="product">
+                                                    <figure class="product-media">
+                                                        <a href="#">
+                                                            <img src="assets/images/products/table/product-2.jpg"
+                                                                alt="Product image">
+                                                        </a>
+                                                    </figure>
+
+                                                    <h3 class="product-title">
+                                                        <a href="#">Blue utility pinafore denim dress</a>
+                                                    </h3>
+                                                    <!-- End .product-title -->
+                                                </div>
+                                                <!-- End .product -->
+                                            </td>
+                                            <td class="price-col">$76.00</td>
+                                            <td class="quantity-col">
+                                                <div class="cart-product-quantity">
+                                                    <input type="number" class="form-control" value="1" min="1" max="10"
+                                                        step="1" data-decimals="0" required>
+                                                </div>
+                                                <!-- End .cart-product-quantity -->
+                                            </td>
+                                            <td class="total-col">$76.00</td>
+                                            <td class="remove-col"><button class="btn-remove"><i
+                                                        class="icon-close"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-col">
+                                                <div class="product">
+                                                    <figure class="product-media">
+                                                        <a href="#">
+                                                            <img src="assets/images/products/table/product-1.jpg"
+                                                                alt="Product image">
+                                                        </a>
+                                                    </figure>
+
+                                                    <h3 class="product-title">
+                                                        <a href="#">Beige knitted elastic runner shoes</a>
+                                                    </h3>
+                                                    <!-- End .product-title -->
+                                                </div>
+                                                <!-- End .product -->
+                                            </td>
+                                            <td class="price-col">$84.00</td>
+                                            <td class="quantity-col">
+                                                <div class="cart-product-quantity">
+                                                    <input type="number" class="form-control" value="1" min="1" max="10"
+                                                        step="1" data-decimals="0" required>
+                                                </div>
+                                                <!-- End .cart-product-quantity -->
+                                            </td>
+                                            <td class="total-col">$84.00</td>
+                                            <td class="remove-col"><button class="btn-remove"><i
+                                                        class="icon-close"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-col">
+                                                <div class="product">
+                                                    <figure class="product-media">
+                                                        <a href="#">
+                                                            <img src="assets/images/products/table/product-2.jpg"
+                                                                alt="Product image">
+                                                        </a>
+                                                    </figure>
+
+                                                    <h3 class="product-title">
+                                                        <a href="#">Blue utility pinafore denim dress</a>
+                                                    </h3>
+                                                    <!-- End .product-title -->
+                                                </div>
+                                                <!-- End .product -->
+                                            </td>
+                                            <td class="price-col">$76.00</td>
+                                            <td class="quantity-col">
+                                                <div class="cart-product-quantity">
+                                                    <input type="number" class="form-control" value="1" min="1" max="10"
+                                                        step="1" data-decimals="0" required>
+                                                </div>
+                                                <!-- End .cart-product-quantity -->
+                                            </td>
+                                            <td class="total-col">$76.00</td>
+                                            <td class="remove-col"><button class="btn-remove"><i
+                                                        class="icon-close"></i></button></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <!-- End .table table-wishlist -->
 
                                 <div class="cart-bottom">
-                                    <div class="cart-discount">
-                                        <form action="#">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" required placeholder="coupon code">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-outline-primary-2" type="submit"><i class="icon-long-arrow-right"></i></button>
-                                                </div>
-                                                <!-- .End .input-group-append -->
-                                            </div>
-                                            <!-- End .input-group -->
-                                        </form>
-                                    </div>
+                                    
                                     <!-- End .cart-discount -->
 
-                                    <a href="#" class="btn btn-outline-dark-2"><span>UPDATE CART</span><i class="icon-refresh"></i></a>
+                                    <a href="#" class="btn btn-outline-dark-2"><span>REFRESH CART</span><i
+                                            class="icon-refresh"></i></a>
                                 </div>
                                 <!-- End .cart-bottom -->
                             </div>
@@ -151,8 +350,10 @@
                                             <tr class="summary-shipping-row">
                                                 <td>
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="free-shipping" name="shipping" class="custom-control-input">
-                                                        <label class="custom-control-label" for="free-shipping">Free Shipping</label>
+                                                        <input type="radio" id="free-shipping" name="shipping"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="free-shipping">Free
+                                                            Shipping</label>
                                                     </div>
                                                     <!-- End .custom-control -->
                                                 </td>
@@ -163,8 +364,10 @@
                                             <tr class="summary-shipping-row">
                                                 <td>
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="standart-shipping" name="shipping" class="custom-control-input">
-                                                        <label class="custom-control-label" for="standart-shipping">Standart:</label>
+                                                        <input type="radio" id="standart-shipping" name="shipping"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="standart-shipping">Standart:</label>
                                                     </div>
                                                     <!-- End .custom-control -->
                                                 </td>
@@ -175,8 +378,10 @@
                                             <tr class="summary-shipping-row">
                                                 <td>
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="express-shipping" name="shipping" class="custom-control-input">
-                                                        <label class="custom-control-label" for="express-shipping">Express:</label>
+                                                        <input type="radio" id="express-shipping" name="shipping"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="express-shipping">Express:</label>
                                                     </div>
                                                     <!-- End .custom-control -->
                                                 </td>
@@ -185,7 +390,8 @@
                                             <!-- End .summary-shipping-row -->
 
                                             <tr class="summary-shipping-estimate">
-                                                <td>Estimate for Your Country<br> <a href="dashboard.html">Change address</a></td>
+                                                <td>Estimate for Your Country<br> <a href="dashboard.html">Change
+                                                        address</a></td>
                                                 <td>&nbsp;</td>
                                             </tr>
                                             <!-- End .summary-shipping-estimate -->
@@ -199,11 +405,13 @@
                                     </table>
                                     <!-- End .table table-summary -->
 
-                                    <a href="checkout.html" class="btn btn-outline-primary-2 btn-order btn-block">PROCEED TO CHECKOUT</a>
+                                    <a href="checkout.html"
+                                        class="btn btn-outline-primary-2 btn-order btn-block">PROCEED TO CHECKOUT</a>
                                 </div>
                                 <!-- End .summary -->
 
-                                <a href="category.html" class="btn btn-outline-dark-2 btn-block mb-3"><span>CONTINUE SHOPPING</span><i class="icon-refresh"></i></a>
+                                <a href="category.html" class="btn btn-outline-dark-2 btn-block mb-3"><span>CONTINUE
+                                        SHOPPING</span><i class="icon-refresh"></i></a>
                             </aside>
                             <!-- End .col-lg-3 -->
                         </div>
@@ -217,326 +425,109 @@
         </main>
         <!-- End .main -->
 
-        
+        <footer>
+            <!-- Footer Start-->
+            <div class="footer-area footer-padding">
+                <!-- <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                     <div class="single-footer-caption mb-50">
+                       <div class="single-footer-caption mb-30">
+                        
+                        <div class="footer-logo mb-35">
+                            <a href="/"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                        </div>
+                        <div class="footer-tittle">
+                            <div class="footer-pera">
+                                <p>
+                                    MEGAB is a cleaning, environmental management and personnel outsourcing company. 
+                                    We always look forward to rendering dedicated service that will bring a smile to the faces of our clients.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                    <div class="footer-tittle">
+                        <h4>Our Values </h4>
+                        <ul>
+                            <li><a href="#">- Dedication.</a></li>
+                            <li><a href="#">- Truth.</a></li>
+                            <li><a href="#">- Hardwork.</a></li>
+                            <li><a href="#">- Loyalty.</a></li>
+                            <li><a href="#">- Excellence.</a></li>
+            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                    <div class="footer-tittle">
+                        <h4>Get in touch</h4>
+                        <ul>
+                            <li class="number"><a href="#">(233) 20 140 8571</a></li>
+                            <li><a href="#">gakbentil@yahoo.co.uk</a></li>
+                             
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+                <div class="container text-center">
+                    <p style="font-size:1.2em;"><span class="shop-name" style="font-size:2em;">megabgh online
+                            shop.</span>
+                    </p>
+                    <p style="font-size:1.2em;"> Contact our cutomer service <span class="number"><a href="#"
+                                style="margin-bottom:0;">(233) 20 140 8571</a></span> for shop support.</p>
+                </div>
+            </div>
+            <!-- footer-bottom area -->
+            <div class="footer-bottom-area section-bg2" data-background="assets/img/gallery/footer-bg.png">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-12 ">
+                                <div class="footer-copy-right text-center">
+                                    <p>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;<script>
+                                            document.write(new Date().getFullYear());
+                                        </script> All rights reserved | Made by <a href="https://stel-dare.github.io/"
+                                            target="_blank" rel="noreferrer noopener">stel.</a>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End-->
+        </footer>
         <!-- End .footer -->
     </div>
     <!-- End .page-wrapper -->
-    <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+    <!-- <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button> -->
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu-overlay"></div>
+    <!-- <div class="mobile-menu-overlay"></div> -->
     <!-- End .mobil-menu-overlay -->
 
-    <div class="mobile-menu-container">
-        <div class="mobile-menu-wrapper">
-            <span class="mobile-menu-close"><i class="icon-close"></i></span>
 
-            <form action="#" method="get" class="mobile-search">
-                <label for="mobile-search" class="sr-only">Search</label>
-                <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search in..." required>
-                <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
-            </form>
-
-            <nav class="mobile-nav">
-                <ul class="mobile-menu">
-                    <li class="active">
-                        <a href="index.html">Home</a>
-
-                        <ul>
-                            <li><a href="index-1.html">01 - furniture store</a></li>
-                            <li><a href="index-2.html">02 - furniture store</a></li>
-                            <li><a href="index-3.html">03 - electronic store</a></li>
-                            <li><a href="index-4.html">04 - electronic store</a></li>
-                            <li><a href="index-5.html">05 - fashion store</a></li>
-                            <li><a href="index-6.html">06 - fashion store</a></li>
-                            <li><a href="index-7.html">07 - fashion store</a></li>
-                            <li><a href="index-8.html">08 - fashion store</a></li>
-                            <li><a href="index-9.html">09 - fashion store</a></li>
-                            <li><a href="index-10.html">10 - shoes store</a></li>
-                            <li><a href="index-11.html">11 - furniture simple store</a></li>
-                            <li><a href="index-12.html">12 - fashion simple store</a></li>
-                            <li><a href="index-13.html">13 - market</a></li>
-                            <li><a href="index-14.html">14 - market fullwidth</a></li>
-                            <li><a href="index-15.html">15 - lookbook 1</a></li>
-                            <li><a href="index-16.html">16 - lookbook 2</a></li>
-                            <li><a href="index-17.html">17 - fashion store</a></li>
-                            <li><a href="index-18.html">18 - fashion store (with sidebar)</a></li>
-                            <li><a href="index-19.html">19 - games store</a></li>
-                            <li><a href="index-20.html">20 - book store</a></li>
-                            <li><a href="index-21.html">21 - sport store</a></li>
-                            <li><a href="index-22.html">22 - tools store</a></li>
-                            <li><a href="index-23.html">23 - fashion left navigation store</a></li>
-                            <li><a href="index-24.html">24 - extreme sport store</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="category.html">Shop</a>
-                        <ul>
-                            <li><a href="category-list.html">Shop List</a></li>
-                            <li><a href="category-2cols.html">Shop Grid 2 Columns</a></li>
-                            <li><a href="category.html">Shop Grid 3 Columns</a></li>
-                            <li><a href="category-4cols.html">Shop Grid 4 Columns</a></li>
-                            <li><a href="category-boxed.html"><span>Shop Boxed No Sidebar<span class="tip tip-hot">Hot</span></span></a></li>
-                            <li><a href="category-fullwidth.html">Shop Fullwidth No Sidebar</a></li>
-                            <li><a href="product-category-boxed.html">Product Category Boxed</a></li>
-                            <li><a href="product-category-fullwidth.html"><span>Product Category Fullwidth<span class="tip tip-new">New</span></span></a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="#">Lookbook</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="product.html" class="sf-with-ul">Product</a>
-                        <ul>
-                            <li><a href="product.html">Default</a></li>
-                            <li><a href="product-centered.html">Centered</a></li>
-                            <li><a href="product-extended.html"><span>Extended Info<span class="tip tip-new">New</span></span></a></li>
-                            <li><a href="product-gallery.html">Gallery</a></li>
-                            <li><a href="product-sticky.html">Sticky Info</a></li>
-                            <li><a href="product-sidebar.html">Boxed With Sidebar</a></li>
-                            <li><a href="product-fullwidth.html">Full Width</a></li>
-                            <li><a href="product-masonry.html">Masonry Sticky Info</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                        <ul>
-                            <li>
-                                <a href="about.html">About</a>
-
-                                <ul>
-                                    <li><a href="about.html">About 01</a></li>
-                                    <li><a href="about-2.html">About 02</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-
-                                <ul>
-                                    <li><a href="contact.html">Contact 01</a></li>
-                                    <li><a href="contact-2.html">Contact 02</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="faq.html">FAQs</a></li>
-                            <li><a href="404.html">Error 404</a></li>
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-
-                        <ul>
-                            <li><a href="blog.html">Classic</a></li>
-                            <li><a href="blog-listing.html">Listing</a></li>
-                            <li>
-                                <a href="#">Grid</a>
-                                <ul>
-                                    <li><a href="blog-grid-2cols.html">Grid 2 columns</a></li>
-                                    <li><a href="blog-grid-3cols.html">Grid 3 columns</a></li>
-                                    <li><a href="blog-grid-4cols.html">Grid 4 columns</a></li>
-                                    <li><a href="blog-grid-sidebar.html">Grid sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Masonry</a>
-                                <ul>
-                                    <li><a href="blog-masonry-2cols.html">Masonry 2 columns</a></li>
-                                    <li><a href="blog-masonry-3cols.html">Masonry 3 columns</a></li>
-                                    <li><a href="blog-masonry-4cols.html">Masonry 4 columns</a></li>
-                                    <li><a href="blog-masonry-sidebar.html">Masonry sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Mask</a>
-                                <ul>
-                                    <li><a href="blog-mask-grid.html">Blog mask grid</a></li>
-                                    <li><a href="blog-mask-masonry.html">Blog mask masonry</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Single Post</a>
-                                <ul>
-                                    <li><a href="single.html">Default with sidebar</a></li>
-                                    <li><a href="single-fullwidth.html">Fullwidth no sidebar</a></li>
-                                    <li><a href="single-fullwidth-sidebar.html">Fullwidth with sidebar</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="elements-list.html">Elements</a>
-                        <ul>
-                            <li><a href="elements-products.html">Products</a></li>
-                            <li><a href="elements-typography.html">Typography</a></li>
-                            <li><a href="elements-titles.html">Titles</a></li>
-                            <li><a href="elements-banners.html">Banners</a></li>
-                            <li><a href="elements-product-category.html">Product Category</a></li>
-                            <li><a href="elements-video-banners.html">Video Banners</a></li>
-                            <li><a href="elements-buttons.html">Buttons</a></li>
-                            <li><a href="elements-accordions.html">Accordions</a></li>
-                            <li><a href="elements-tabs.html">Tabs</a></li>
-                            <li><a href="elements-testimonials.html">Testimonials</a></li>
-                            <li><a href="elements-blog-posts.html">Blog Posts</a></li>
-                            <li><a href="elements-portfolio.html">Portfolio</a></li>
-                            <li><a href="elements-cta.html">Call to Action</a></li>
-                            <li><a href="elements-icon-boxes.html">Icon Boxes</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <!-- End .mobile-nav -->
-
-            <div class="social-icons">
-                <a href="#" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
-                <a href="#" class="social-icon" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>
-                <a href="#" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
-                <a href="#" class="social-icon" target="_blank" title="Youtube"><i class="icon-youtube"></i></a>
-            </div>
-            <!-- End .social-icons -->
-        </div>
-        <!-- End .mobile-menu-wrapper -->
-    </div>
     <!-- End .mobile-menu-container -->
 
     <!-- Sign in / Register Modal -->
-    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="icon-close"></i></span>
-                    </button>
 
-                    <div class="form-box">
-                        <div class="form-tab">
-                            <ul class="nav nav-pills nav-fill" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Sign In</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="tab-content-5">
-                                <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
-                                    <form action="#">
-                                        <div class="form-group">
-                                            <label for="singin-email">Username or email address *</label>
-                                            <input type="text" class="form-control" id="singin-email" name="singin-email" required>
-                                        </div>
-                                        <!-- End .form-group -->
-
-                                        <div class="form-group">
-                                            <label for="singin-password">Password *</label>
-                                            <input type="password" class="form-control" id="singin-password" name="singin-password" required>
-                                        </div>
-                                        <!-- End .form-group -->
-
-                                        <div class="form-footer">
-                                            <button type="submit" class="btn btn-outline-primary-2">
-                                                <span>LOG IN</span>
-                                                <i class="icon-long-arrow-right"></i>
-                                            </button>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="signin-remember">
-                                                <label class="custom-control-label" for="signin-remember">Remember Me</label>
-                                            </div>
-                                            <!-- End .custom-checkbox -->
-
-                                            <a href="#" class="forgot-link">Forgot Your Password?</a>
-                                        </div>
-                                        <!-- End .form-footer -->
-                                    </form>
-                                    <div class="form-choice">
-                                        <p class="text-center">or sign in with</p>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login btn-g">
-                                                    <i class="icon-google"></i>
-                                                    Login With Google
-                                                </a>
-                                            </div>
-                                            <!-- End .col-6 -->
-                                            <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login btn-f">
-                                                    <i class="icon-facebook-f"></i>
-                                                    Login With Facebook
-                                                </a>
-                                            </div>
-                                            <!-- End .col-6 -->
-                                        </div>
-                                        <!-- End .row -->
-                                    </div>
-                                    <!-- End .form-choice -->
-                                </div>
-                                <!-- .End .tab-pane -->
-                                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                                    <form action="#">
-                                        <div class="form-group">
-                                            <label for="register-email">Your email address *</label>
-                                            <input type="email" class="form-control" id="register-email" name="register-email" required>
-                                        </div>
-                                        <!-- End .form-group -->
-
-                                        <div class="form-group">
-                                            <label for="register-password">Password *</label>
-                                            <input type="password" class="form-control" id="register-password" name="register-password" required>
-                                        </div>
-                                        <!-- End .form-group -->
-
-                                        <div class="form-footer">
-                                            <button type="submit" class="btn btn-outline-primary-2">
-                                                <span>SIGN UP</span>
-                                                <i class="icon-long-arrow-right"></i>
-                                            </button>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="register-policy" required>
-                                                <label class="custom-control-label" for="register-policy">I agree to the <a href="#">privacy policy</a> *</label>
-                                            </div>
-                                            <!-- End .custom-checkbox -->
-                                        </div>
-                                        <!-- End .form-footer -->
-                                    </form>
-                                    <div class="form-choice">
-                                        <p class="text-center">or sign in with</p>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login btn-g">
-                                                    <i class="icon-google"></i>
-                                                    Login With Google
-                                                </a>
-                                            </div>
-                                            <!-- End .col-6 -->
-                                            <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login  btn-f">
-                                                    <i class="icon-facebook-f"></i>
-                                                    Login With Facebook
-                                                </a>
-                                            </div>
-                                            <!-- End .col-6 -->
-                                        </div>
-                                        <!-- End .row -->
-                                    </div>
-                                    <!-- End .form-choice -->
-                                </div>
-                                <!-- .End .tab-pane -->
-                            </div>
-                            <!-- End .tab-content -->
-                        </div>
-                        <!-- End .form-tab -->
-                    </div>
-                    <!-- End .form-box -->
-                </div>
-                <!-- End .modal-body -->
-            </div>
-            <!-- End .modal-content -->
-        </div>
-        <!-- End .modal-dialog -->
-    </div>
     <!-- End .modal -->
 
     <!-- Plugins JS File -->
@@ -549,6 +540,49 @@
     <script src="assets/js/bootstrap-input-spinner.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/checkout.js"></script>
+
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
