@@ -29,6 +29,8 @@ else{
         $_SESSION['id'] = $user->id;
         $_SESSION['username'] = $user->username;
         $_SESSION['numberItemsCart'] = count($numberItemsCart);
-        header("Location: shop");
+
+        // Refer user to previous page or shop
+        $_POST['refer'] !=''? header("Location: {$_POST['refer']}") : header("Location: shop");
     }
 }

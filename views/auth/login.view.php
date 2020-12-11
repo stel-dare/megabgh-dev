@@ -82,6 +82,7 @@
 							Create an account
 						</a>
 					</div>
+					<input type="text" name="refer" value="<?=$refer_user?>" style="display:none;">
 				</form>
 			</div>
 		</div>
