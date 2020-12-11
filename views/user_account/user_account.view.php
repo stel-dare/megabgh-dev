@@ -13,14 +13,13 @@
 
     <link href="assets/user_account_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="assets/user_account_assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
-
     <link href="assets/user_account_assets/vendor/icofont/icofont.min.css" rel="stylesheet">
 
     <link href="assets/user_account_assets/vendor/select2/css/select2.min.css" rel="stylesheet">
 
     <link href="assets/user_account_assets/css/osahan.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link href="assets/user_account_assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
 </head>
 
 
@@ -32,7 +31,7 @@
                 <!-- Logo -->
                 <div class="header-left">
                     <div class="logo">
-                        <a href="#" class="shop-name" style="color:#6785FF;">megabgh online shop</a>
+                        <a href="shop" class="shop-name" style="color:#6785FF;">megabgh online shop</a>
                     </div>
                     <div class="menu-wrapper  d-flex align-items-center">
                         <!-- Main-menu -->
@@ -50,8 +49,9 @@
                                         </ul> -->
                                     <!-- </li> -->
                                     <!-- <li ><a href="contact">Contact</a></li> -->
-                                    <li class="d-lg-none"><a href="#" class="header-btn1 "><i
-                                                class="fa fa-shopping-cart"></i></a></li>
+                                    <li class="d-lg-none" style="position:relative;width:max-content;"><a href="cart" class="header-btn1 "><i
+                                                class="fa fa-shopping-cart"></i></a><span class='cart-number' style="font-size:0.7em;position:absolute;
+                                    top:0;right:0;color:#000"><?= $logged_in? htmlspecialchars($_SESSION['numberItemsCart']) : '0'; ?></span></li>
                                     <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi,
                                             <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
                                         <!-- <ul class="submenu">
@@ -59,7 +59,7 @@
                                         </ul> -->
                                         <?php if($logged_in): ?>
                                         <ul class="submenu">
-                                            <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                            <li><a href="user_account"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                                             <li><a href="user_account"><i class="fas fa-user-circle"></i> View
                                                     profile</a></li>
                                             <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
@@ -81,14 +81,15 @@
                 <div class="header-right d-none d-lg-block">
                     <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
                     <ul style="display:flex;">
-                        <li><a href="#" class="header-btn1" style="color:#6785FF;"><i
-                                    class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#" class="" style="color:#6785FF;">|</a></li>
+                    <li style="position:relative;"><a href="cart" class="header-btn1" style="color:#6785FF;"><i
+                                    class="fa fa-shopping-cart"></i><span class='cart-number' style="font-size:0.7em;position:absolute;
+                                    top:0;right:0;"><?= $logged_in? htmlspecialchars($_SESSION['numberItemsCart']) : '0'; ?></span></a></li>
+                        <li><a href="#" class="" style="color:#6785FF;padding-left:1em;">|</a></li>
                         <li class="user-account-name"><a href="#" class="header-btn1" style="color:#6785FF;">Hi,
                                 <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
                             <?php if($logged_in): ?>
                             <ul class="user-account-submenu">
-                                <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                <li><a href="user_account"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                                 <li><a href="user_account"><i class="fas fa-user-circle"></i> View profile</a></li>
                                 <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                             </ul>

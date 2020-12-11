@@ -10,22 +10,20 @@
     <meta name="description" content="Molla - Bootstrap eCommerce Template">
     <meta name="author" content="p-themes">
     <!-- Favicon -->
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/icons/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg" color="#666666">
-    <link rel="shortcut icon" href="assets/images/icons/favicon.ico"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="Megabgh">
     <meta name="application-name" content="Megabgh">
     <!-- <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml"> -->
     <meta name="theme-color" content="#ffffff">
     <!-- Plugins CSS File -->
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="assets/css/checkout.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link href="assets/user_account_assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +36,7 @@
                     <!-- Logo -->
                     <div class="header-left">
                         <div class="logo">
-                            <a href="#" class="shop-name" style="color:#6785FF;">megabgh online shop</a>
+                            <a href="shop" class="shop-name" style="color:#6785FF;">megabgh online shop</a>
                         </div>
                         <div class="menu-wrapper  d-flex align-items-center">
                             <!-- Main-menu -->
@@ -56,8 +54,9 @@
                                         </ul> -->
                                         <!-- </li> -->
                                         <!-- <li ><a href="contact">Contact</a></li> -->
-                                        <li class="d-lg-none"><a href="#" class="header-btn1 "><i
-                                                    class="fa fa-shopping-cart"></i></a></li>
+                                        <li class="d-lg-none" style="position:relative;width:max-content;"><a href="cart" class="header-btn1 "><i
+                                                class="fa fa-shopping-cart"></i></a><span class='cart-number' style="font-size:0.7em;position:absolute;
+                                    top:0;right:0;color:#000"><?= $logged_in? htmlspecialchars($_SESSION['numberItemsCart']) : '0'; ?></span></li>
                                         <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi,
                                                 <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
                                             <!-- <ul class="submenu">
@@ -65,7 +64,7 @@
                                         </ul> -->
                                             <?php if($logged_in): ?>
                                             <ul class="submenu">
-                                                <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                                <li><a href="user_account"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                                                 <li><a href="user_account"><i class="fas fa-user-circle"></i> View
                                                         profile</a></li>
                                                 <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
@@ -88,14 +87,15 @@
                     <div class="header-right d-none d-lg-block">
                         <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
                         <ul style="display:flex;">
-                            <li><a href="#" class="header-btn1" style="color:#6785FF;"><i
-                                        class="fa fa-shopping-cart"></i></a></li>
-                            <li><a href="#" class="" style="color:#6785FF;">|</a></li>
+                        <li style="position:relative;"><a href="cart" class="header-btn1" style="color:#6785FF;"><i
+                                    class="fa fa-shopping-cart"></i><span class='cart-number' style="font-size:0.7em;position:absolute;
+                                    top:0;right:0;"><?= $logged_in? htmlspecialchars($_SESSION['numberItemsCart']) : '0'; ?></span></a></li>
+                            <li><a href="#" class="" style="color:#6785FF;padding-left:1em;">|</a></li>
                             <li class="user-account-name"><a href="#" class="header-btn1" style="color:#6785FF;">Hi,
                                     <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
                                 <?php if($logged_in): ?>
                                 <ul class="user-account-submenu">
-                                    <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                    <li><a href="user_account"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                                     <li><a href="user_account"><i class="fas fa-user-circle"></i> View profile</a></li>
                                     <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                                 </ul>

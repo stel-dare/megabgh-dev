@@ -79,7 +79,7 @@
                                         </ul> -->
                                     <!-- </li> -->
                                     <!-- <li ><a href="contact">Contact</a></li> -->
-                                    <li class="d-lg-none" style="position:relative;width:max-content;"><a href="#" class="header-btn1 "><i
+                                    <li class="d-lg-none" style="position:relative;width:max-content;"><a href="cart" class="header-btn1 "><i
                                                 class="fa fa-shopping-cart"></i></a><span class='cart-number' style="font-size:0.7em;position:absolute;
                                     top:0;right:0;color:#000"><?= $logged_in? htmlspecialchars($_SESSION['numberItemsCart']) : '0'; ?></span></li>
                                     <li class="d-lg-none"><a href="#" class="header-btn1 ">Hi,
@@ -89,7 +89,7 @@
                                         </ul> -->
                                         <?php if($logged_in): ?>
                                         <ul class="submenu">
-                                            <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                            <li><a href="user_account"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                                             <li><a href="user_account"><i class="fas fa-user-circle"></i> View
                                                     profile</a></li>
                                             <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
@@ -111,7 +111,7 @@
                 <div class="header-right d-none d-lg-block">
                     <!-- <a href="#" class="header-btn1"><i class="fa fa-shopping-cart"></i> (233) 20 140 8571</a> -->
                     <ul style="display:flex;">
-                        <li style="position:relative;"><a href="#" class="header-btn1" style="color:#6785FF;"><i
+                        <li style="position:relative;"><a href="cart" class="header-btn1" style="color:#6785FF;"><i
                                     class="fa fa-shopping-cart"></i><span class='cart-number' style="font-size:0.7em;position:absolute;
                                     top:0;right:0;"><?= $logged_in? htmlspecialchars($_SESSION['numberItemsCart']) : '0'; ?></span></a></li>
                         <li><a href="#" class="" style="color:#6785FF;padding-left:1em;">|</a></li>
@@ -119,7 +119,7 @@
                                 <?= $logged_in? htmlspecialchars($_SESSION['username']) : 'Customer'; ?></a>
                             <?php if($logged_in): ?>
                             <ul class="user-account-submenu">
-                                <li><a href="#"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                                <li><a href="user_account"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
                                 <li><a href="user_account"><i class="fas fa-user-circle"></i> View profile</a></li>
                                 <li><a href="logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                             </ul>
