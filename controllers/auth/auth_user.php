@@ -18,13 +18,17 @@ else{
     }
 
     else{
+        // Fetch  number of items in customer's cart
+        $numberItemsCart = $app['queryBuilder']->theExecutioner(
+        "
+        select * from cart where customer_id = $user->id
+        ");
+
         session_start();
         $_SESSION['logged_in'] = true;
         $_SESSION['id'] = $user->id;
         $_SESSION['username'] = $user->username;
+        $_SESSION['numberItemsCart'] = count($numberItemsCart);
         header("Location: shop");
     }
 }
-
-
-

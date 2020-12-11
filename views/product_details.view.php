@@ -170,9 +170,9 @@
                         <p class="last-para">Not only does the Widebody offer superior performance for the standard</p>
                         <div class="shop__details__widget">
                             <div class="quantity">
-                                <div class="pro-qty"><input type="text" value="1"></div>
+                                <div class="pro-qty"><input type="text" value="1" id='pro-qty-value'></div>
                             </div>
-                            <a href="#" class="primary-btn">Add To Cart</a>
+                            <a href="javascript:;" class="primary-btn" onclick="addToCart(<?=$product[0]->id?>,document.querySelector('#pro-qty-value').value)">Add To Cart</a>
                         </div>
                         <ul>
                             <li><span>Availability:</span>In Stock</li>
@@ -341,7 +341,7 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    <!-- <script src="js/shop.js"></script> -->
+    <script src="js/shop.js"></script>
 
 </body>
 

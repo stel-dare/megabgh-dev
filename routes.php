@@ -59,6 +59,7 @@ $router -> get('trace', 'controllers/user_account/trace_order.php');
 
 // USER ACCOUNT POST REQUESTS
 $router -> post('update_user_account', 'controllers/user_account/update_user_account.php');
+$router -> post('manage_cart', 'controllers/user_account/manage_cart.php');
 
 // ERROR PAGES
 $router -> get('403', 'controllers/error/403.php');
