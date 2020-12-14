@@ -6,6 +6,12 @@ session_start();
 // Check if user is logged in
 if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
 
+    if(isset($_POST['action'])){
+
+        // Add item to cart
+        if($_POST['action']==='add'){
+
+
     //Check if user already added product
     $cart = $app['queryBuilder']->theExecutioner(
         "
@@ -33,6 +39,28 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
         
     $_SESSION['numberItemsCart'] = count($numberItemsCart);
     echo count($numberItemsCart);
+
+        }
+
+        // Delete item from cart
+        else if($_POST['action']==='delete'){
+
+            $app['queryBuilder']->theInsertExecutioner(
+            "delete from cart where id = {$_POST['id']}"
+        );
+
+            // Set session for number of items in cart
+        $numberItemsCart = $app['queryBuilder']->theExecutioner(
+            "
+            select * from cart where customer_id = {$_SESSION['id']}
+            ");
+            
+        $_SESSION['numberItemsCart'] = count($numberItemsCart);
+        
+            echo 'Delete Successful!';
+
+        }
+    }
 }
 
 // Redirect to login page if user not logged in

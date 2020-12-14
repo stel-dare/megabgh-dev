@@ -174,7 +174,7 @@
                                                 <!-- End .cart-product-quantity -->
                                             </td>
                                             <td class="total-col">GHS <?=$item->price * $item->quantity?></td>
-                                            <td class="remove-col"><button class="btn-remove"><i
+                                            <td class="remove-col"><button class="btn-remove" onclick="removeItem(<?=$item->id?>)"><i
                                                         class="icon-close"></i></button></td>
                                         </tr>
                                     <?php endforeach; ?>    
@@ -445,6 +445,7 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>

@@ -161,7 +161,7 @@ function addToCart(product_id, quantity = 1) {
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     // Post product ID and quantity to manage_cart endpoint
-    xhttp.send(`product_id=${product_id}&quantity=${quantity}`);
+    xhttp.send(`product_id=${product_id}&quantity=${quantity}&action=add`);
 
     console.log(`Product ID : ${product_id}. Quantity: ${quantity}`);
 }
