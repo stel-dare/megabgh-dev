@@ -60,6 +60,15 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
             echo 'Delete Successful!';
 
         }
+
+        // Update quantity of item
+        else if($_POST['action']==='update'){
+            // update quantity of product in cart
+            $app['queryBuilder']->theInsertExecutioner("
+           update cart set quantity={$_POST['quantity']} where id={$_POST['id']}
+               ");
+               echo 'success';
+        }
     }
 }
 

@@ -169,11 +169,11 @@
                                             <td class="quantity-col">
                                                 <div class="cart-product-quantity">
                                                     <input type="number" class="form-control" value="<?=$item->quantity?>" min="1" max="15"
-                                                        step="1" data-decimals="0" required>
+                                                        step="1" data-decimals="0" onchange="quantityChanged(this,<?=$item->price?>,<?=$item->id?>)" required>
                                                 </div>
                                                 <!-- End .cart-product-quantity -->
                                             </td>
-                                            <td class="total-col">GHS <?=$item->price * $item->quantity?></td>
+                                            <td class="total-col" id='<?=$item->id?>'>GHS <?=$item->price * $item->quantity?></td>
                                             <td class="remove-col"><button class="btn-remove" onclick="removeItem(<?=$item->id?>)"><i
                                                         class="icon-close"></i></button></td>
                                         </tr>
