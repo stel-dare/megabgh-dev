@@ -251,11 +251,11 @@
                                             </tr> -->
                                             <!-- End .summary-shipping-row -->
 
-                                            <tr class="summary-shipping-estimate">
+                                            <!-- <tr class="summary-shipping-estimate">
                                                 <td>Estimate for Your Country<br> <a href="dashboard.html">Change
                                                         address</a></td>
                                                 <td>&nbsp;</td>
-                                            </tr>
+                                            </tr> -->
                                             <!-- End .summary-shipping-estimate -->
 
                                             <tr class="summary-total">
@@ -267,7 +267,7 @@
                                     </table>
                                     <!-- End .table table-summary -->
 
-                                    <a href="checkout.html"
+                                    <a href="checkout"
                                         class="btn btn-outline-primary-2 btn-order btn-block">PROCEED TO CHECKOUT</a>
                                 </div>
                                 <!-- End .summary -->
