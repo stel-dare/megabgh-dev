@@ -12,6 +12,13 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
         "
         SELECT cart.id,products.name,products.price,products.image_url,cart.quantity FROM `cart` INNER join products on cart.product_id = products.id where customer_id = {$_SESSION['id']}
         ");
+
+    $subtotal = 0;
+
+    foreach($user_cart as $item){
+        $subtotal += ($item->quantity*$item->price);
+    }
+
     require "views/user_account/cart.view.php";
 }
 

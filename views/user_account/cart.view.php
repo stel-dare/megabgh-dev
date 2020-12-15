@@ -173,7 +173,7 @@
                                                 </div>
                                                 <!-- End .cart-product-quantity -->
                                             </td>
-                                            <td class="total-col" id='<?=$item->id?>'>GHS <?=$item->price * $item->quantity?></td>
+                                            <td class="total-col" >GHS  <span id='<?=$item->id?>' class='total_prod_costs'><?=round($item->price * $item->quantity,2)?></span></td>
                                             <td class="remove-col"><button class="btn-remove" onclick="removeItem(<?=$item->id?>)"><i
                                                         class="icon-close"></i></button></td>
                                         </tr>
@@ -201,7 +201,7 @@
                                         <tbody>
                                             <tr class="summary-subtotal">
                                                 <td>Subtotal:</td>
-                                                <td>$160.00</td>
+                                                <td>GHS <span id='subtotal'><?=round($subtotal,2)?></span></td>
                                             </tr>
                                             <!-- End .summary-subtotal -->
                                             <tr class="summary-shipping">
@@ -219,11 +219,11 @@
                                                     </div>
                                                     <!-- End .custom-control -->
                                                 </td>
-                                                <td>$0.00</td>
+                                                <td>GHS 0.00</td>
                                             </tr>
                                             <!-- End .summary-shipping-row -->
 
-                                            <tr class="summary-shipping-row">
+                                            <!-- <tr class="summary-shipping-row">
                                                 <td>
                                                     <div class="custom-control custom-radio">
                                                         <input type="radio" id="standart-shipping" name="shipping"
@@ -231,13 +231,13 @@
                                                         <label class="custom-control-label"
                                                             for="standart-shipping">Standart:</label>
                                                     </div>
-                                                    <!-- End .custom-control -->
+                                                    
                                                 </td>
                                                 <td>$10.00</td>
-                                            </tr>
+                                            </tr> -->
                                             <!-- End .summary-shipping-row -->
 
-                                            <tr class="summary-shipping-row">
+                                            <!-- <tr class="summary-shipping-row">
                                                 <td>
                                                     <div class="custom-control custom-radio">
                                                         <input type="radio" id="express-shipping" name="shipping"
@@ -245,10 +245,10 @@
                                                         <label class="custom-control-label"
                                                             for="express-shipping">Express:</label>
                                                     </div>
-                                                    <!-- End .custom-control -->
+                                                    
                                                 </td>
                                                 <td>$20.00</td>
-                                            </tr>
+                                            </tr> -->
                                             <!-- End .summary-shipping-row -->
 
                                             <tr class="summary-shipping-estimate">
@@ -260,7 +260,7 @@
 
                                             <tr class="summary-total">
                                                 <td>Total:</td>
-                                                <td>$160.00</td>
+                                                <td>GHS <span id='order_total'><?=round($subtotal,2)?></span></td>
                                             </tr>
                                             <!-- End .summary-total -->
                                         </tbody>

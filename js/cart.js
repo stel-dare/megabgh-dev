@@ -15,7 +15,16 @@ function removeItem(id) {
 
 function quantityChanged(quantity, price, total) {
     // Update total cost when quantity changes
-    document.getElementById(total).innerHTML = quantity.value * price;
+    document.getElementById(total).innerHTML = (quantity.value * price).toFixed(2);
+
+    // Calculate new subtotal
+    subtotal = 0;
+    for (let i = 0; i < document.getElementsByClassName('total_prod_costs').length; i++) {
+        subtotal += Number(document.getElementsByClassName('total_prod_costs')[i].innerText);
+    }
+    document.getElementById('subtotal').innerText = subtotal.toFixed(2);
+    document.getElementById('order_total').innerText = subtotal.toFixed(2);
+    console.log('New Subtotal: ', subtotal);
 
     // Update quantity of product in database
     let xhttp = new XMLHttpRequest();
