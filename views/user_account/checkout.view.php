@@ -131,13 +131,13 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label>First Name </label>
-                                            <input type="text" class="form-control" disabled>
+                                            <input type="text" class="form-control" value="<?=$user_info->first_name?>" disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
 
                                         <div class="col-sm-6">
                                             <label>Last Name </label>
-                                            <input type="text" class="form-control" disabled>
+                                            <input type="text" class="form-control" value="<?=$user_info->last_name?>" disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
                                     </div>
@@ -150,19 +150,19 @@
                                     <input type="text" class="form-control" required> -->
 
                                     <label>Address </label>
-                                    <input type="text" class="form-control"  disabled>
+                                    <input type="text" class="form-control" value="<?=$user_address->address?>" disabled>
                                     <!-- <input type="text" class="form-control" placeholder="Appartments, suite, unit etc ..." required> -->
 
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label> City </label>
-                                            <input type="text" class="form-control" disabled>
+                                            <input type="text" class="form-control" value="<?=$user_address->address_city?>" disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
 
                                         <div class="col-sm-6">
                                             <label>Region </label>
-                                            <input type="text" class="form-control" disabled>
+                                            <input type="text" class="form-control" value="<?=$user_address->address_region?>" disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
                                     </div>
@@ -172,7 +172,7 @@
                                     <!-- End .row -->
 
                                     <label>Email address </label>
-                                    <input type="email" class="form-control" disabled>
+                                    <input type="email" class="form-control" value="<?=$user_info->email?>" disabled>
 
                                     <!-- <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="checkout-create-acc">
@@ -204,18 +204,16 @@
                                             </thead>
 
                                             <tbody>
+                                                <?php foreach($user_cart as $item): ?>
                                                 <tr>
-                                                    <td><a href="#">Beige knitted elastic runner shoes</a></td>
-                                                    <td>$84.00</td>
+                                                    <td><a href="#"><?=$item -> name?></a></td>
+                                                    <td>GHS <?=round($item->quantity * $item->price,2)?></td>
                                                 </tr>
-
-                                                <tr>
-                                                    <td><a href="#">Blue utility pinafore denimdress</a></td>
-                                                    <td>$76,00</td>
-                                                </tr>
+                                                <?php endforeach; ?>
+                                                
                                                 <tr class="summary-subtotal">
                                                     <td>Subtotal:</td>
-                                                    <td>$160.00</td>
+                                                    <td>GHS <?= round($subtotal,2) ?></td>
                                                 </tr>
                                                 <!-- End .summary-subtotal -->
                                                 <tr>
@@ -224,7 +222,7 @@
                                                 </tr>
                                                 <tr class="summary-total">
                                                     <td>Total:</td>
-                                                    <td>$160.00</td>
+                                                    <td>GHS <?= round($subtotal,2) ?></td>
                                                 </tr>
                                                 <!-- End .summary-total -->
                                             </tbody>
@@ -232,93 +230,20 @@
                                         <!-- End .table table-summary -->
 
                                         <div class="accordion-summary" id="accordion-payment">
-                                            <div class="card">
-                                                <div class="card-header" id="heading-1">
-                                                    <h2 class="card-title">
-                                                        <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-										                    Direct bank transfer
-										                </a>
-                                                    </h2>
-                                                </div>
-                                                <!-- End .card-header -->
-                                                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion-payment">
-                                                    <div class="card-body">
-                                                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
-                                                    </div>
-                                                    <!-- End .card-body -->
-                                                </div>
-                                                <!-- End .collapse -->
-                                            </div>
-                                            <!-- End .card -->
-
-                                            <div class="card">
-                                                <div class="card-header" id="heading-2">
-                                                    <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-										                    Check payments
-										                </a>
-                                                    </h2>
-                                                </div>
-                                                <!-- End .card-header -->
-                                                <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-payment">
-                                                    <div class="card-body">
-                                                        Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                                    </div>
-                                                    <!-- End .card-body -->
-                                                </div>
-                                                <!-- End .collapse -->
-                                            </div>
-                                            <!-- End .card -->
-
-                                            <div class="card">
-                                                <div class="card-header" id="heading-3">
-                                                    <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-										                    Cash on delivery
-										                </a>
-                                                    </h2>
-                                                </div>
-                                                <!-- End .card-header -->
-                                                <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion-payment">
-                                                    <div class="card-body">Quisque volutpat mattis eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                                                    </div>
-                                                    <!-- End .card-body -->
-                                                </div>
-                                                <!-- End .collapse -->
-                                            </div>
-                                            <!-- End .card -->
-
-                                            <div class="card">
-                                                <div class="card-header" id="heading-4">
-                                                    <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-										                    PayPal <small class="float-right paypal-link">What is PayPal?</small>
-										                </a>
-                                                    </h2>
-                                                </div>
-                                                <!-- End .card-header -->
-                                                <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-payment">
-                                                    <div class="card-body">
-                                                        Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum.
-                                                    </div>
-                                                    <!-- End .card-body -->
-                                                </div>
-                                                <!-- End .collapse -->
-                                            </div>
-                                            <!-- End .card -->
+                                            
 
                                             <div class="card">
                                                 <div class="card-header" id="heading-5">
                                                     <h2 class="card-title">
                                                         <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-										                    Credit Card (Stripe)
-										                    <img src="assets/images/payments-summary.png" alt="payments cards">
+										                   <?=$user_payment_methods->name?> Mobile Money
+										                    <img src="<?=$user_payment_methods->image_url?>" alt="payments cards" style="height:18px;">
 										                </a>
                                                     </h2>
                                                 </div>
                                                 <!-- End .card-header -->
-                                                <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-payment">
-                                                    <div class="card-body"> Donec nec justo eget felis facilisis fermentum.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Lorem ipsum dolor sit ame.
+                                                <div id="collapse-5" class="" aria-labelledby="heading-5" data-parent="#accordion-payment">
+                                                    <div class="card-body"><?=$user_payment_methods->phone_number?>
                                                     </div>
                                                     <!-- End .card-body -->
                                                 </div>
@@ -452,7 +377,7 @@
     <script src="assets/js/superfish.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <!-- Main JS File -->
-    <script src="assets/js/checkout.js"></script>
+    <!-- <script src="assets/js/checkout.js"></script> -->
 
     <!-- JS here -->
 
