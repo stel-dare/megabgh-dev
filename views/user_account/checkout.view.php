@@ -19,7 +19,7 @@
 
 <body>
     <div class="page-wrapper">
-    <header>
+        <header>
             <!-- Header Start -->
             <div class="header-area">
                 <div class="main-header header-sticky">
@@ -115,15 +115,15 @@
         <!-- End .header -->
 
         <main class="main">
-           
+
             <!-- End .breadcrumb-nav -->
 
             <div class="page-content">
                 <div class="checkout">
                     <div class="container">
-                        
+
                         <!-- End .checkout-discount -->
-                        <form action="#">
+                        <form action="place_order" method='post'>
                             <div class="row">
                                 <div class="col-lg-9">
                                     <h2 class="checkout-title">Billing Details</h2>
@@ -131,13 +131,15 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label>First Name </label>
-                                            <input type="text" class="form-control" value="<?=$user_info->first_name?>" disabled>
+                                            <input type="text" class="form-control" value="<?=$user_info->first_name?>"
+                                                disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
 
                                         <div class="col-sm-6">
                                             <label>Last Name </label>
-                                            <input type="text" class="form-control" value="<?=$user_info->last_name?>" disabled>
+                                            <input type="text" class="form-control" value="<?=$user_info->last_name?>"
+                                                disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
                                     </div>
@@ -150,25 +152,28 @@
                                     <input type="text" class="form-control" required> -->
 
                                     <label>Address </label>
-                                    <input type="text" class="form-control" value="<?=$user_address->address?>" disabled>
-                                    <!-- <input type="text" class="form-control" placeholder="Appartments, suite, unit etc ..." required> -->
+                                    <input type="text" class="form-control" value="<?=$user_address->address?>"
+                                        disabled>
+                                    <input type="text" class="form-control" name='adress_id' value="<?=$user_address->id?>" style="display:none;">
 
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label> City </label>
-                                            <input type="text" class="form-control" value="<?=$user_address->address_city?>" disabled>
+                                            <input type="text" class="form-control"
+                                                value="<?=$user_address->address_city?>" disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
 
                                         <div class="col-sm-6">
                                             <label>Region </label>
-                                            <input type="text" class="form-control" value="<?=$user_address->address_region?>" disabled>
+                                            <input type="text" class="form-control"
+                                                value="<?=$user_address->address_region?>" disabled>
                                         </div>
                                         <!-- End .col-sm-6 -->
                                     </div>
                                     <!-- End .row -->
 
-             
+
                                     <!-- End .row -->
 
                                     <label>Email address </label>
@@ -210,7 +215,7 @@
                                                     <td>GHS <?=round($item->quantity * $item->price,2)?></td>
                                                 </tr>
                                                 <?php endforeach; ?>
-                                                
+
                                                 <tr class="summary-subtotal">
                                                     <td>Subtotal:</td>
                                                     <td>GHS <?= round($subtotal,2) ?></td>
@@ -230,19 +235,23 @@
                                         <!-- End .table table-summary -->
 
                                         <div class="accordion-summary" id="accordion-payment">
-                                            
+
 
                                             <div class="card">
                                                 <div class="card-header" id="heading-5">
                                                     <h2 class="card-title">
-                                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-										                   <?=$user_payment_methods->name?> Mobile Money
-										                    <img src="<?=$user_payment_methods->image_url?>" alt="payments cards" style="height:18px;">
-										                </a>
+                                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                                            href="#collapse-5" aria-expanded="false"
+                                                            aria-controls="collapse-5">
+                                                            <?=$user_payment_methods->name?> Mobile Money
+                                                            <img src="<?=$user_payment_methods->image_url?>"
+                                                                alt="payments cards" style="height:18px;">
+                                                        </a>
                                                     </h2>
                                                 </div>
                                                 <!-- End .card-header -->
-                                                <div id="collapse-5" class="" aria-labelledby="heading-5" data-parent="#accordion-payment">
+                                                <div id="collapse-5" class="" aria-labelledby="heading-5"
+                                                    data-parent="#accordion-payment">
                                                     <div class="card-body"><?=$user_payment_methods->phone_number?>
                                                     </div>
                                                     <!-- End .card-body -->
@@ -254,9 +263,10 @@
                                         <!-- End .accordion -->
 
                                         <button type="submit" class="btn btn-outline-primary-2 btn-order btn-block">
-		                					<span class="btn-text">Place Order</span>
-		                					<span class="btn-hover-text">Proceed to Checkout</span>
-		                				</button>
+                                            <span class="btn-text">Place Order</span>
+                                            <span class="btn-hover-text">Proceed to Checkout</span>
+                                        </button>
+
                                     </div>
                                     <!-- End .summary -->
                                 </aside>
@@ -361,12 +371,12 @@
             </div>
             <!-- Footer End-->
         </footer>
-       
+
         <!-- End .footer -->
     </div>
 
 
-    
+
     <!-- End .modal -->
 
     <!-- Plugins JS File -->
@@ -421,7 +431,7 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    
+
 </body>
 
 </html>
