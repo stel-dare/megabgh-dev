@@ -22,7 +22,8 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
         }
 
         //Date ordered
-        $date_ordered = date('Y-m-d h:i:sa');
+        $date_ordered = date('Y-m-d H:i:s');
+        
 
         // Store (customer id, total paid, date ordered,order status,order_address) in orders
         $app['queryBuilder']->theInsertExecutioner("
