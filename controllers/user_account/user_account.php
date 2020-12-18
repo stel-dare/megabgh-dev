@@ -28,14 +28,14 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']===true){
     $user_past_orders =  $app['queryBuilder']->theExecutioner(
         "SELECT orders.id,orders.customer_id,orders.total_paid,orders.date_ordered,order_state.state 
         from orders left join order_state on orders.order_state_id = order_state.id where order_state.state =
-         'Delivered' and orders.customer_id=$user->id
+         'Delivered' and orders.customer_id=$user->id order by orders.date_ordered DESC
         ");
     
     // Fetch user's current orders
     $user_current_orders =  $app['queryBuilder']->theExecutioner(
         "SELECT orders.id,orders.customer_id,orders.total_paid,orders.date_ordered,order_state.state 
         from orders left join order_state on orders.order_state_id = order_state.id where order_state.state !=
-         'Delivered' and orders.customer_id=$user->id
+         'Delivered' and orders.customer_id=$user->id order by orders.date_ordered DESC
         ");
 
     // Function to fetch products of orders
